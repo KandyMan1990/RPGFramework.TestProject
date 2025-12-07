@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$USER_HOME$/source/repos/RPGFramework.Audio" vcs="Git" />
+    <mapping directory="$USER_HOME$/source/repos/RPGFramework.Core" vcs="Git" />
+    <mapping directory="$USER_HOME$/source/repos/RPGFramework.Core.SharedTypes" vcs="Git" />
+    <mapping directory="$USER_HOME$/source/repos/RPGFramework.DI" vcs="Git" />
+    <mapping directory="$USER_HOME$/source/repos/RPGFramework.Localisation" vcs="Git" />
+    <mapping directory="$USER_HOME$/source/repos/RPGFramework.Menu" vcs="Git" />
+    <mapping directory="$USER_HOME$/source/repos/RPGFramework.Menu.SharedTypes" vcs="Git" />
+  </component>
+</project>

@@ -1,0 +1,14 @@
+﻿namespace Test.Localisation
+{
+	// Auto generated keys for sheet: Generic
+	public static partial class LocalisationKeys
+	{
+		public static class Generic
+		{
+			///<summary>Generic</summary>
+			public const string SHEET_NAME = @"Generic";
+			///<summary>Game_Title</summary>
+			public const string GAME_TITLE = @"Generic/Game_Title";
+		}
+	}
+}
