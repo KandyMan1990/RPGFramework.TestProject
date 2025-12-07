@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.Linq;
 using RPGFramework.Core;
+using RPGFramework.Core.SharedTypes;
 using RPGFramework.Localisation;
 using RPGFramework.Menu;
 using RPGFramework.Menu.SharedTypes;
@@ -29,7 +30,7 @@ namespace Test
             //TODO: set the language on the ILocalisationService object
             Debug.Log(allCultures);
             
-            IMenuModuleArgs args = new MenuModuleArgs(typeof(IBeginMenu));
+            IModuleArgs args = new MenuModuleArgs<IBeginMenu>();
 
             entryPoint.StartGameAsync<IMenuModule>(args).FireAndForget();
         }
