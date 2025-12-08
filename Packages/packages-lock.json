@@ -1,56 +1,63 @@
 {
   "dependencies": {
     "com.rpgframework.audio": {
-      "version": "file:C:/Users/KandyMan/source/repos/RPGFramework.Audio",
+      "version": "https://github.com/KandyMan1990/RPGFramework.Audio.git#v0.5.3",
       "depth": 0,
-      "source": "local",
+      "source": "git",
       "dependencies": {
         "com.rpgframework.core": "0.1.1"
-      }
+      },
+      "hash": "067603a06c8b93c9606758ed24da5101ef9aee49"
     },
     "com.rpgframework.core": {
-      "version": "file:C:/Users/KandyMan/source/repos/RPGFramework.Core",
+      "version": "https://github.com/KandyMan1990/RPGFramework.Core.git#v0.4.0",
       "depth": 0,
-      "source": "local",
+      "source": "git",
       "dependencies": {
         "com.rpgframework.di": "0.1.1",
         "com.rpgframework.core.sharedtypes": "0.1.0"
-      }
+      },
+      "hash": "a5c621d56673aecaf36d91bdaa3a2e2394c3ea26"
     },
     "com.rpgframework.core.sharedtypes": {
-      "version": "file:C:/Users/KandyMan/source/repos/RPGFramework.Core.SharedTypes",
+      "version": "https://github.com/KandyMan1990/RPGFramework.Core.SharedTypes.git#v0.1.0",
       "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "source": "git",
+      "dependencies": {},
+      "hash": "6d11bd9a966e4e94a0f8c368e9391991ee843c7f"
     },
     "com.rpgframework.di": {
-      "version": "file:C:/Users/KandyMan/source/repos/RPGFramework.DI",
+      "version": "https://github.com/KandyMan1990/RPGFramework.DI.git#v0.2.0",
       "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "source": "git",
+      "dependencies": {},
+      "hash": "9cb8e0d763ee01d6d81270b77e296a06cc1f8471"
     },
     "com.rpgframework.localisation": {
-      "version": "file:C:/Users/KandyMan/source/repos/RPGFramework.Localisation",
+      "version": "https://github.com/KandyMan1990/RPGFramework.Localisation.git#v0.2.0",
       "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "source": "git",
+      "dependencies": {},
+      "hash": "dd00fcfbba2e7258b3246ab5198ca33a98764a5c"
     },
     "com.rpgframework.menu": {
-      "version": "file:C:/Users/KandyMan/source/repos/RPGFramework.Menu",
+      "version": "https://github.com/KandyMan1990/RPGFramework.Menu.git#v0.1.0",
       "depth": 0,
-      "source": "local",
+      "source": "git",
       "dependencies": {
         "com.rpgframework.core": "0.1.1",
         "com.rpgframework.di": "0.1.0",
         "com.rpgframework.audio": "0.5.2",
         "com.rpgframework.localisation": "0.1.0"
-      }
+      },
+      "hash": "a57ec62067f9e275b07d15c001d50b9f6671a0ce"
     },
     "com.rpgframework.menu.sharedtypes": {
-      "version": "file:C:/Users/KandyMan/source/repos/RPGFramework.Menu.SharedTypes",
+      "version": "https://github.com/KandyMan1990/RPGFramework.Menu.SharedTypes.git#v0.1.0",
       "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "source": "git",
+      "dependencies": {},
+      "hash": "859bb2ce6258ea4491d84ad9b800d23865ddfaea"
     },
     "com.unity.burst": {
       "version": "1.8.25",
