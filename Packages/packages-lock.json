@@ -34,11 +34,11 @@
       "hash": "9cb8e0d763ee01d6d81270b77e296a06cc1f8471"
     },
     "com.rpgframework.localisation": {
-      "version": "https://github.com/KandyMan1990/RPGFramework.Localisation.git#v0.2.0",
+      "version": "https://github.com/KandyMan1990/RPGFramework.Localisation.git#v0.2.1",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "dd00fcfbba2e7258b3246ab5198ca33a98764a5c"
+      "hash": "b929ae5cd326d3d5e942f65e4a88dee49460d14e"
     },
     "com.rpgframework.menu": {
       "version": "https://github.com/KandyMan1990/RPGFramework.Menu.git#v0.1.0",

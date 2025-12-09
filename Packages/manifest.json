@@ -4,7 +4,7 @@
     "com.rpgframework.core": "https://github.com/KandyMan1990/RPGFramework.Core.git#v0.4.0",
     "com.rpgframework.core.sharedtypes": "https://github.com/KandyMan1990/RPGFramework.Core.SharedTypes.git#v0.1.0",
     "com.rpgframework.di": "https://github.com/KandyMan1990/RPGFramework.DI.git#v0.2.0",
-    "com.rpgframework.localisation": "https://github.com/KandyMan1990/RPGFramework.Localisation.git#v0.2.0",
+    "com.rpgframework.localisation": "https://github.com/KandyMan1990/RPGFramework.Localisation.git#v0.2.1",
     "com.rpgframework.menu": "https://github.com/KandyMan1990/RPGFramework.Menu.git#v0.1.0",
     "com.rpgframework.menu.sharedtypes": "https://github.com/KandyMan1990/RPGFramework.Menu.SharedTypes.git#v0.1.0",
     "com.unity.collections": "2.6.3",
