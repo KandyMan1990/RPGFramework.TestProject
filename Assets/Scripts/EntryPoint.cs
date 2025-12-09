@@ -18,6 +18,7 @@ namespace Test
         {
             IEntryPoint entryPoint = CoreModule.Create(m_GlobalContainer);
 
+            // this is just for testing, localisation service is bound in the global installer
             ILocalisationService localisationService = new LocalisationService();
             string[]             languages           = localisationService.GetAllLanguages();
             
