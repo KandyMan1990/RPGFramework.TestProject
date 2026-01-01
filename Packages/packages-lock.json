@@ -10,14 +10,14 @@
       "hash": "067603a06c8b93c9606758ed24da5101ef9aee49"
     },
     "com.rpgframework.core": {
-      "version": "https://github.com/KandyMan1990/RPGFramework.Core.git#v0.4.0",
+      "version": "https://github.com/KandyMan1990/RPGFramework.Core.git#v0.5.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.rpgframework.di": "0.1.1",
         "com.rpgframework.core.sharedtypes": "0.1.0"
       },
-      "hash": "a5c621d56673aecaf36d91bdaa3a2e2394c3ea26"
+      "hash": "11e9aa939663b29759ddf3f9318e55200ac8b19c"
     },
     "com.rpgframework.core.sharedtypes": {
       "version": "https://github.com/KandyMan1990/RPGFramework.Core.SharedTypes.git#v0.1.0",
@@ -27,21 +27,21 @@
       "hash": "6d11bd9a966e4e94a0f8c368e9391991ee843c7f"
     },
     "com.rpgframework.di": {
-      "version": "https://github.com/KandyMan1990/RPGFramework.DI.git#v0.2.0",
+      "version": "https://github.com/KandyMan1990/RPGFramework.DI.git#v1.1.0",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "9cb8e0d763ee01d6d81270b77e296a06cc1f8471"
+      "hash": "3aaa0ac70991c1d40734b1791f410841bece575f"
     },
     "com.rpgframework.localisation": {
-      "version": "https://github.com/KandyMan1990/RPGFramework.Localisation.git#v0.2.1",
+      "version": "https://github.com/KandyMan1990/RPGFramework.Localisation.git#v1.0.0",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "b929ae5cd326d3d5e942f65e4a88dee49460d14e"
+      "hash": "496d42b90b4762e09ebd83171b8021d82a877ef9"
     },
     "com.rpgframework.menu": {
-      "version": "https://github.com/KandyMan1990/RPGFramework.Menu.git#v0.1.0",
+      "version": "https://github.com/KandyMan1990/RPGFramework.Menu.git#v0.2.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -50,7 +50,7 @@
         "com.rpgframework.audio": "0.5.2",
         "com.rpgframework.localisation": "0.1.0"
       },
-      "hash": "a57ec62067f9e275b07d15c001d50b9f6671a0ce"
+      "hash": "2b7c0668845c936d2ca606e1af2595d17df06d32"
     },
     "com.rpgframework.menu.sharedtypes": {
       "version": "https://github.com/KandyMan1990/RPGFramework.Menu.SharedTypes.git#v0.1.0",
@@ -60,7 +60,7 @@
       "hash": "859bb2ce6258ea4491d84ad9b800d23865ddfaea"
     },
     "com.unity.burst": {
-      "version": "1.8.25",
+      "version": "1.8.26",
       "depth": 1,
       "source": "registry",
       "dependencies": {
