@@ -21,13 +21,13 @@ namespace Test
 
         public override void InstallBindings(IDIContainer container)
         {
-            container.BindSingleton<ILocalisationService, LocalisationService>();
+            container.BindSingleton<ILocalisationService, LocalisationService>().AsNonLazy();
 
             ISfxPlayer sfxPlayer = new UnitySfxPlayer();
             sfxPlayer.SetSfxAssetProvider(m_SfxProvider);
             sfxPlayer.SetStemMixerGroups(m_SfxMixerGroups);
-
             container.BindSingletonFromInstance(sfxPlayer);
+
             container.BindSingleton<IMusicPlayer, UnityMusicPlayer>();
             container.BindSingleton<IMenuModule, MenuModule>();
             container.BindSingletonFromInstance<IGenericAudioIdProvider>(m_GenericAudioIdProvider);

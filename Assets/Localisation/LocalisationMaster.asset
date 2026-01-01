@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: LocalisationMaster
   m_EditorClassIdentifier: RPGFramework.Localisation.Editor::RPGFramework.Localisation.Editor.LocalisationMaster
   SheetId: 1R9kxWgY2cfwkjbftb_JPVQAgiBG1UrCZM4ZOA-pAfNo
-  StreamingAssetsBase: Localisation
   DefaultNamespace: Test.Localisation
+  Version: 1
   SheetAssets:
   - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
   - {fileID: 11400000, guid: 34dd1c8d7a5bcdc489a4e817f51c8da9, type: 2}
+  - {fileID: 11400000, guid: f359084be1ae7ce459792550d36b0976, type: 2}

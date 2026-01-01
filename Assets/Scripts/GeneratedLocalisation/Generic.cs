@@ -9,6 +9,8 @@
 			public const string SHEET_NAME = @"Generic";
 			///<summary>Game_Title</summary>
 			public const string GAME_TITLE = @"Generic/Game_Title";
+			///<summary>Settings</summary>
+			public const string SETTINGS = @"Generic/Settings";
 		}
 	}
 }
