@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Test/Menu/MenuModule.unity
     guid: 086e9ee6731c4104f95330f08849a0fd
+  - enabled: 1
+    path: Assets/Test/Field/FieldModule.unity
+    guid: feead7c87f427044794e06064b493373
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.localization.settings: {fileID: 11400000, guid: 4f13433f847c21e46b782909fe999892, type: 2}
