@@ -15,7 +15,7 @@ namespace Test
         {
             IEntryPoint entryPoint = CoreModule.Create(m_GlobalContainer);
 
-            IModuleArgs args = new MenuModuleArgs<IBeginMenu>();
+            IModuleArgs args = new GenericMenuModuleArgs<IBeginMenu>();
 
             entryPoint.StartGameAsync<IMenuModule>(args).FireAndForget();
         }

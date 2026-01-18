@@ -33,6 +33,7 @@ namespace Test
             container.BindSingletonFromInstance(sfxPlayer);
 
             container.BindSingleton<IMusicPlayer, UnityMusicPlayer>();
+            container.BindSingleton<IMenuTypeProvider, MenuTypeProvider>();
             container.BindSingleton<IMenuModule, MenuModule>();
             container.BindSingleton<IFieldModule, FieldModule>();
             container.BindSingletonFromInstance<IAudioIntentPlayer>(new GameAudioIntentPlayer(sfxPlayer, GameAudioIntentMaps.Default));
