@@ -1,7 +1,6 @@
 ﻿using System;
 using RPGFramework.Core;
 using RPGFramework.Core.SharedTypes;
-using RPGFramework.Field;
 using RPGFramework.Field.SharedTypes;
 
 namespace Test
@@ -22,7 +21,7 @@ namespace Test
         {
             return moduleId switch
                    {
-                           (byte)ModuleID.Field => new FieldModuleArgs<IField>(),
+                           (byte)ModuleID.Field => new FieldModuleArgs("TestField0"),
                            //(byte)ModuleID.World => new WorldMapModuleArgs(),
                            _                    => throw new InvalidOperationException($"{nameof(IModuleResumeMap)}::{nameof(IModuleResumeMap.CreateArgs)} Unknown module id {moduleId}")
 

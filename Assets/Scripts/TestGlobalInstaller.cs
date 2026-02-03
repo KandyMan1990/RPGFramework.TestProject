@@ -19,6 +19,10 @@ namespace Test
     public class TestGlobalInstaller : GlobalInstallerBase
     {
         [SerializeField]
+        private MusicAssetProvider m_MusicProvider;
+        [SerializeField]
+        private AudioMixerGroup[] m_MusicMixerGroups;
+        [SerializeField]
         private SfxAssetProvider m_SfxProvider;
         [SerializeField]
         private AudioMixerGroup[] m_SfxMixerGroups;
@@ -32,7 +36,11 @@ namespace Test
             sfxPlayer.SetStemMixerGroups(m_SfxMixerGroups);
             container.BindSingletonFromInstance(sfxPlayer);
 
-            container.BindSingleton<IMusicPlayer, UnityMusicPlayer>();
+            IMusicPlayer musicPlayer = new UnityMusicPlayer();
+            musicPlayer.SetMusicAssetProvider(m_MusicProvider);
+            musicPlayer.SetStemMixerGroups(m_MusicMixerGroups);
+            container.BindSingletonFromInstance(musicPlayer);
+
             container.BindSingleton<IMenuTypeProvider, MenuTypeProvider>();
             container.BindSingleton<IMenuModule, MenuModule>();
             container.BindSingleton<IFieldModule, FieldModule>();
@@ -43,6 +51,21 @@ namespace Test
             container.BindSingleton<ISaveDataService, SaveDataService>();
             container.BindSingleton<ISaveFactory, SaveFactory>();
             container.BindSingleton<IModuleResumeMap, ModuleResumeMap>();
+            
+            container.BindSingleton<IFieldRegistry, TestFieldRegistry>();
+            container.BindSingleton<IFieldPresentation, PrefabFieldPresentation>();
+        }
+    }
+    
+    public class TestFieldRegistry : IFieldRegistry
+    {
+        FieldDefinition IFieldRegistry.LoadField(string fieldId)
+        {
+            return new FieldDefinition
+                   {
+                           PresentationType = FieldPresentationType.Prefab,
+                           PrefabAddress    = fieldId
+                   };
         }
     }
 }

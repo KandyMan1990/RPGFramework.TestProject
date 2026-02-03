@@ -12,6 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ea0264cc55617478af0efe8f4c0d9a, type: 3}
   m_Name: TestGlobalInstaller
   m_EditorClassIdentifier: Test::TestGlobalInstaller
+  m_MusicProvider: {fileID: 11400000, guid: 9e046b7bf7a6b7b41a2d6f640eb2637c, type: 2}
+  m_MusicMixerGroups:
+  - {fileID: 5533237714984791865, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
+  - {fileID: -5462444277202327870, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
+  - {fileID: 2815022773721639946, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
+  - {fileID: -2292960641392828784, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
+  - {fileID: 8810228782129667432, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
+  - {fileID: 7009789329004750729, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
+  - {fileID: 6707794879640224735, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
+  - {fileID: -1533153595537037862, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
+  - {fileID: 8830170600578570995, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
+  - {fileID: 5700844537237884987, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
+  - {fileID: 759269581511497727, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
+  - {fileID: -2431118590460908029, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
+  - {fileID: 7947891332530029993, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
+  - {fileID: 6757427146511150931, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
+  - {fileID: 654315984749902392, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
+  - {fileID: -5762118300419045792, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
   m_SfxProvider: {fileID: 11400000, guid: 44d1c347686253047bc13dc7207dd179, type: 2}
   m_SfxMixerGroups:
   - {fileID: 3788437536805461070, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
@@ -30,4 +48,3 @@ MonoBehaviour:
   - {fileID: -1935413842707860392, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
   - {fileID: -5307952389386084171, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
   - {fileID: 3604866634774007751, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
-  m_GenericAudioIdProvider: {fileID: 11400000, guid: 5e9f1f963fdae55438e03b5035837901, type: 2}
