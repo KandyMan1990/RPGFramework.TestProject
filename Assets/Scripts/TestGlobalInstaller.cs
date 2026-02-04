@@ -51,20 +51,19 @@ namespace Test
             container.BindSingleton<ISaveDataService, SaveDataService>();
             container.BindSingleton<ISaveFactory, SaveFactory>();
             container.BindSingleton<IModuleResumeMap, ModuleResumeMap>();
-            
+
             container.BindSingleton<IFieldRegistry, TestFieldRegistry>();
             container.BindSingleton<IFieldPresentation, PrefabFieldPresentation>();
         }
     }
-    
+
     public class TestFieldRegistry : IFieldRegistry
     {
         FieldDefinition IFieldRegistry.LoadField(string fieldId)
         {
             return new FieldDefinition
                    {
-                           PresentationType = FieldPresentationType.Prefab,
-                           PrefabAddress    = fieldId
+                           PrefabAddress = fieldId
                    };
         }
     }

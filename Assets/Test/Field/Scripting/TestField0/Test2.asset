@@ -15,6 +15,6 @@ MonoBehaviour:
   ScriptId: 1
   ScriptText: 'WAIT_SECONDS 2.0
 
-    TRIGGER_GATEWAY TestField1
+    TRIGGER_GATEWAY TestField1 1
 
     RETURN'

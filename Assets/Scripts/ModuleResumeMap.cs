@@ -21,7 +21,7 @@ namespace Test
         {
             return moduleId switch
                    {
-                           (byte)ModuleID.Field => new FieldModuleArgs("TestField0"),
+                           (byte)ModuleID.Field => new FieldModuleArgs("TestField0", 0),
                            //(byte)ModuleID.World => new WorldMapModuleArgs(),
                            _                    => throw new InvalidOperationException($"{nameof(IModuleResumeMap)}::{nameof(IModuleResumeMap.CreateArgs)} Unknown module id {moduleId}")
 
