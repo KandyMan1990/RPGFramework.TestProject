@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 169351b22bd1425d986921b046b06eed, type: 3}
   m_Name: Entity1
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldScriptDefinition
-  EntityName: Entity2
-  EntityId: 2
+  EntityName: Entity1
+  EntityId: 1
   Scripts:
   - Name: Init
     CompiledScript: {fileID: 11400000, guid: d2e58b1ab075be14d938ed81b0ef53c1, type: 2}

@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: Test1
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldScriptSource
   ScriptId: 1
-  ScriptText: 'WAIT_SECONDS 3.0
+  ScriptText: 'INIT_CHARACTER
 
-    TRIGGER_GATEWAY TestField0 0
+    VISIBILITY true
+
+    WAIT_SECONDS 3.0
+
+    TRIGGER_GATEWAY
+    TestField0 0
 
     RETURN'
