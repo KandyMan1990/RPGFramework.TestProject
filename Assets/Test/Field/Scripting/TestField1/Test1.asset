@@ -19,7 +19,7 @@ MonoBehaviour:
 
     WAIT_SECONDS 3.0
 
-    TRIGGER_GATEWAY
+    JUMP_TO_MAP
     TestField0 0
 
     RETURN'
