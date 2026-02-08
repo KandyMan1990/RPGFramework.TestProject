@@ -15,5 +15,5 @@ MonoBehaviour:
   EntityName: Entity1
   EntityId: 1
   Scripts:
-  - Name: Init
+  - ScriptType: 1
     CompiledScript: {fileID: 11400000, guid: 7326045d12f7c604aa66a8d262f82adb, type: 2}

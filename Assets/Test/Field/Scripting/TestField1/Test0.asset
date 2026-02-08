@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162c296e815c4d4fafedcb081fb20e95, type: 3}
   m_Name: Test0
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldScriptSource
-  ScriptId: 1
+  ScriptId: 0
   ScriptText: 'WAIT_SECONDS 1.0
 
     PLAY_SOUND 2

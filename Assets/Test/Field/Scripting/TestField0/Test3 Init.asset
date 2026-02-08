@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d6c29c0400b4855b50e5c4085988282, type: 3}
-  m_Name: Test0.compiled
-  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldCompiledScript
-  ScriptId: 0
-  Bytecode: 0c000000803fd300020000000000
+  m_Script: {fileID: 11500000, guid: 162c296e815c4d4fafedcb081fb20e95, type: 3}
+  m_Name: Test3 Init
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldScriptSource
+  ScriptId: 3
+  ScriptText: RETURN

@@ -12,14 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162c296e815c4d4fafedcb081fb20e95, type: 3}
   m_Name: Test2
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldScriptSource
-  ScriptId: 1
+  ScriptId: 2
   ScriptText: 'INIT_CHARACTER
 
     VISIBILITY true
-
-    WAIT_SECONDS 3.0
-
-    JUMP_TO_MAP
-    TestField1 1
 
     RETURN'
