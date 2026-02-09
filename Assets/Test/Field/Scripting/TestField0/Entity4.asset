@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 169351b22bd1425d986921b046b06eed, type: 3}
-  m_Name: Entity2
+  m_Name: Entity4
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldScriptDefinition
-  EntityName: Entity2
-  EntityId: 2
+  EntityName: Entity4
+  EntityId: 4
   Scripts:
   - ScriptType: 1
-    CompiledScript: {fileID: 11400000, guid: 03e1f89e80f61964ea641e22ab2c8344, type: 2}
+    CompiledScript: {fileID: 11400000, guid: 7db1fe0c00c1cbe44b86c9ec2c8df236, type: 2}
