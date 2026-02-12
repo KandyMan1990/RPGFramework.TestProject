@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 169351b22bd1425d986921b046b06eed, type: 3}
+  m_Name: Entity5
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldScriptDefinition
+  EntityName: Entity5
+  EntityId: 5
+  Scripts:
+  - ScriptType: 1
+    CompiledScript: {fileID: 11400000, guid: eb8112c5d7ad83f40bc10ba8bedb6fef, type: 2}
+  - ScriptType: 3
+    CompiledScript: {fileID: 11400000, guid: c48508ba473ccbc4c9d2c02dd920fe1c, type: 2}
