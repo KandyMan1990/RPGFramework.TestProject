@@ -128,7 +128,6 @@ Transform:
   - {fileID: 4291803081713579202}
   - {fileID: 418020152802613571}
   - {fileID: 1040450980106019358}
-  - {fileID: 8741167285197782151}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4765534201608813108
@@ -382,52 +381,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
   ScriptDefinition: {fileID: 11400000, guid: 447518fc10ac6f642b4241c85ba40d07, type: 2}
   m_VisibleObject: {fileID: 8409716444044686529}
---- !u!1 &8320904783530630045
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8741167285197782151}
-  - component: {fileID: 8172010851252158673}
-  m_Layer: 0
-  m_Name: Entity6 (InteractionActivation)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8741167285197782151
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8320904783530630045}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8967626963149710051}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8172010851252158673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8320904783530630045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: 5a05f13818523fc4f97874735ba9dd8f, type: 2}
-  m_VisibleObject: {fileID: 0}
 --- !u!1 &8409716444044686529
 GameObject:
   m_ObjectHideFlags: 0

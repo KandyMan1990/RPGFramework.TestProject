@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Test5 Init
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldScriptSource
   ScriptId: 6
-  ScriptText: RETURN
+  ScriptText: 'INTERACTION_TRIGGER_ACTIVATION true
+
+    RETURN'
