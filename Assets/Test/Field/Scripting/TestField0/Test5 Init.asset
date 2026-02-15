@@ -15,4 +15,6 @@ MonoBehaviour:
   ScriptId: 6
   ScriptText: 'INTERACTION_TRIGGER_ACTIVATION true
 
+    SET_INTERACTION_RANGE 2.0
+
     RETURN'

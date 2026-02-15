@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 8916872194948385318}
   m_Layer: 0
   m_Name: RenderObject
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -587,6 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc75dbce07184c60b898d17408700dc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldInteractionTrigger
+  m_InteractionAngle: 60
 --- !u!1 &8993376875006806741
 GameObject:
   m_ObjectHideFlags: 0
