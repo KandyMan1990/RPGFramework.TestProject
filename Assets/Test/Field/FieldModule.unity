@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21dc0e2425a1418cae022ad447c36590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Core::RPGFramework.Core.Input.InputAdapter
+  m_Movement: {fileID: 5272367611473766546, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_Primary: {fileID: 5187823559276234746, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_Secondary: {fileID: 0}
   m_Tertiary: {fileID: 1990023514}
@@ -224,6 +225,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90cb2a9a23e997e46af4242df6f922ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldModuleMonoBehaviour
+  m_Up: {x: 0, y: 1, z: 0}
+  m_PlayerInteractionAngle: 60
 --- !u!1 &669434360
 GameObject:
   m_ObjectHideFlags: 0

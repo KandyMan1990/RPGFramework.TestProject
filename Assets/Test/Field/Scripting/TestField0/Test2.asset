@@ -17,4 +17,11 @@ MonoBehaviour:
 
     VISIBILITY true
 
+    LOCK_INPUT true
+
+    WAIT_SECONDS
+    2.0
+
+    LOCK_INPUT false
+
     RETURN'
