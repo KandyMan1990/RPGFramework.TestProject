@@ -714,7 +714,7 @@ GameObject:
   - component: {fileID: 8544813478530265405}
   - component: {fileID: 5253742140373104738}
   m_Layer: 0
-  m_Name: Entity6 (SetPosition)
+  m_Name: Entity6 (SetPosition & SetRotation)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
