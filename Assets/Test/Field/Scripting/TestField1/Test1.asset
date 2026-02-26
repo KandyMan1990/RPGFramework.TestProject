@@ -20,6 +20,6 @@ MonoBehaviour:
     WAIT_SECONDS 3.0
 
     JUMP_TO_MAP
-    TestField0 0
+    TestField0 0 Generic TestField
 
     RETURN'
