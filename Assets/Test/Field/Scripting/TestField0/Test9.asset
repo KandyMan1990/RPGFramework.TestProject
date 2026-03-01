@@ -10,16 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 162c296e815c4d4fafedcb081fb20e95, type: 3}
-  m_Name: Test7
+  m_Name: Test9
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldScriptSource
-  ScriptId: 9
-  ScriptText: 'VISIBILITY true
+  ScriptId: 11
+  ScriptText: 'WAIT_SECONDS 3.0
 
-    SET_DIRECTION_TO_FACE_ENTITY 2
+    CREATE_WINDOW Test 100 100 640 180
 
-    WAIT_SECONDS
-    2.0
-
-    GOTO_DIRECTLY 3
+    SHOW_WINDOW_WITH_TEXT
+    Test true
 
     RETURN'

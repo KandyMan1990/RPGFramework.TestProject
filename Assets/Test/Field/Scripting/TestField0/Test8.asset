@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162c296e815c4d4fafedcb081fb20e95, type: 3}
   m_Name: Test8
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldScriptSource
-  ScriptId: 0
+  ScriptId: 10
   ScriptText: 'MAIN_MENU_ACCESSIBILITY true
 
     RETURN'

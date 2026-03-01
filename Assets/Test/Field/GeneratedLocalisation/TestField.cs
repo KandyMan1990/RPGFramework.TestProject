@@ -9,6 +9,8 @@
 			public const string SHEET_NAME = @"TestField";
 			///<summary>Location</summary>
 			public const string LOCATION = @"TestField/Location";
+			///<summary>Test</summary>
+			public const string TEST = @"TestField/Test";
 		}
 	}
 }

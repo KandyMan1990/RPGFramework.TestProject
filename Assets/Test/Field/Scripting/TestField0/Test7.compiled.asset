@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d6c29c0400b4855b50e5c4085988282, type: 3}
   m_Name: Test7.compiled
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldCompiledScript
-  ScriptId: 8
-  Bytecode: 8300019200020a00000000400600030000000000
+  ScriptId: 9
+  Bytecode: 8200019100020a00000000400600030000000000

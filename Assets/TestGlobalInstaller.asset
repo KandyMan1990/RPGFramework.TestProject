@@ -48,3 +48,4 @@ MonoBehaviour:
   - {fileID: -1935413842707860392, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
   - {fileID: -5307952389386084171, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
   - {fileID: 3604866634774007751, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
+  m_DialogueWindowUiProvider: {fileID: 11400000, guid: 2b92f48173859644a87bdfd476c2854f, type: 2}

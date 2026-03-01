@@ -3,6 +3,8 @@ using RPGFramework.Audio.Music;
 using RPGFramework.Audio.Sfx;
 using RPGFramework.Core;
 using RPGFramework.Core.Audio;
+using RPGFramework.Core.DialogueWindow;
+using RPGFramework.Core.DialogueWindow.UI;
 using RPGFramework.Core.Input;
 using RPGFramework.Core.SaveDataService;
 using RPGFramework.DI;
@@ -26,6 +28,8 @@ namespace Test
         private SfxAssetProvider m_SfxProvider;
         [SerializeField]
         private AudioMixerGroup[] m_SfxMixerGroups;
+        [SerializeField]
+        private DialogueWindowUiProvider m_DialogueWindowUiProvider;
 
         public override void InstallBindings(IDIContainer container)
         {
@@ -54,6 +58,11 @@ namespace Test
 
             container.BindSingleton<IFieldRegistry, TestFieldRegistry>();
             container.BindSingleton<IFieldPresentation, PrefabFieldPresentation>();
+            
+            container.BindSingletonFromInstance<IDialogueWindowUiProvider>(m_DialogueWindowUiProvider);
+
+            container.BindSingleton<IDialogueWindowWithText, DialogueWindowWithText>();
+            container.BindSingleton<IDialogueWindowWithTextUI, DialogueWindowWithTextUI>();
         }
     }
 
