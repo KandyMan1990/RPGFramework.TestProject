@@ -56,24 +56,12 @@ namespace Test
             container.BindSingleton<ISaveFactory, SaveFactory>();
             container.BindSingleton<IModuleResumeMap, ModuleResumeMap>();
 
-            container.BindSingleton<IFieldRegistry, TestFieldRegistry>();
             container.BindSingleton<IFieldPresentation, PrefabFieldPresentation>();
-            
+
             container.BindSingletonFromInstance<IDialogueWindowUiProvider>(m_DialogueWindowUiProvider);
 
             container.BindSingleton<IDialogueWindowWithText, DialogueWindowWithText>();
             container.BindSingleton<IDialogueWindowWithTextUI, DialogueWindowWithTextUI>();
-        }
-    }
-
-    public class TestFieldRegistry : IFieldRegistry
-    {
-        FieldDefinition IFieldRegistry.LoadField(string fieldId)
-        {
-            return new FieldDefinition
-                   {
-                           PrefabAddress = fieldId
-                   };
         }
     }
 }
