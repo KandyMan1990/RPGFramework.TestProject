@@ -15,9 +15,9 @@ MonoBehaviour:
   ScriptId: 11
   ScriptText: 'WAIT_SECONDS 3.0
 
-    CREATE_WINDOW Test 100 100 640 180
+    CREATE_DIALOGUE_WINDOW_WITH_TEXT Test 100 100
+    640 180
 
-    SHOW_WINDOW_WITH_TEXT
-    Test true
+    SHOW_DIALOGUE_WINDOW_WITH_TEXT Test true
 
     RETURN'
