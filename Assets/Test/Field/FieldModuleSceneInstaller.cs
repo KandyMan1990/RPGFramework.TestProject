@@ -7,6 +7,7 @@ namespace Test.Menu
     {
         public override void InstallBindings(IDIContainer container)
         {
+            container.BindSingleton<IFieldPresentation, PrefabFieldPresentation>();
             container.BindSingleton<IFieldRegistry, TestFieldRegistry>();
         }
     }
