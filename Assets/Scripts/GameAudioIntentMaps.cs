@@ -20,6 +20,9 @@ namespace Test
                         { new AudioIntentKey(AudioIntent.ItemUse,   AudioContext.Menu), (int)TestSfxEnum.ItemConsumed },
                         { new AudioIntentKey(AudioIntent.ItemEquip, AudioContext.Menu), (int)TestSfxEnum.Equip },
                         { new AudioIntentKey(AudioIntent.ItemFail,  AudioContext.Menu), (int)TestSfxEnum.Equip },
+                        
+                        { new AudioIntentKey(AudioIntent.Navigate, AudioContext.Field), (int)TestSfxEnum.NavigateButtonPositive },
+                        { new AudioIntentKey(AudioIntent.Confirm,  AudioContext.Field), (int)TestSfxEnum.NavigateButtonPositive },
                 };
     }
 }

@@ -3,8 +3,8 @@ using RPGFramework.Audio.Music;
 using RPGFramework.Audio.Sfx;
 using RPGFramework.Core;
 using RPGFramework.Core.Audio;
-using RPGFramework.Core.DialogueWindow;
-using RPGFramework.Core.DialogueWindow.UI;
+using RPGFramework.Core.Dialogue;
+using RPGFramework.Core.Dialogue.UI;
 using RPGFramework.Core.Input;
 using RPGFramework.Core.SaveDataService;
 using RPGFramework.DI;
@@ -57,8 +57,8 @@ namespace Test
             container.BindSingleton<IModuleResumeMap, ModuleResumeMap>();
 
             container.BindSingletonFromInstance<IDialogueWindowUiProvider>(m_DialogueWindowUiProvider);
-            container.BindSingleton<IDialogueWindowWithText, DialogueWindowWithText>();
-            container.BindSingleton<IDialogueWindowWithTextUI, DialogueWindowWithTextUI>();
+            container.BindSingleton<IDialogueWindow, DialogueWindow>();
+            container.BindSingleton<IDialogueWindowUI, DialogueWindowUI>();
         }
     }
 }

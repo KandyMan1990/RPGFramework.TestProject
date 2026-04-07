@@ -10,14 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 162c296e815c4d4fafedcb081fb20e95, type: 3}
-  m_Name: Test9
+  m_Name: Test1
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldScriptSource
-  ScriptId: 11
-  ScriptText: 'WAIT_SECONDS 3.0
+  ScriptId: 2
+  ScriptText: 'INIT_CHARACTER
 
-    CREATE_DIALOGUE_WINDOW Test 100 100 640 180
+    VISIBILITY true
 
-    SHOW_DIALOGUE_WINDOW
-    Test true
+    LOCK_INPUT true
+
+    WAIT_SECONDS
+    2.0
+
+    LOCK_INPUT false
 
     RETURN'
