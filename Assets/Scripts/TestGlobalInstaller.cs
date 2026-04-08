@@ -3,10 +3,8 @@ using RPGFramework.Audio.Music;
 using RPGFramework.Audio.Sfx;
 using RPGFramework.Core;
 using RPGFramework.Core.Audio;
-using RPGFramework.Core.Dialogue;
 using RPGFramework.Core.Dialogue.UI;
-using RPGFramework.Core.Input;
-using RPGFramework.Core.SaveDataService;
+using RPGFramework.Core.SaveData;
 using RPGFramework.DI;
 using RPGFramework.Field;
 using RPGFramework.Field.SharedTypes;
@@ -50,15 +48,10 @@ namespace Test
             container.BindSingleton<IFieldModule, FieldModule>();
             container.BindSingletonFromInstance<IAudioIntentPlayer>(new GameAudioIntentPlayer(sfxPlayer, GameAudioIntentMaps.Default));
 
-            container.BindSingleton<IInputRouter, InputRouter>();
-
-            container.BindSingleton<ISaveDataService, SaveDataService>();
             container.BindSingleton<ISaveFactory, SaveFactory>();
             container.BindSingleton<IModuleResumeMap, ModuleResumeMap>();
 
             container.BindSingletonFromInstance<IDialogueWindowUiProvider>(m_DialogueWindowUiProvider);
-            container.BindSingleton<IDialogueWindow, DialogueWindow>();
-            container.BindSingleton<IDialogueWindowUI, DialogueWindowUI>();
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using RPGFramework.Core.Data;
-using RPGFramework.Core.SaveDataService;
+using RPGFramework.Core.SaveData;
 using RPGFramework.Core.SharedTypes;
 using RPGFramework.Localisation;
 using Test.Localisation;
