@@ -28,6 +28,8 @@ namespace Test
         private AudioMixerGroup[] m_SfxMixerGroups;
         [SerializeField]
         private DialogueWindowUiProvider m_DialogueWindowUiProvider;
+        [SerializeField]
+        private MemoryServiceArgs m_MemoryServiceArgs;
 
         public override void InstallBindings(IDIContainer container)
         {
@@ -52,6 +54,8 @@ namespace Test
             container.BindSingleton<IModuleResumeMap, ModuleResumeMap>();
 
             container.BindSingletonFromInstance<IDialogueWindowUiProvider>(m_DialogueWindowUiProvider);
+
+            container.BindSingletonFromInstance<IMemoryServiceArgs>(m_MemoryServiceArgs);
         }
     }
 }
