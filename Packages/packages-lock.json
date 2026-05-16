@@ -1,37 +1,58 @@
 {
   "dependencies": {
     "com.rpgframework.audio": {
-      "version": "https://github.com/KandyMan1990/RPGFramework.Audio.git#v0.5.3",
+      "version": "https://github.com/KandyMan1990/RPGFramework.Audio.git#v0.5.4",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.rpgframework.core": "0.1.1"
       },
-      "hash": "067603a06c8b93c9606758ed24da5101ef9aee49"
+      "hash": "a59750cf16b2fc0c7542f8c749f948be6f80f0bc"
     },
     "com.rpgframework.core": {
-      "version": "https://github.com/KandyMan1990/RPGFramework.Core.git#v0.5.0",
+      "version": "https://github.com/KandyMan1990/RPGFramework.Core.git#v0.6.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.rpgframework.di": "0.1.1",
-        "com.rpgframework.core.sharedtypes": "0.1.0"
+        "com.rpgframework.core.sharedtypes": "0.1.0",
+        "com.rpgframework.hashing": "1.0.0"
       },
-      "hash": "11e9aa939663b29759ddf3f9318e55200ac8b19c"
+      "hash": "9b087875d861b11f74d731bd16190e5ff3e04015"
     },
     "com.rpgframework.core.sharedtypes": {
-      "version": "https://github.com/KandyMan1990/RPGFramework.Core.SharedTypes.git#v0.1.0",
+      "version": "https://github.com/KandyMan1990/RPGFramework.Core.SharedTypes.git#v0.2.0",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "6d11bd9a966e4e94a0f8c368e9391991ee843c7f"
+      "hash": "032c2d0a1fe8f6c8737b15857bfa019fb5211386"
     },
     "com.rpgframework.di": {
-      "version": "https://github.com/KandyMan1990/RPGFramework.DI.git#v1.1.0",
+      "version": "https://github.com/KandyMan1990/RPGFramework.DI.git#v2.0.0",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "3aaa0ac70991c1d40734b1791f410841bece575f"
+      "hash": "569986025a7bf85cf0cdc16bc418efdfa62817f1"
+    },
+    "com.rpgframework.field": {
+      "version": "https://github.com/KandyMan1990/RPGFramework.Field.git#v0.2.0",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.rpgframework.core": "0.1.1",
+        "com.rpgframework.di": "0.1.0",
+        "com.rpgframework.audio": "0.5.2",
+        "com.rpgframework.localisation": "0.1.0",
+        "com.rpgframework.hashing": "1.0.0"
+      },
+      "hash": "de504065d28476d8a7e822c66c488b6c4b2547b9"
+    },
+    "com.rpgframework.field.sharedtypes": {
+      "version": "https://github.com/KandyMan1990/RPGFramework.Field.SharedTypes.git#v0.2.0",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "46342f689bd59385ebcff2f75393d7eb70188636"
     },
     "com.rpgframework.hashing": {
       "version": "https://github.com/KandyMan1990/RPGFramework.Hashing.git#v1.0.0",
@@ -50,7 +71,7 @@
       "hash": "cbb927ac9344f2154bc6147f65fb8a6edc3143f1"
     },
     "com.rpgframework.menu": {
-      "version": "https://github.com/KandyMan1990/RPGFramework.Menu.git#v0.2.0",
+      "version": "https://github.com/KandyMan1990/RPGFramework.Menu.git#v0.3.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -59,17 +80,17 @@
         "com.rpgframework.audio": "0.5.2",
         "com.rpgframework.localisation": "0.1.0"
       },
-      "hash": "2b7c0668845c936d2ca606e1af2595d17df06d32"
+      "hash": "95b0d2039276e613716ab953fe1ebf823412e26d"
     },
     "com.rpgframework.menu.sharedtypes": {
-      "version": "https://github.com/KandyMan1990/RPGFramework.Menu.SharedTypes.git#v0.1.0",
+      "version": "https://github.com/KandyMan1990/RPGFramework.Menu.SharedTypes.git#v0.2.0",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "859bb2ce6258ea4491d84ad9b800d23865ddfaea"
+      "hash": "a18104b9bd7c9454e1a159e4c638b6cf086f17eb"
     },
     "com.unity.burst": {
-      "version": "1.8.28",
+      "version": "1.8.29",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -97,7 +118,7 @@
       "dependencies": {}
     },
     "com.unity.ide.rider": {
-      "version": "3.0.39",
+      "version": "3.0.40",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -209,7 +230,7 @@
       }
     },
     "com.unity.test-framework.performance": {
-      "version": "3.2.0",
+      "version": "3.4.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
