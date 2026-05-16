@@ -2,6 +2,7 @@
 using RPGFramework.Core;
 using RPGFramework.Core.SharedTypes;
 using RPGFramework.Field.SharedTypes;
+using Unity.Mathematics;
 
 namespace Test
 {
@@ -13,17 +14,20 @@ namespace Test
                    {
                            (byte)ModuleID.Field => typeof(IFieldModule),
                            //(byte)ModuleID.World => typeof(IWorldModule),
-                           _                    => throw new InvalidOperationException($"{nameof(IModuleResumeMap)}::{nameof(IModuleResumeMap.GetModuleType)} Unknown module id {moduleId}")
+                           _ => throw new InvalidOperationException($"{nameof(IModuleResumeMap)}::{nameof(IModuleResumeMap.GetModuleType)} Unknown module id {moduleId}")
                    };
         }
 
-        IModuleArgs IModuleResumeMap.CreateArgs(byte moduleId, int arg0, int arg1, int arg2, int arg3)
+        IModuleArgs IModuleResumeMap.CreateArgs(RuntimeResumeData runtimeResumeData)
         {
-            return moduleId switch
+            return runtimeResumeData.ModuleId switch
                    {
-                           (byte)ModuleID.Field => new FieldModuleArgs("TestField0", 0, new string[] { "Generic", "TestField" }),
+                           (byte)ModuleID.Field => new FieldModuleArgs(runtimeResumeData.Index,
+                                                                       runtimeResumeData.SpawnId,
+                                                                       new float3(runtimeResumeData.PositionX, runtimeResumeData.PositionY, runtimeResumeData.PositionZ),
+                                                                       new quaternion(runtimeResumeData.RotationX, runtimeResumeData.RotationY, runtimeResumeData.RotationZ, runtimeResumeData.RotationW)),
                            //(byte)ModuleID.World => new WorldMapModuleArgs(),
-                           _                    => throw new InvalidOperationException($"{nameof(IModuleResumeMap)}::{nameof(IModuleResumeMap.CreateArgs)} Unknown module id {moduleId}")
+                           _ => throw new InvalidOperationException($"{nameof(IModuleResumeMap)}::{nameof(IModuleResumeMap.CreateArgs)} Unknown module id {runtimeResumeData.ModuleId}")
 
                    };
         }

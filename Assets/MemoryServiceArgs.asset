@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee74f345c43a46f894ddd30279b6f633, type: 3}
   m_Name: MemoryServiceArgs
   m_EditorClassIdentifier: Test::Test.MemoryServiceArgs
-  m_GlobalBytes: 0
-  m_SessionBytes: 0
+  m_GlobalBytes: 256
+  m_SessionBytes: 256

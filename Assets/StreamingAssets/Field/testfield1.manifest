@@ -1,0 +1,47 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.4.1f1
+CRC: 356265720
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 018abe66c32535c6f5960c57f5f0c7dc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cc39df40fd60ed291c5b1e33c9419d46
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: b773ccf79237a955c39243a37340754e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3d6c29c0400b4855b50e5c4085988282, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 169351b22bd1425d986921b046b06eed, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6123fe1503884b1aa33b6593f1353303, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: RPGFramework.Field
+  ClassName: RPGFramework.Field.ScriptEntry
+Assets:
+- Assets/Test/Field/Resources/TestField1.prefab
+Dependencies: []

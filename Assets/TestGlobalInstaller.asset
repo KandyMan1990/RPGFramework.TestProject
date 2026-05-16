@@ -49,3 +49,4 @@ MonoBehaviour:
   - {fileID: -5307952389386084171, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
   - {fileID: 3604866634774007751, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
   m_DialogueWindowUiProvider: {fileID: 11400000, guid: 2b92f48173859644a87bdfd476c2854f, type: 2}
+  m_MemoryServiceArgs: {fileID: 11400000, guid: 1d230d54e0a4d7948bbff540f3eb273f, type: 2}

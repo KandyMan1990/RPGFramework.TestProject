@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e1bca82192b4d49b5bab5f9daf81b9, type: 3}
+  m_Name: Field Database
+  m_EditorClassIdentifier: RPGFramework.Field.Editor::RPGFramework.Field.Editor.FieldDatabaseScriptableObject
+  m_Fields:
+  - Prefab: {fileID: 4226698957846357039, guid: 6ad179edc360b98428d6c013063e4e0e, type: 3}
+    LocalisationSheets:
+    - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
+    - {fileID: 11400000, guid: 9a993b4a988e2c445b1e08ec025f3e5f, type: 2}
+  - Prefab: {fileID: 4226698957846357039, guid: 368860dd8e62d5d4eb55fea2fd485d6a, type: 3}
+    LocalisationSheets:
+    - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
+  - Prefab: {fileID: 4226698957846357039, guid: 84087e7f18b802e499b83f07857945ee, type: 3}
+    LocalisationSheets:
+    - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
+    - {fileID: 11400000, guid: 9a993b4a988e2c445b1e08ec025f3e5f, type: 2}

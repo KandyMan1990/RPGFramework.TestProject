@@ -56,16 +56,21 @@ namespace Test
 
             return new SaveSection<ConfigData_V1>(1, section);
         }
-        
+
         private static SaveSection<RuntimeResumeData> GetDefaultRuntimeResumeData()
         {
             RuntimeResumeData section = new RuntimeResumeData
                                         {
-                                                ModuleId = (byte)ModuleID.Field,
-                                                Arg0 = 0,
-                                                Arg1 = 0,
-                                                Arg2 = 0,
-                                                Arg3 = 0
+                                                ModuleId  = (byte)ModuleID.Field,
+                                                Index     = 0,
+                                                SpawnId   = 0,
+                                                PositionX = 0f,
+                                                PositionY = 0f,
+                                                PositionZ = 0f,
+                                                RotationX = 0f,
+                                                RotationY = 0f,
+                                                RotationZ = 0f,
+                                                RotationW = 0f
                                         };
 
             return new SaveSection<RuntimeResumeData>(1, section);

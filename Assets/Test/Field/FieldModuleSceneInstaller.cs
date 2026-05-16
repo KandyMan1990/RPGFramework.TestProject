@@ -1,5 +1,6 @@
 using RPGFramework.DI;
 using RPGFramework.Field;
+using Test.Field;
 
 namespace Test.Menu
 {
@@ -8,18 +9,7 @@ namespace Test.Menu
         public override void InstallBindings(IDIContainer container)
         {
             container.BindSingleton<IFieldPresentation, PrefabFieldPresentation>();
-            container.BindSingleton<IFieldRegistry, TestFieldRegistry>();
-        }
-    }
-
-    public class TestFieldRegistry : IFieldRegistry
-    {
-        FieldDefinition IFieldRegistry.LoadField(string fieldId)
-        {
-            return new FieldDefinition
-                   {
-                           PrefabAddress = fieldId
-                   };
+            container.BindSingleton<IFieldDatabase, FieldDatabase>();
         }
     }
 }
