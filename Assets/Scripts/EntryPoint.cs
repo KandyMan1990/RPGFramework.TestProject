@@ -13,7 +13,7 @@ namespace Test
 
         private void Start()
         {
-            IEntryPoint entryPoint = CoreModule.Create(m_GlobalContainer);
+            IEntryPoint entryPoint = CoreModuleBuilder.Create(m_GlobalContainer);
 
             IModuleArgs args = new GenericMenuModuleArgs<IBeginMenu>();
 
