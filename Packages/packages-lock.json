@@ -10,15 +10,15 @@
       "hash": "a59750cf16b2fc0c7542f8c749f948be6f80f0bc"
     },
     "com.rpgframework.core": {
-      "version": "https://github.com/KandyMan1990/RPGFramework.Core.git#v0.6.0",
+      "version": "https://github.com/KandyMan1990/RPGFramework.Core.git#v0.7.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.rpgframework.di": "0.1.1",
+        "com.rpgframework.di": "2.1.0",
         "com.rpgframework.core.sharedtypes": "0.1.0",
         "com.rpgframework.hashing": "1.0.0"
       },
-      "hash": "9b087875d861b11f74d731bd16190e5ff3e04015"
+      "hash": "b8ac687c6594da642ffe3ecae7a3a71e800bb0fe"
     },
     "com.rpgframework.core.sharedtypes": {
       "version": "https://github.com/KandyMan1990/RPGFramework.Core.SharedTypes.git#v0.2.0",
@@ -28,11 +28,11 @@
       "hash": "032c2d0a1fe8f6c8737b15857bfa019fb5211386"
     },
     "com.rpgframework.di": {
-      "version": "https://github.com/KandyMan1990/RPGFramework.DI.git#v2.0.0",
+      "version": "https://github.com/KandyMan1990/RPGFramework.DI.git#v2.1.0",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "569986025a7bf85cf0cdc16bc418efdfa62817f1"
+      "hash": "f209b4aa743a24ce457165ab2272c4c1cd2f07c2"
     },
     "com.rpgframework.field": {
       "version": "https://github.com/KandyMan1990/RPGFramework.Field.git#v0.2.0",

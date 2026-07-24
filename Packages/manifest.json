@@ -1,9 +1,9 @@
 {
   "dependencies": {
     "com.rpgframework.audio": "https://github.com/KandyMan1990/RPGFramework.Audio.git#v0.5.4",
-    "com.rpgframework.core": "https://github.com/KandyMan1990/RPGFramework.Core.git#v0.6.0",
+    "com.rpgframework.core": "https://github.com/KandyMan1990/RPGFramework.Core.git#v0.7.0",
     "com.rpgframework.core.sharedtypes": "https://github.com/KandyMan1990/RPGFramework.Core.SharedTypes.git#v0.2.0",
-    "com.rpgframework.di": "https://github.com/KandyMan1990/RPGFramework.DI.git#v2.0.0",
+    "com.rpgframework.di": "https://github.com/KandyMan1990/RPGFramework.DI.git#v2.1.0",
     "com.rpgframework.field": "https://github.com/KandyMan1990/RPGFramework.Field.git#v0.2.0",
     "com.rpgframework.field.sharedtypes": "https://github.com/KandyMan1990/RPGFramework.Field.SharedTypes.git#v0.2.0",
     "com.rpgframework.hashing": "https://github.com/KandyMan1990/RPGFramework.Hashing.git#v1.0.0",
