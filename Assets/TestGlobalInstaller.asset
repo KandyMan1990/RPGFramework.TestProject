@@ -50,3 +50,5 @@ MonoBehaviour:
   - {fileID: 3604866634774007751, guid: a1236a28652655948ac374ff2cb4b29d, type: 2}
   m_DialogueWindowUiProvider: {fileID: 11400000, guid: 2b92f48173859644a87bdfd476c2854f, type: 2}
   m_MemoryServiceArgs: {fileID: 11400000, guid: 1d230d54e0a4d7948bbff540f3eb273f, type: 2}
+  m_UniversalRendererData: {fileID: 11400000, guid: f288ae1f4751b564a96ac7587541f7a2, type: 2}
+  m_ScreenFadeServiceConfig: {fileID: 11400000, guid: 06e479a25f9f44f8a8cf962d747619f8, type: 2}

@@ -4,6 +4,7 @@ using RPGFramework.Audio.Sfx;
 using RPGFramework.Core;
 using RPGFramework.Core.Audio;
 using RPGFramework.Core.Dialogue.UI;
+using RPGFramework.Core.Rendering;
 using RPGFramework.Core.SaveData;
 using RPGFramework.DI;
 using RPGFramework.Field;
@@ -13,6 +14,7 @@ using RPGFramework.Menu;
 using RPGFramework.Menu.SharedTypes;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Rendering.Universal;
 
 namespace Test
 {
@@ -30,6 +32,10 @@ namespace Test
         private DialogueWindowUiProvider m_DialogueWindowUiProvider;
         [SerializeField]
         private MemoryServiceArgs m_MemoryServiceArgs;
+        [SerializeField]
+        private UniversalRendererData m_UniversalRendererData;
+        [SerializeField]
+        private ScreenFadeServiceConfig m_ScreenFadeServiceConfig;
 
         public override void InstallBindings(IDIContainer container)
         {
@@ -45,6 +51,11 @@ namespace Test
             musicPlayer.SetStemMixerGroups(m_MusicMixerGroups);
             container.BindSingletonFromInstance(musicPlayer);
 
+            IRendererDataProvider rendererDataProvider = new RendererDataProvider(m_UniversalRendererData);
+            container.BindSingletonFromInstance(rendererDataProvider);
+            
+            container.BindSingletonFromInstance<IScreenFadeServiceConfig>(m_ScreenFadeServiceConfig);
+
             container.BindSingleton<IMenuTypeProvider, MenuTypeProvider>();
             container.BindSingleton<IMenuModule, MenuModule>();
             container.BindSingleton<IFieldModule, FieldModule>();
@@ -56,6 +67,12 @@ namespace Test
             container.BindSingletonFromInstance<IDialogueWindowUiProvider>(m_DialogueWindowUiProvider);
 
             container.BindSingletonFromInstance<IMemoryServiceArgs>(m_MemoryServiceArgs);
+        }
+
+        public override void Bootstrap(IDIResolver resolver)
+        {
+            IScreenFadeService screenFadeService = resolver.Resolve<IScreenFadeService>();
+            screenFadeService.SetFadeToSimple();
         }
     }
 }
