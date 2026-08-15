@@ -1,8 +1,7 @@
 using RPGFramework.DI;
 using RPGFramework.Field;
-using Test.Field;
 
-namespace Test.Menu
+namespace Test.Field
 {
     public class FieldModuleSceneInstaller : SceneInstallerBase
     {
