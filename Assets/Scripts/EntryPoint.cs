@@ -1,7 +1,5 @@
 using RPGFramework.Core;
-using RPGFramework.Core.SharedTypes;
-using RPGFramework.Menu;
-using RPGFramework.Menu.SharedTypes;
+using Test.SplashScreen.Constants;
 using UnityEngine;
 
 namespace Test
@@ -13,11 +11,9 @@ namespace Test
 
         private void Start()
         {
-            IEntryPoint entryPoint = CoreModuleBuilder.Create(m_GlobalContainer);
+            ICoreModule entryPoint = CoreModuleBuilder.Create(m_GlobalContainer, SplashScreenConstants.MODULE_ID);
 
-            IModuleArgs args = new GenericMenuModuleArgs<IBeginMenu>();
-
-            entryPoint.StartGameAsync<IMenuModule>(args).FireAndForget();
+            entryPoint.RequestModuleChangeAsync().FireAndForget();
         }
     }
 }
