@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
   ScriptDefinition: {fileID: 11400000, guid: b72daf8f40d91134eb2ee02c1c682cd5, type: 2}
-  InitialScriptName: Init
   m_VisibleObject: {fileID: 8409716444044686529}
 --- !u!1 &1516292526784987423
 GameObject:
@@ -93,7 +92,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
   ScriptDefinition: {fileID: 11400000, guid: 3384b19b7f119a14984adf823554e323, type: 2}
-  InitialScriptName: Init
   m_VisibleObject: {fileID: 0}
 --- !u!1 &4169855607478697768
 GameObject:

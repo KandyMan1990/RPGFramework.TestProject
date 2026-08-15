@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d6c29c0400b4855b50e5c4085988282, type: 3}
-  m_Name: Test2.compiled
+  m_Name: Test10 Init.compiled
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldCompiledScript
-  ScriptId: 2
-  Bytecode: 7e008100017800010a00000000407800000000
+  ScriptId: 12
+  Bytecode: 7d00010000
