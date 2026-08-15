@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Test/SplashScreen/SplashScreenUSS.uss?fileID=7433441132597879392&amp;guid=6aed9c1660c9f4e1ab16626ee825e507&amp;type=3#SplashScreenUSS"/>
+    <ui:VisualElement name="Root" style="flex-grow: 1; background-color: rgb(88, 17, 128);">
+        <ui:Label text="Kandy Kave Studios" name="TitleLabel" class="text-visible" style="-unity-text-align: middle-center; -unity-text-auto-size: best-fit 10px 100px; flex-grow: 1;"/>
+    </ui:VisualElement>
+</ui:UXML>

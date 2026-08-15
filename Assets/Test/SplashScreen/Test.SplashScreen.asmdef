@@ -1,0 +1,20 @@
+{
+    "name": "Test.SplashScreen",
+    "rootNamespace": "Test.SplashScreen",
+    "references": [
+        "RPGFramework.Core",
+        "RPGFramework.Core.SharedTypes",
+        "RPGFramework.DI",
+        "RPGFramework.Menu.SharedTypes",
+        "RPGFramework.Field.SharedTypes"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

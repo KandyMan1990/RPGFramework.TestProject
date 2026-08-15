@@ -1,0 +1,18 @@
+:root {
+}
+
+.text-hidden {
+    color: rgba(255, 255, 255, 0);
+    transition-property: color, text-shadow;
+    transition-duration: 2s, 2s;
+    transition-timing-function: linear, linear;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0);
+}
+
+.text-visible {
+    color: rgb(255, 255, 255);
+    transition-property: color, text-shadow;
+    transition-duration: 2s, 2s;
+    transition-timing-function: linear, linear;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.498);
+}
