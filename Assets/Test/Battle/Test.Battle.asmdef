@@ -1,0 +1,17 @@
+{
+    "name": "Test.Battle",
+    "rootNamespace": "",
+    "references": [
+        "RPGFramework.DI",
+        "RPGFramework.Battle"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
