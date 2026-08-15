@@ -1,5 +1,6 @@
 using RPGFramework.DI;
 using RPGFramework.Menu;
+using RPGFramework.Menu.SharedTypes;
 using RPGFramework.Menu.SubMenus;
 using RPGFramework.Menu.SubMenus.UI;
 using UnityEngine;
@@ -22,6 +23,8 @@ namespace Test.Menu
             container.BindTransient<IConfigMenuUI, ConfigMenuUI>();
             container.BindTransient<ILanguageMenu, LanguageMenu>();
             container.BindTransient<ILanguageMenuUI, LanguageMenuUI>();
+            
+            container.BindSingleton<IMenuTypeProvider, MenuTypeProvider>();
         }
 
         private static void BindLocalisationArgs(IDIContainer container)
