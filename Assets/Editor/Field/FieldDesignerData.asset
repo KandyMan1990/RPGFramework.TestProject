@@ -12,3 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af41dfa88401847d698173c58f3c5aac, type: 3}
   m_Name: FieldDesignerData
   m_EditorClassIdentifier: RPGFramework.Field.Editor::RPGFramework.Field.Editor.FieldDesignerData
+  m_FieldDatabase:
+    m_Fields:
+    - Prefab: {fileID: 4226698957846357039, guid: 6ad179edc360b98428d6c013063e4e0e, type: 3}
+      LocalisationSheets:
+      - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
+      - {fileID: 11400000, guid: 9a993b4a988e2c445b1e08ec025f3e5f, type: 2}
+    - Prefab: {fileID: 4226698957846357039, guid: 368860dd8e62d5d4eb55fea2fd485d6a, type: 3}
+      LocalisationSheets:
+      - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
+    - Prefab: {fileID: 4226698957846357039, guid: 84087e7f18b802e499b83f07857945ee, type: 3}
+      LocalisationSheets:
+      - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
+      - {fileID: 11400000, guid: 9a993b4a988e2c445b1e08ec025f3e5f, type: 2}
