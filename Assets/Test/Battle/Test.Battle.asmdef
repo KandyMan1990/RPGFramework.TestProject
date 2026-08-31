@@ -3,7 +3,9 @@
     "rootNamespace": "",
     "references": [
         "RPGFramework.DI",
-        "RPGFramework.Battle"
+        "RPGFramework.Battle",
+        "RPGFramework.Battle.SharedTypes",
+        "RPGFramework.Core.SharedTypes"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

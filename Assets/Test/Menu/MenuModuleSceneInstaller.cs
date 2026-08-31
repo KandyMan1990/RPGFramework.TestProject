@@ -23,16 +23,17 @@ namespace Test.Menu
             container.BindTransient<IConfigMenuUI, ConfigMenuUI>();
             container.BindTransient<ILanguageMenu, LanguageMenu>();
             container.BindTransient<ILanguageMenuUI, LanguageMenuUI>();
-            
+
             container.BindSingleton<IMenuTypeProvider, MenuTypeProvider>();
+            container.BindSingleton<IMenuModule, MenuModule>();
         }
 
         private static void BindLocalisationArgs(IDIContainer container)
         {
             string[] beginSheetNames = new[]
                                        {
-                                               Test.Localisation.LocalisationKeys.Generic.SHEET_NAME,
-                                               Localisation.LocalisationKeys.BeginMenu.SHEET_NAME
+                                           Test.Localisation.LocalisationKeys.Generic.SHEET_NAME,
+                                           Localisation.LocalisationKeys.BeginMenu.SHEET_NAME
                                        };
 
             IBeginMenuLocalisationArgs beginMenuLocalisationArgs = new BeginMenuLocalisationArgs(Test.Localisation.LocalisationKeys.Generic.GAME_TITLE,
@@ -43,8 +44,8 @@ namespace Test.Menu
 
             string[] configSheetNames = new[]
                                         {
-                                                Test.Localisation.LocalisationKeys.Generic.SHEET_NAME,
-                                                Localisation.LocalisationKeys.ConfigMenu.SHEET_NAME
+                                            Test.Localisation.LocalisationKeys.Generic.SHEET_NAME,
+                                            Localisation.LocalisationKeys.ConfigMenu.SHEET_NAME
                                         };
 
             IConfigMenuLocalisationArgs configMenuLocalisationArgs = new ConfigMenuLocalisationArgs(Test.Localisation.LocalisationKeys.Generic.SETTINGS,
@@ -59,8 +60,8 @@ namespace Test.Menu
 
             string[] languageSheetNames = new[]
                                           {
-                                                  Test.Localisation.LocalisationKeys.Generic.SHEET_NAME,
-                                                  Localisation.LocalisationKeys.ConfigMenu.SHEET_NAME
+                                              Test.Localisation.LocalisationKeys.Generic.SHEET_NAME,
+                                              Localisation.LocalisationKeys.ConfigMenu.SHEET_NAME
                                           };
 
             ILanguageMenuLocalisationArgs languageMenuLocalisationArgs = new LanguageMenuLocalisationArgs(Localisation.LocalisationKeys.ConfigMenu.LANGUAGE_TITLE,

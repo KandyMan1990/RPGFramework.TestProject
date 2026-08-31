@@ -4,6 +4,7 @@
     "references": [
         "RPGFramework.DI",
         "RPGFramework.Core",
+        "RPGFramework.Core.SharedTypes",
         "RPGFramework.Localisation",
         "RPGFramework.Menu",
         "RPGFramework.Menu.SharedTypes",

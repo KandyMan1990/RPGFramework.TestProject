@@ -1,8 +1,7 @@
+using System.Threading.Tasks;
 using RPGFramework.Audio;
 using RPGFramework.Audio.Music;
 using RPGFramework.Audio.Sfx;
-using RPGFramework.Battle;
-using RPGFramework.Battle.SharedTypes;
 using RPGFramework.Battle.SharedTypes.Providers;
 using RPGFramework.Core;
 using RPGFramework.Core.Audio;
@@ -12,11 +11,8 @@ using RPGFramework.Core.Rendering;
 using RPGFramework.Core.SaveData;
 using RPGFramework.DI;
 using RPGFramework.Field;
-using RPGFramework.Field.SharedTypes;
 using RPGFramework.Field.SharedTypes.Providers;
 using RPGFramework.Localisation;
-using RPGFramework.Menu;
-using RPGFramework.Menu.SharedTypes;
 using RPGFramework.Menu.SharedTypes.Providers;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -73,8 +69,6 @@ namespace Test
             container.BindSingleton<IFieldArgsProvider, FieldArgsProvider>();
             container.BindSingleton<IMenuArgsProvider, MenuArgsProvider>();
 
-            container.BindSingleton<IMenuModule, MenuModule>();
-            container.BindSingleton<IFieldModule, FieldModule>();
             container.BindSingletonFromInstance<IAudioIntentPlayer>(new GameAudioIntentPlayer(sfxPlayer, GameAudioIntentMaps.Default));
 
             container.BindSingleton<ISaveFactory, SaveFactory>();
@@ -85,7 +79,6 @@ namespace Test
 
             container.BindSingletonFromInstance<IMemoryServiceArgs>(m_MemoryServiceArgs);
 
-            container.BindSingleton<IBattleModule, BattleModule>();
             container.BindSingleton<IBattleCompleteStateProvider, BattleCompleteStateProvider>();
 
             container.BindSingleton<ISceneDatabase, SceneDatabase>();
