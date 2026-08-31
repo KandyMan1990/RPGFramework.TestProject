@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using RPGFramework.Core;
 using Test.SplashScreen.Constants;
 using UnityEngine;
@@ -11,9 +12,14 @@ namespace Test
 
         private void Start()
         {
-            ICoreModule entryPoint = CoreModuleBuilder.Create(m_GlobalContainer, SplashScreenConstants.MODULE_ID);
+            async Task Run()
+            {
+                ICoreModule entryPoint = await CoreModuleBuilder.Create(m_GlobalContainer, SplashScreenConstants.MODULE_ID);
 
-            entryPoint.RequestModuleChangeAsync().FireAndForget();
+                await entryPoint.RequestModuleChangeAsync();
+            }
+            
+            Run().FireAndForget();
         }
     }
 }
