@@ -91,10 +91,13 @@ namespace Test
             container.BindSingleton<ISceneDatabase, SceneDatabase>();
         }
 
-        public override void Bootstrap(IDIResolver resolver)
+        public override Task Bootstrap(IDIResolver resolver)
         {
             IScreenFadeService screenFadeService = resolver.Resolve<IScreenFadeService>();
             screenFadeService.SetFadeToSimple();
+
+            ILocalisationService localisationService = resolver.Resolve<ILocalisationService>();
+            return localisationService.InitialiseAsync();
         }
     }
 }
