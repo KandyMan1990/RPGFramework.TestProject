@@ -5,24 +5,24 @@ namespace Test
 {
     public static class GameAudioIntentMaps
     {
-        public static Dictionary<AudioIntentKey, int> Default =>
-                new Dictionary<AudioIntentKey, int>
+        public static Dictionary<AudioIntentKey, ulong> Default =>
+                new Dictionary<AudioIntentKey, ulong>
                 {
-                        { new AudioIntentKey(AudioIntent.Navigate, AudioContext.Menu), (int)TestSfxEnum.NavigateButtonPositive },
-                        { new AudioIntentKey(AudioIntent.Confirm,  AudioContext.Menu), (int)TestSfxEnum.NavigateButtonPositive },
-                        { new AudioIntentKey(AudioIntent.Cancel,   AudioContext.Menu), (int)TestSfxEnum.ButtonNegative },
-                        { new AudioIntentKey(AudioIntent.Error,    AudioContext.Menu), (int)TestSfxEnum.Error },
+                        { new AudioIntentKey(AudioIntent.Navigate, AudioContext.Menu), (ulong)TestSfxEnum.NavigateButtonPositive },
+                        { new AudioIntentKey(AudioIntent.Confirm,  AudioContext.Menu), (ulong)TestSfxEnum.NavigateButtonPositive },
+                        { new AudioIntentKey(AudioIntent.Cancel,   AudioContext.Menu), (ulong)TestSfxEnum.ButtonNegative },
+                        { new AudioIntentKey(AudioIntent.Error,    AudioContext.Menu), (ulong)TestSfxEnum.Error },
 
-                        { new AudioIntentKey(AudioIntent.NewGame,  AudioContext.Menu), (int)TestSfxEnum.ItemConsumed },
-                        { new AudioIntentKey(AudioIntent.LoadGame, AudioContext.Menu), (int)TestSfxEnum.ItemConsumed },
-                        { new AudioIntentKey(AudioIntent.SaveGame, AudioContext.Menu), (int)TestSfxEnum.ItemConsumed },
+                        { new AudioIntentKey(AudioIntent.NewGame,  AudioContext.Menu), (ulong)TestSfxEnum.ItemConsumed },
+                        { new AudioIntentKey(AudioIntent.LoadGame, AudioContext.Menu), (ulong)TestSfxEnum.ItemConsumed },
+                        { new AudioIntentKey(AudioIntent.SaveGame, AudioContext.Menu), (ulong)TestSfxEnum.ItemConsumed },
 
-                        { new AudioIntentKey(AudioIntent.ItemUse,   AudioContext.Menu), (int)TestSfxEnum.ItemConsumed },
-                        { new AudioIntentKey(AudioIntent.ItemEquip, AudioContext.Menu), (int)TestSfxEnum.Equip },
-                        { new AudioIntentKey(AudioIntent.ItemFail,  AudioContext.Menu), (int)TestSfxEnum.Equip },
+                        { new AudioIntentKey(AudioIntent.ItemUse,   AudioContext.Menu), (ulong)TestSfxEnum.ItemConsumed },
+                        { new AudioIntentKey(AudioIntent.ItemEquip, AudioContext.Menu), (ulong)TestSfxEnum.Equip },
+                        { new AudioIntentKey(AudioIntent.ItemFail,  AudioContext.Menu), (ulong)TestSfxEnum.Equip },
                         
-                        { new AudioIntentKey(AudioIntent.Navigate, AudioContext.Field), (int)TestSfxEnum.NavigateButtonPositive },
-                        { new AudioIntentKey(AudioIntent.Confirm,  AudioContext.Field), (int)TestSfxEnum.NavigateButtonPositive },
+                        { new AudioIntentKey(AudioIntent.Navigate, AudioContext.Field), (ulong)TestSfxEnum.NavigateButtonPositive },
+                        { new AudioIntentKey(AudioIntent.Confirm,  AudioContext.Field), (ulong)TestSfxEnum.NavigateButtonPositive },
                 };
     }
 }

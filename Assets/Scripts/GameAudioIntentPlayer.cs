@@ -7,9 +7,9 @@ namespace Test
     public sealed class GameAudioIntentPlayer : IAudioIntentPlayer
     {
         private readonly ISfxPlayer                      m_SfxPlayer;
-        private readonly Dictionary<AudioIntentKey, int> m_Map;
+        private readonly Dictionary<AudioIntentKey, ulong> m_Map;
 
-        public GameAudioIntentPlayer(ISfxPlayer sfxPlayer, Dictionary<AudioIntentKey, int> map)
+        public GameAudioIntentPlayer(ISfxPlayer sfxPlayer, Dictionary<AudioIntentKey, ulong> map)
         {
             m_SfxPlayer = sfxPlayer;
             m_Map       = map;
@@ -19,7 +19,7 @@ namespace Test
         {
             AudioIntentKey key = new AudioIntentKey(intent, context);
 
-            if (!m_Map.TryGetValue(key, out int sfxId))
+            if (!m_Map.TryGetValue(key, out ulong sfxId))
             {
                 return;
             }

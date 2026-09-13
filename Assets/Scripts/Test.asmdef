@@ -10,6 +10,7 @@
         "RPGFramework.DI",
         "RPGFramework.Field",
         "RPGFramework.Field.SharedTypes",
+        "RPGFramework.Hashing",
         "RPGFramework.Localisation",
         "RPGFramework.Menu",
         "RPGFramework.Menu.SharedTypes",
