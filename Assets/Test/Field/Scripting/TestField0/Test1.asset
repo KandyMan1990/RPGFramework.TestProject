@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Test1
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldScriptSource
   ScriptId: 1
-  ScriptText: 'WAIT_SECONDS 1.0
-
-    PLAY_SOUND 4
+  ScriptText: 'PLAY_SOUND Equip
 
     RETURN'

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Test3 OnCollision.compiled
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldCompiledScript
   ScriptId: 4
-  Bytecode: 160001000000010000000000
+  FormatVersion: 1
+  Bytecode: 0501028b820f806dfe91010000000000

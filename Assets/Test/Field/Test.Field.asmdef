@@ -8,6 +8,7 @@
         "RPGFramework.Localisation",
         "RPGFramework.Field",
         "RPGFramework.Field.SharedTypes",
+        "RPGFramework.Hashing",
         "RPGFramework.Menu.SharedTypes",
         "Test"
     ],

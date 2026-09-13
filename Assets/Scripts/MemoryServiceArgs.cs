@@ -10,8 +10,11 @@ namespace Test
         private int m_GlobalBytes;
         [SerializeField]
         private int m_SessionBytes;
+        [SerializeField]
+        private int m_TempBytes = 64;
 
         int IMemoryServiceArgs.GlobalBytes  => m_GlobalBytes;
         int IMemoryServiceArgs.SessionBytes => m_SessionBytes;
+        int IMemoryServiceArgs.TempBytes    => m_TempBytes;
     }
 }

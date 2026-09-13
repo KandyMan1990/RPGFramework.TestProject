@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Test4 Init.compiled
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldCompiledScript
   ScriptId: 5
-  Bytecode: 1a00010000
+  FormatVersion: 1
+  Bytecode: 0a01010000y

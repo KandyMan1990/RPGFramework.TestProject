@@ -15,11 +15,4 @@ MonoBehaviour:
   ScriptId: 9
   ScriptText: 'VISIBILITY true
 
-    SET_DIRECTION_TO_FACE_ENTITY 2
-
-    WAIT_SECONDS
-    2.0
-
-    GOTO_DIRECTLY 3
-
     RETURN'
