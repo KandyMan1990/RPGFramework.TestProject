@@ -13,11 +13,4 @@ MonoBehaviour:
   m_Name: Test9
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldScriptSource
   ScriptId: 11
-  ScriptText: 'WAIT_SECONDS 3.0
-
-    CREATE_DIALOGUE_WINDOW TestField/Test 100 100 640 180
-
-    SHOW_DIALOGUE_WINDOW
-    TestField/Test true
-
-    RETURN'
+  ScriptText: "IF_BYTE $TestIntroCutscene == 1\n    RETURN\nEND_IF\nASSIGN_BYTE $TestIntroCutscene 1\nWAIT_SECONDS 3.0\nCREATE_DIALOGUE_WINDOW TestField/Test 100 100 640 180\nSHOW_DIALOGUE_WINDOW TestField/Test true\nRETURN"

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a53cab365904129b0d6ce4f53c6c89, type: 3}
+  m_Name: VariableMap
+  m_EditorClassIdentifier: RPGFramework.Core::RPGFramework.Core.Memory.VariableMapAsset
+  m_Variables:
+  - m_Name: TestIntroCutscene
+    m_Bank: 0
+    m_Width: 1
+    m_Offset: 0
+    m_Description: Triggers opening cutscene if unset
