@@ -17,7 +17,6 @@ MonoBehaviour:
 
     CREATE_DIALOGUE_WINDOW TestField/Test 100 100 506 300
 
-    ASK_PLAYER_TO_MAKE_A_CHOICE
-    1 6 TestField/Test TestField/Location Generic/Settings Generic/PlayerName
+    ASK_PLAYER_TO_MAKE_A_CHOICE $TestChoiceAnswer TestField/Test TestField/Location Generic/Settings Generic/PlayerName
 
     RETURN'

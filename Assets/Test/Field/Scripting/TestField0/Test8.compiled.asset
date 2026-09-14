@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldCompiledScript
   ScriptId: 10
   FormatVersion: 1
-  Bytecode: 0c03010000y
+  Bytecode: 0c0300010000

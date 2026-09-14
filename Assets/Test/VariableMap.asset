@@ -15,6 +15,11 @@ MonoBehaviour:
   m_Variables:
   - m_Name: TestIntroCutscene
     m_Bank: 0
-    m_Width: 1
+    m_Width: 0
     m_Offset: 0
     m_Description: Triggers opening cutscene if unset
+  - m_Name: TestChoiceAnswer
+    m_Bank: 1
+    m_Width: 1
+    m_Offset: 6
+    m_Description: Which answer the choice in TestField2 picked
