@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: VariableMapMemoryServiceArgs
   m_EditorClassIdentifier: RPGFramework.Core::RPGFramework.Core.Memory.VariableMapMemoryServiceArgs
   m_VariableMap: {fileID: 11400000, guid: 9447ce4c9d8ac48b082314a480f6c717, type: 2}
-  m_AdditionalGlobalBytes: 0
+  m_AdditionalPersistentBytes: 0
   m_AdditionalSessionBytes: 0
   m_AdditionalTempBytes: 64
