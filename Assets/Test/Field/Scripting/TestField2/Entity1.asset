@@ -17,3 +17,5 @@ MonoBehaviour:
   Scripts:
   - ScriptType: 1
     CompiledScript: {fileID: 11400000, guid: b1c2bcd24082dbc4a931a01a14e76776, type: 2}
+  - ScriptType: 0
+    CompiledScript: {fileID: 11400000, guid: 339be2c7d20394f4b9d0f1c92a142d6b, type: 2}

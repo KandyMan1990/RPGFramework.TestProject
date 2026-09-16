@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: Entity1 Init
   m_EditorClassIdentifier: RPGFramework.Field.Editor::RPGFramework.Field.Editor.FieldScriptSource
   ScriptId: 1
-  ScriptText: RETURN
+  ScriptText: 'INIT_CHARACTER
+
+    VISIBILITY true
+
+    RETURN'

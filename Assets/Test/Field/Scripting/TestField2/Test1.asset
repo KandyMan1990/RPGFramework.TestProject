@@ -12,15 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162c296e815c4d4fafedcb081fb20e95, type: 3}
   m_Name: Test1
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldScriptSource
-  ScriptId: 2
-  ScriptText: 'INIT_CHARACTER
+  ScriptId: 1
+  ScriptText: 'LOCK_INPUT true
 
-    VISIBILITY true
-
-    LOCK_INPUT true
-
-    WAIT_SECONDS
-    2.0
+    WAIT_SECONDS 2.0
 
     LOCK_INPUT false
 

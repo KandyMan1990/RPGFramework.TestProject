@@ -13,11 +13,7 @@ MonoBehaviour:
   m_Name: Test1
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldScriptSource
   ScriptId: 3
-  ScriptText: 'INIT_CHARACTER
-
-    VISIBILITY true
-
-    WAIT_SECONDS 3.0
+  ScriptText: 'WAIT_SECONDS 3.0
 
     JUMP_TO_MAP TestField0 0
 
