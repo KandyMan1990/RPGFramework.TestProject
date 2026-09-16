@@ -48,7 +48,7 @@ namespace Test
             m_ChangeModuleStore.SetModuleId(FieldConstants.MODULE_ID);
 
             // TODO: the field and spawn the save was written at are not persisted yet, so a loaded game
-            // resumes at the start. They belong in the global memory bank as declared variables.
+            // resumes at the start. They belong in the persistent memory bank as declared variables.
             FieldArgs fieldArgs = new FieldArgs(Fnv1a64.Hash(STARTING_FIELD), 0);
 
             m_FieldArgsProvider.Set(fieldArgs);

@@ -78,6 +78,7 @@ namespace Test
             container.BindSingletonFromInstance<IDialogueWindowUiProvider>(m_DialogueWindowUiProvider);
 
             container.BindSingletonFromInstance<IMemoryServiceArgs>(m_MemoryServiceArgs);
+            container.BindSingletonFromInstance<ITempMemoryArgs>(m_MemoryServiceArgs);
 
             container.BindSingleton<IBattleCompleteStateProvider, BattleCompleteStateProvider>();
 
