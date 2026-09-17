@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Entity1 Init
   m_EditorClassIdentifier: RPGFramework.Field.Editor::RPGFramework.Field.Editor.FieldScriptSource
   ScriptId: 1
-  ScriptText: 'INIT_CHARACTER
+  ScriptText: 'SET_PLAYER_ENTITY
 
     VISIBILITY true
 
