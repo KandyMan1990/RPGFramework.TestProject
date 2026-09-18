@@ -15,8 +15,8 @@ MonoBehaviour:
   ScriptId: 3
   ScriptText: 'WAIT_SECONDS 3.0
 
-    CREATE_DIALOGUE_WINDOW TestField/Test 100 100 506 300
+    CREATE_DIALOGUE_WINDOW 0 100 100 506 300
 
-    ASK_PLAYER_TO_MAKE_A_CHOICE $TestChoiceAnswer TestField/Test TestField/Location Generic/Settings Generic/PlayerName
+    ASK_PLAYER_TO_MAKE_A_CHOICE $TestChoiceAnswer 0 TestField/Test TestField/Location Generic/Settings Generic/PlayerName
 
     RETURN'

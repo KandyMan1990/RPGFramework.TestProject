@@ -15,3 +15,4 @@ MonoBehaviour:
   m_GetTextSpeed: 40
   m_GetWindowSpeed: 3
   m_DialogueWindow: {fileID: 9197481963319205126, guid: 18f9572174a3c544bb39d4a94c44eacf, type: 3}
+  m_TextStyles: {fileID: 11400000, guid: 7398c7ea938640a991ab7814dad7a31a, type: 2}
