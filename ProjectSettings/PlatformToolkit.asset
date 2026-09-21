@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.PlatformToolkit.Editor::Unity.PlatformToolkit.Editor.PlatformToolkitSettings
   SupportDeclarationTargetsManager:
     m_BuildTargetToDeclarationMappings:
-      keys: 02000000050000001300000018000000
+      keys: 02000000050000001300000018000000i
       values:
       - Unity.LocalSaving
       - Unity.LocalSaving

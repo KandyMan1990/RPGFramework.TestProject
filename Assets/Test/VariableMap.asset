@@ -13,13 +13,33 @@ MonoBehaviour:
   m_Name: VariableMap
   m_EditorClassIdentifier: RPGFramework.Core::RPGFramework.Core.Memory.VariableMapAsset
   m_Variables:
+  - m_Name: CurrentModule
+    m_Bank: 0
+    m_Width: 2
+    m_Offset: 1
+    m_Description: The module the playthrough is in. Its default is the module a new game begins in
+    m_DefaultValue: 0
+  - m_Name: CurrentField
+    m_Bank: 0
+    m_Width: 8
+    m_Offset: 8
+    m_Description: The field the player is in. Its default is the field a new game begins in
+    m_DefaultValue: 10519967275879140533
+  - m_Name: CurrentSpawn
+    m_Bank: 0
+    m_Width: 5
+    m_Offset: 16
+    m_Description: The spawn point the player entered the current field by. Its default is where a new game begins
+    m_DefaultValue: 0
   - m_Name: TestIntroCutscene
     m_Bank: 0
     m_Width: 0
     m_Offset: 0
     m_Description: Triggers opening cutscene if unset
+    m_DefaultValue: 0
   - m_Name: TestChoiceAnswer
     m_Bank: 1
     m_Width: 2
     m_Offset: 6
     m_Description: Which answer the choice in TestField2 picked
+    m_DefaultValue: 0

@@ -5,7 +5,7 @@ using System.Text;
 namespace Test
 {
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public unsafe struct TestSaveFileSection
+    internal unsafe struct TestSaveFileSection
     {
         public fixed byte  PlayerNameLocKey[32];
         public fixed byte  CurrentLocationLocKey[64];

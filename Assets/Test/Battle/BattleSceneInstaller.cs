@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace Test.Battle
 {
-    public class BattleSceneInstaller : SceneInstallerBase
+    internal class BattleSceneInstaller : SceneInstallerBase
     {
         [SerializeField]
         private BattleAudioProvider m_AudioProvider;

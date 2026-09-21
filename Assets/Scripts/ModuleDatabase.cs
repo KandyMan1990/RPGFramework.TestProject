@@ -11,7 +11,7 @@ using Test.SplashScreen.Constants;
 
 namespace Test
 {
-    public sealed class ModuleDatabase : IModuleDatabase
+    internal sealed class ModuleDatabase : IModuleDatabase
     {
         Type IModuleDatabase.GetModuleType(byte moduleId)
         {

@@ -3,7 +3,7 @@ using RPGFramework.Core.Audio;
 
 namespace Test
 {
-    public static class GameAudioIntentMaps
+    internal static class GameAudioIntentMaps
     {
         public static Dictionary<AudioIntentKey, ulong> Default =>
                 new Dictionary<AudioIntentKey, ulong>

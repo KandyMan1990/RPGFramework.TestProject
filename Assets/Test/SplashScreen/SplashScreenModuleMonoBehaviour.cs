@@ -5,12 +5,12 @@ using UnityEngine.UIElements;
 
 namespace Test.SplashScreen
 {
-    public interface ISplashScreenModuleMonoBehaviour
+    internal interface ISplashScreenModuleMonoBehaviour
     {
         Task ShowSplashScreenAsync();
     }
 
-    public class SplashScreenModuleMonoBehaviour : MonoBehaviour, ISplashScreenModuleMonoBehaviour
+    internal class SplashScreenModuleMonoBehaviour : MonoBehaviour, ISplashScreenModuleMonoBehaviour
     {
         private const string TEXT_HIDDEN  = "text-hidden";
         private const string TEXT_VISIBLE = "text-visible";

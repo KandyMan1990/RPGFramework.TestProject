@@ -4,7 +4,7 @@ using RPGFramework.Field.SharedTypes;
 
 namespace Test.Field
 {
-    public class FieldModuleSceneInstaller : SceneInstallerBase
+    internal class FieldModuleSceneInstaller : SceneInstallerBase
     {
         public override void InstallBindings(IDIContainer container)
         {

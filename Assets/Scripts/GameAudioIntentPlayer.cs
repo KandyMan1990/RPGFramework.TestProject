@@ -4,7 +4,7 @@ using RPGFramework.Core.Audio;
 
 namespace Test
 {
-    public sealed class GameAudioIntentPlayer : IAudioIntentPlayer
+    internal sealed class GameAudioIntentPlayer : IAudioIntentPlayer
     {
         private readonly ISfxPlayer                      m_SfxPlayer;
         private readonly Dictionary<AudioIntentKey, ulong> m_Map;

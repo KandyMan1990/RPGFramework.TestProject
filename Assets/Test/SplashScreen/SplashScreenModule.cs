@@ -1,9 +1,7 @@
 using System.Threading.Tasks;
 using RPGFramework.Core;
-using RPGFramework.Core.SaveData;
 using RPGFramework.Core.SharedTypes;
 using RPGFramework.Core.Store;
-using RPGFramework.Field.SharedTypes.Providers;
 using RPGFramework.Menu.SharedTypes.Constants;
 
 namespace Test.SplashScreen
@@ -17,20 +15,14 @@ namespace Test.SplashScreen
         private readonly ICoreModule                      m_CoreModule;
         private readonly IChangeModuleStore               m_ChangeModuleStore;
         private readonly ISplashScreenModuleMonoBehaviour m_SplashScreenModuleMonoBehaviour;
-        private readonly ISaveDataService                 m_SaveDataService;
-        private readonly IFieldArgsProvider               m_FieldArgsProvider;
 
         internal SplashScreenModule(ICoreModule                      coreModule,
                                     IChangeModuleStore               changeModuleStore,
-                                    ISplashScreenModuleMonoBehaviour splashScreenModuleMonoBehaviour,
-                                    ISaveDataService                 saveDataService,
-                                    IFieldArgsProvider               fieldArgsProvider)
+                                    ISplashScreenModuleMonoBehaviour splashScreenModuleMonoBehaviour)
         {
             m_CoreModule                      = coreModule;
             m_ChangeModuleStore               = changeModuleStore;
             m_SplashScreenModuleMonoBehaviour = splashScreenModuleMonoBehaviour;
-            m_SaveDataService                 = saveDataService;
-            m_FieldArgsProvider               = fieldArgsProvider;
         }
 
         Task IModule.OnEnterAsync()

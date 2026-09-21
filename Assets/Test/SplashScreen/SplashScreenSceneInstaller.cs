@@ -1,7 +1,7 @@
 using RPGFramework.DI;
 using Test.SplashScreen;
 
-public class SplashScreenSceneInstaller : SceneInstallerBase
+internal class SplashScreenSceneInstaller : SceneInstallerBase
 {
     public override void InstallBindings(IDIContainer container)
     {

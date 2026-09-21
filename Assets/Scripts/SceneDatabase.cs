@@ -7,7 +7,7 @@ using Test.SplashScreen;
 
 namespace Test
 {
-    public sealed class SceneDatabase : ISceneDatabase
+    internal sealed class SceneDatabase : ISceneDatabase
     {
         private readonly ISceneDatabase m_This;
 

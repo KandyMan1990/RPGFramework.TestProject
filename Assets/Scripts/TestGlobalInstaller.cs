@@ -7,6 +7,7 @@ using RPGFramework.Core;
 using RPGFramework.Core.Audio;
 using RPGFramework.Core.Databases;
 using RPGFramework.Core.Dialogue.UI;
+using RPGFramework.Core.Memory;
 using RPGFramework.Core.Rendering;
 using RPGFramework.Core.SaveData;
 using RPGFramework.DI;
@@ -20,7 +21,7 @@ using UnityEngine.Rendering.Universal;
 
 namespace Test
 {
-    public class TestGlobalInstaller : GlobalInstallerBase
+    internal class TestGlobalInstaller : GlobalInstallerBase
     {
         [SerializeField]
         private MusicAssetProvider m_MusicProvider;
@@ -38,7 +39,7 @@ namespace Test
         private DialogueWindowUiProvider m_DialogueWindowUiProvider;
 
         [SerializeField]
-        private MemoryServiceArgs m_MemoryServiceArgs;
+        private VariableMapMemoryServiceArgs m_MemoryServiceArgs;
 
         [SerializeField]
         private UniversalRendererData m_UniversalRendererData;
@@ -66,7 +67,7 @@ namespace Test
             container.BindSingletonFromInstance<IScreenFadeServiceConfig>(m_ScreenFadeServiceConfig);
 
             container.BindSingleton<IBattleArgsProvider, BattleArgsProvider>();
-            container.BindSingleton<IFieldArgsProvider, FieldArgsProvider>();
+            container.BindSingleton<IFieldArgsStore, VariableFieldArgsStore>();
             container.BindSingleton<IMenuArgsProvider, MenuArgsProvider>();
 
             container.BindSingletonFromInstance<IAudioIntentPlayer>(new GameAudioIntentPlayer(sfxPlayer, GameAudioIntentMaps.Default));
@@ -79,6 +80,7 @@ namespace Test
 
             container.BindSingletonFromInstance<IMemoryServiceArgs>(m_MemoryServiceArgs);
             container.BindSingletonFromInstance<ITempMemoryArgs>(m_MemoryServiceArgs);
+            container.BindSingletonFromInstance<IVariableMap>(m_MemoryServiceArgs.VariableMap);
 
             container.BindSingleton<IBattleCompleteStateProvider, BattleCompleteStateProvider>();
 
