@@ -45,54 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: b72daf8f40d91134eb2ee02c1c682cd5, type: 2}
   m_VisibleObject: {fileID: 8409716444044686529}
---- !u!1 &1516292526784987423
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 134776188532864546}
-  - component: {fileID: 6579465391411764749}
-  m_Layer: 0
-  m_Name: Entity0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &134776188532864546
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516292526784987423}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8967626963149710051}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6579465391411764749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516292526784987423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: 3384b19b7f119a14984adf823554e323, type: 2}
-  m_VisibleObject: {fileID: 0}
 --- !u!1 &4169855607478697768
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,6 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8967626963149710051}
+  - component: {fileID: 3363852695779376116}
   m_Layer: 0
   m_Name: TestField1
   m_TagString: Untagged
@@ -169,10 +123,56 @@ Transform:
   m_Children:
   - {fileID: 544555270704929572}
   - {fileID: 7366623473631236026}
-  - {fileID: 134776188532864546}
   - {fileID: 2281994426800900256}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3363852695779376116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4226698957846357039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 314535403b2949fba48cc97b81e469d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntities
+  m_Entities:
+  - m_EntityId: 0
+    m_Name: Entity0
+    m_Body: {fileID: 0}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: RETURN
+    - m_Type: 1
+      m_Name: 
+      m_Text: 'WAIT_SECONDS 1.0
+
+        PLAY_SOUND Error
+
+        RETURN'
+  - m_EntityId: 1
+    m_Name: Entity1
+    m_Body: {fileID: 729688710695128244}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'SET_PLAYER_ENTITY
+
+        VISIBILITY true
+
+        RETURN'
+    - m_Type: 1
+      m_Name: 
+      m_Text: 'WAIT_SECONDS 3.0
+
+        JUMP_TO_MAP TestField0 0
+
+        RETURN'
+  m_FormatVersion: 0
+  m_Compiled: []
 --- !u!1 &7112577293085898537
 GameObject:
   m_ObjectHideFlags: 0

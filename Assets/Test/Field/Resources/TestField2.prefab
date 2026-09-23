@@ -1,51 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &685857683754304567
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1202603301603176877}
-  - component: {fileID: 6527608879561786597}
-  m_Layer: 0
-  m_Name: Entity0 (PlayMusic)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &1202603301603176877
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685857683754304567}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8967626963149710051}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6527608879561786597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685857683754304567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: d2b818951aae7154294416b6fd41225b, type: 2}
-  m_VisibleObject: {fileID: 0}
 --- !u!1 &2221558266945983312
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,52 +90,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &3189431268250413639
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 815323896026303688}
-  - component: {fileID: 5398070430970532796}
-  m_Layer: 0
-  m_Name: Entity2 (AskPlayerChoice)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &815323896026303688
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3189431268250413639}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8967626963149710051}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5398070430970532796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3189431268250413639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: e171730e0f3246148a6726c5baa3a432, type: 2}
-  m_VisibleObject: {fileID: 0}
 --- !u!1 &4226698957846357039
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8967626963149710051}
+  - component: {fileID: 6081003387355856814}
   m_Layer: 0
   m_Name: TestField2
   m_TagString: Untagged
@@ -212,11 +121,69 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3146149145677279097}
-  - {fileID: 1202603301603176877}
   - {fileID: 7375378824970891124}
-  - {fileID: 815323896026303688}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6081003387355856814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4226698957846357039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 314535403b2949fba48cc97b81e469d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntities
+  m_Entities:
+  - m_EntityId: 0
+    m_Name: Entity0 (PlayMusic)
+    m_Body: {fileID: 0}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'PLAY_MUSIC MusicSample Default
+
+        RETURN'
+  - m_EntityId: 1
+    m_Name: Entity1 (PlayerCharacter)
+    m_Body: {fileID: 6354893702813436339}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'SET_PLAYER_ENTITY
+
+        VISIBILITY true
+
+        RETURN'
+    - m_Type: 1
+      m_Name: 
+      m_Text: 'LOCK_INPUT true
+
+        WAIT_SECONDS 2.0
+
+        LOCK_INPUT false
+
+        RETURN'
+  - m_EntityId: 2
+    m_Name: Entity2 (AskPlayerChoice)
+    m_Body: {fileID: 0}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: RETURN
+    - m_Type: 1
+      m_Name: 
+      m_Text: 'WAIT_SECONDS 3.0
+
+        CREATE_DIALOGUE_WINDOW 0 100 100 506 300
+
+        ASK_PLAYER_TO_MAKE_A_CHOICE $TestChoiceAnswer 0 TestField/Test TestField/Location Generic/Settings Generic/PlayerName
+
+        RETURN'
+  m_FormatVersion: 0
+  m_Compiled: []
 --- !u!1 &5709288289742801716
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: 4eed1b4c701bb734f9a78f00a6ae8d1a, type: 2}
   m_VisibleObject: {fileID: 8409716444044686529}
 --- !u!65 &588670411180573758
 BoxCollider:

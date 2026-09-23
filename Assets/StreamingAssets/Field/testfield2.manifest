@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.6.2f1
-CRC: 3287695280
+CRC: 19109642
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: fe8f9a7f3c6fab07a7021373513ddfea
+    Hash: a0e625f0229efb273bfe49e427491c15
   TypeTreeHash:
     serializedVersion: 2
-    Hash: d1b71bacc486b1f163ac6b7a6cbd4fd9
+    Hash: c0cf23fe79d33948dd4f2fce94a67dce
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: a091bdcdda930faf05d66a2df7e6e035
+    Hash: 20daaf28f0f5942f653bea6e399a79f6
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -32,18 +32,18 @@ ClassTypes:
 - Class: 65
   Script: {instanceID: 0}
 - Class: 114
-  Script: {fileID: 11500000, guid: 3d6c29c0400b4855b50e5c4085988282, type: 3}
+  Script: {fileID: 11500000, guid: 314535403b2949fba48cc97b81e469d3, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 169351b22bd1425d986921b046b06eed, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 6123fe1503884b1aa33b6593f1353303, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers:
 - AssemblyName: RPGFramework.Field
-  ClassName: RPGFramework.Field.ScriptEntry
+  ClassName: RPGFramework.Field.CompiledFieldEntity
+- AssemblyName: RPGFramework.Field
+  ClassName: RPGFramework.Field.CompiledFieldScript
 Assets:
-- Assets/Test/Field/Resources/TestField2.prefab
+- Assets/RPGFrameworkFieldBuild/TestField2.prefab
 Dependencies: []

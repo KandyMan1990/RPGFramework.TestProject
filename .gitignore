@@ -103,3 +103,6 @@ InitTestScene*.unity*
 .DS_Store
 
 *.csproj.DotSettings
+# Field export writes compiled copies of each field here and deletes them after the bundle build
+/Assets/RPGFrameworkFieldBuild/
+/Assets/RPGFrameworkFieldBuild.meta

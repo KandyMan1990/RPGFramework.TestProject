@@ -91,98 +91,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &406416708288853992
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8380204303250105379}
-  - component: {fileID: 1718022364680244829}
-  m_Layer: 0
-  m_Name: Entity1 (PlaySound)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &8380204303250105379
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 406416708288853992}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8967626963149710051}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1718022364680244829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 406416708288853992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: e7e1779b97e70be4ea491ca6f179c778, type: 2}
-  m_VisibleObject: {fileID: 0}
---- !u!1 &685857683754304567
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1202603301603176877}
-  - component: {fileID: 6527608879561786597}
-  m_Layer: 0
-  m_Name: Entity0 (PlayMusic)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &1202603301603176877
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685857683754304567}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8967626963149710051}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6527608879561786597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685857683754304567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: 24e8a42d160a6de49a98d01443e3ad85, type: 2}
-  m_VisibleObject: {fileID: 0}
 --- !u!1 &1639832957538049038
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,7 +136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: 670d69b0814bd4642a775fdd17cb7f07, type: 2}
   m_VisibleObject: {fileID: 0}
 --- !u!1 &1936019979855930486
 GameObject:
@@ -413,7 +320,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: 9f77b5660712e2b42ae8032c8f41e9e9, type: 2}
   m_VisibleObject: {fileID: 6284203792125931149}
 --- !u!65 &5357477718208148939
 BoxCollider:
@@ -553,98 +459,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &3189431268250413639
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 815323896026303688}
-  - component: {fileID: 5398070430970532796}
-  m_Layer: 0
-  m_Name: Entity9 (CreateWindow)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &815323896026303688
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3189431268250413639}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8967626963149710051}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5398070430970532796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3189431268250413639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: 2ff6416e0893f7d48acd0aa69075dbe7, type: 2}
-  m_VisibleObject: {fileID: 0}
---- !u!1 &3944290906701233850
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3257176550106621841}
-  - component: {fileID: 8522549212390248966}
-  m_Layer: 0
-  m_Name: Entity8 (MainMenuAccessibility)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &3257176550106621841
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3944290906701233850}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8967626963149710051}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8522549212390248966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3944290906701233850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: 0a317f9ee0d305a4391d0e73d48b53df, type: 2}
-  m_VisibleObject: {fileID: 0}
 --- !u!1 &4226698957846357039
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,6 +468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8967626963149710051}
+  - component: {fileID: 4829676445749990612}
   m_Layer: 0
   m_Name: TestField0
   m_TagString: Untagged
@@ -675,19 +490,188 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3146149145677279097}
-  - {fileID: 1202603301603176877}
-  - {fileID: 8380204303250105379}
   - {fileID: 7375378824970891124}
   - {fileID: 4291803081713579202}
-  - {fileID: 418020152802613571}
   - {fileID: 1040450980106019358}
   - {fileID: 8544813478530265405}
   - {fileID: 3242721425653617235}
-  - {fileID: 3257176550106621841}
-  - {fileID: 815323896026303688}
   - {fileID: 6329587309128530432}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4829676445749990612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4226698957846357039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 314535403b2949fba48cc97b81e469d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntities
+  m_Entities:
+  - m_EntityId: 0
+    m_Name: Entity0 (PlayMusic)
+    m_Body: {fileID: 0}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'PLAY_MUSIC MusicSample Default
+
+        RETURN'
+  - m_EntityId: 1
+    m_Name: Entity1 (PlaySound)
+    m_Body: {fileID: 0}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'PLAY_SOUND Equip
+
+        RETURN'
+  - m_EntityId: 2
+    m_Name: Entity2 (PlayerCharacter)
+    m_Body: {fileID: 6354893702813436339}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'SET_PLAYER_ENTITY
+
+        VISIBILITY true
+
+        RETURN'
+  - m_EntityId: 3
+    m_Name: Entity3 (Gateway)
+    m_Body: {fileID: 7445875409821500104}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: RETURN
+    - m_Type: 5
+      m_Name: 
+      m_Text: 'JUMP_TO_MAP TestField2 0
+
+        RETURN'
+  - m_EntityId: 4
+    m_Name: Entity4 (GatewayActivation)
+    m_Body: {fileID: 0}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'GATEWAY_TRIGGER_ACTIVATION true
+
+        RETURN'
+  - m_EntityId: 5
+    m_Name: Entity5 (Interaction)
+    m_Body: {fileID: 7497597249530857423}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'INTERACTION_TRIGGER_ACTIVATION true
+
+        SET_INTERACTION_RANGE 2.0
+
+        RETURN'
+    - m_Type: 3
+      m_Name: 
+      m_Text: 'PLAY_SOUND ItemConsumed
+
+        RETURN'
+  - m_EntityId: 6
+    m_Name: Entity6 (SetPosition & SetRotation)
+    m_Body: {fileID: 5253742140373104738}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'VISIBILITY true
+
+        RETURN'
+    - m_Type: 1
+      m_Name: 
+      m_Text: 'SET_ENTITY_POSITION -2.0 2.0 0.0
+
+        SET_ENTITY_ROTATION_OVER_TIME 0.0 90.0 0.0 0 2.0 0
+
+        WAIT_SECONDS 2.0
+
+        SET_ENTITY_POSITION -2.0 0.0 0.0
+
+        SET_ENTITY_ROTATION_OVER_TIME 0.0 270.0 0.0 1 1.0 1
+
+        WAIT_SECONDS 2.0
+
+        GOTO_DIRECTLY 0
+
+        RETURN'
+  - m_EntityId: 7
+    m_Name: Entity7 (FaceEntity)
+    m_Body: {fileID: 2861220065097343795}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'VISIBILITY true
+
+        RETURN'
+    - m_Type: 1
+      m_Name: 
+      m_Text: 'SET_DIRECTION_TO_FACE_ENTITY 2
+
+        WAIT_SECONDS 2.0
+
+        GOTO_DIRECTLY 0
+
+        RETURN'
+  - m_EntityId: 8
+    m_Name: Entity8 (MainMenuAccessibility)
+    m_Body: {fileID: 0}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'MAIN_MENU_ACCESSIBILITY true
+
+        RETURN'
+  - m_EntityId: 9
+    m_Name: Entity9 (CreateWindow)
+    m_Body: {fileID: 0}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: RETURN
+    - m_Type: 1
+      m_Name: 
+      m_Text: "IF_BOOL $TestIntroCutscene == true\n    RETURN\nEND_IF\nSET_BOOL $TestIntroCutscene true\nWAIT_SECONDS 2\nCREATE_DIALOGUE_WINDOW 0 100 100 640 180\nSHOW_DIALOGUE_WINDOW 0 TestField/Test true\nRETURN"
+  - m_EntityId: 10
+    m_Name: Entity10 (Battle)
+    m_Body: {fileID: 1287413900847595060}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'INTERACTION_TRIGGER_ACTIVATION true
+
+        RETURN'
+    - m_Type: 3
+      m_Name: 
+      m_Text: 'SET_BATTLE_MODE_OPTIONS 0 3 129 15
+
+        START_BATTLE
+
+        RETURN'
+  - m_EntityId: 11
+    m_Name: TestSfx
+    m_Body: {fileID: 0}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: RETURN
+    - m_Type: 1
+      m_Name: Main
+      m_Text: 'WAIT_SECONDS 1
+
+        PLAY_SOUND ItemConsumed
+
+        RETURN'
+  m_FormatVersion: 0
+  m_Compiled: []
 --- !u!1 &4765534201608813108
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,7 +828,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: f18e241f39a894141b9a8b9ac8b5f5a8, type: 2}
   m_VisibleObject: {fileID: 0}
 --- !u!1 &6284203792125931149
 GameObject:
@@ -1027,52 +1010,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &7036766976092699843
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 418020152802613571}
-  - component: {fileID: 4486718157581758336}
-  m_Layer: 0
-  m_Name: Entity4 (GatewayActivation)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &418020152802613571
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7036766976092699843}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8967626963149710051}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4486718157581758336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7036766976092699843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: 85699f2452c8e2a4b934a36fa2a59b7c, type: 2}
-  m_VisibleObject: {fileID: 0}
 --- !u!1 &7705987168967311131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,7 +1057,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: 447518fc10ac6f642b4241c85ba40d07, type: 2}
   m_VisibleObject: {fileID: 8409716444044686529}
 --- !u!65 &588670411180573758
 BoxCollider:
@@ -1217,7 +1153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: 6154c5ca724e4aa4dac10591f795e658, type: 2}
   m_VisibleObject: {fileID: 322503906043475775}
 --- !u!65 &6243827152884757608
 BoxCollider:
@@ -1449,5 +1384,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
-  ScriptDefinition: {fileID: 11400000, guid: 9523933354e0b884282be8c3f8f33738, type: 2}
   m_VisibleObject: {fileID: 0}
