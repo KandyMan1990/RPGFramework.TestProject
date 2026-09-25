@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
-UnityVersion: 6000.6.2f1
-CRC: 3108621916
+UnityVersion: 6000.6.3f1
+CRC: 4056973469
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 4b0841bb4ea1726d41f16185019529ad
+    Hash: 595b43e44707d4424c86b3eb77a588ba
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 39bd1af07aa007f004662ab6e28093c9
+    Hash: 35112556aa515d6b8ca3ebbfe6ead3ec
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 14ef7b46e1b1f29d3f6b7d51402fb9c9
+    Hash: fb451b783ade390844c72f1c74cbcf75
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -31,6 +31,14 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 65
   Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: bc8beb0306674bc8a23928beec2fdf52, type: 3}
 - Class: 114
@@ -42,6 +50,10 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 6123fe1503884b1aa33b6593f1353303, type: 3}
 - Class: 115
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers:
 - AssemblyName: RPGFramework.Field
