@@ -16,3 +16,6 @@ MonoBehaviour:
   Gid: 1544136321
   GeneratedOutputFolder: Assets/Test/Field/GeneratedLocalisation
   NamespaceOverride: Test.Field.Localisation
+  m_Keys:
+  - TestField/Location
+  - TestField/Test

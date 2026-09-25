@@ -16,3 +16,11 @@ MonoBehaviour:
   Gid: 1518824658
   GeneratedOutputFolder: Assets/Test/Menu/GeneratedLocalisation
   NamespaceOverride: Test.Menu.Localisation
+  m_Keys:
+  - ConfigMenu/Language_Title
+  - ConfigMenu/Language
+  - ConfigMenu/Controls
+  - ConfigMenu/Music_Volume
+  - ConfigMenu/Sfx_Volume
+  - ConfigMenu/Battle_Message_Speed
+  - ConfigMenu/Field_Message_Speed

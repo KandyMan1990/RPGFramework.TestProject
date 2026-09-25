@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d8f647ff9eec994c97f47850de96982, type: 3}
   m_Name: Generic
   m_EditorClassIdentifier: RPGFramework.Localisation.Editor::RPGFramework.Localisation.Editor.LocalisationSheetAsset
-  Master: {fileID: 11400000, guid: 9c29cdb9af05c1542be78974104457af, type: 2}
   SheetName: Generic
   Gid: 1415532938
   GeneratedOutputFolder: Assets/Scripts/GeneratedLocalisation
   NamespaceOverride: 
+  m_Keys:
+  - Generic/Game_Title
+  - Generic/Settings
+  - Generic/PlayerName
