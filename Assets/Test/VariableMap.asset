@@ -43,3 +43,33 @@ MonoBehaviour:
     m_Offset: 6
     m_Description: Which answer the choice in TestField2 picked
     m_DefaultValue: 0
+  - m_Name: PlayerPositionX
+    m_Bank: 0
+    m_Width: 9
+    m_Offset: 20
+    m_Description: Where the player stood when the game was saved. Its default is not used
+    m_DefaultValue: 0
+  - m_Name: PlayerPositionY
+    m_Bank: 0
+    m_Width: 9
+    m_Offset: 24
+    m_Description: Where the player stood when the game was saved. Its default is not used
+    m_DefaultValue: 0
+  - m_Name: PlayerPositionZ
+    m_Bank: 0
+    m_Width: 9
+    m_Offset: 28
+    m_Description: Where the player stood when the game was saved. Its default is not used
+    m_DefaultValue: 0
+  - m_Name: PlayerFacing
+    m_Bank: 0
+    m_Width: 9
+    m_Offset: 32
+    m_Description: Which way the player faced when the game was saved, in degrees around the field's up axis. Its default is not used
+    m_DefaultValue: 0
+  - m_Name: LoadedFromSave
+    m_Bank: 1
+    m_Width: 0
+    m_Offset: 7
+    m_Description: Set when a save is loaded, and cleared once the player is back where it was made. Its default is not used
+    m_DefaultValue: 0

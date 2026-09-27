@@ -8,8 +8,10 @@ using RPGFramework.Core.Audio;
 using RPGFramework.Core.Databases;
 using RPGFramework.Core.Dialogue.UI;
 using RPGFramework.Core.Memory;
+using RPGFramework.Core.PlayerLoop;
 using RPGFramework.Core.Rendering;
 using RPGFramework.Core.SaveData;
+using RPGFramework.Core.Store;
 using RPGFramework.DI;
 using RPGFramework.Field;
 using RPGFramework.Field.SharedTypes.Providers;
@@ -91,6 +93,8 @@ namespace Test
         {
             IScreenFadeService screenFadeService = resolver.Resolve<IScreenFadeService>();
             screenFadeService.SetFadeToSimple();
+
+            UpdateManager.RegisterUpdatable(new SaveKey(resolver.Resolve<ISaveDataService>(), resolver.Resolve<IChangeModuleStore>()));
 
             ILocalisationService localisationService = resolver.Resolve<ILocalisationService>();
             return localisationService.InitialiseAsync();
