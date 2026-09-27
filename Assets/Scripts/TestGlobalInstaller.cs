@@ -11,6 +11,7 @@ using RPGFramework.Core.Memory;
 using RPGFramework.Core.PlayerLoop;
 using RPGFramework.Core.Rendering;
 using RPGFramework.Core.SaveData;
+using RPGFramework.Core.Settings;
 using RPGFramework.Core.Store;
 using RPGFramework.DI;
 using RPGFramework.Field;
@@ -75,6 +76,7 @@ namespace Test
             container.BindSingletonFromInstance<IAudioIntentPlayer>(new GameAudioIntentPlayer(sfxPlayer, GameAudioIntentMaps.Default));
 
             container.BindSingleton<ISaveFactory, SaveFactory>();
+            container.BindSingleton<ISettingsFactory, SettingsFactory>();
             container.BindSingleton<IModuleDatabase, ModuleDatabase>();
             container.BindSingleton<IFieldResumeDataStore, FieldResumeDataStore>();
 

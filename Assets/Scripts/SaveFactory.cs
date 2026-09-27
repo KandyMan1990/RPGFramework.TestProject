@@ -1,26 +1,14 @@
-﻿using RPGFramework.Core.Data;
-using RPGFramework.Core.SaveData;
-using RPGFramework.Localisation;
+﻿using RPGFramework.Core.SaveData;
 using Test.Localisation;
 
 namespace Test
 {
     internal class SaveFactory : ISaveFactory
     {
-        private readonly ILocalisationService m_LocalisationService;
-
-        public SaveFactory(ILocalisationService localisationService)
-        {
-            m_LocalisationService = localisationService;
-        }
-
         void ISaveFactory.CreateDefaultSave(ISaveDataService saveDataService)
         {
             SaveSection<TestSaveFileSection> testSaveFileSection = GetDefaultTestSaveFileSection();
             saveDataService.SetSection(GameSaveSectionDatabase.TEST_SAVE_FILE_SECTION, testSaveFileSection);
-
-            SaveSection<ConfigData_V1> configDataSection = GetDefaultConfigDataSection();
-            saveDataService.SetSection(FrameworkSaveSectionDatabase.CONFIG_DATA, configDataSection);
         }
 
         void ISaveFactory.OnSaveLoaded(ISaveDataService saveDataService)
@@ -40,21 +28,6 @@ namespace Test
             section.SetCurrentLocationLocKey("Generic/Seaburn");
 
             return new SaveSection<TestSaveFileSection>(1, section);
-        }
-
-        private SaveSection<ConfigData_V1> GetDefaultConfigDataSection()
-        {
-            ConfigData_V1 section = new ConfigData_V1
-                                    {
-                                        MusicVolume        = 1f,
-                                        SfxVolume          = 1f,
-                                        BattleMessageSpeed = 0.5f,
-                                        FieldMessageSpeed  = 0.5f
-                                    };
-
-            section.SetLanguage(m_LocalisationService.CurrentLanguage);
-
-            return new SaveSection<ConfigData_V1>(1, section);
         }
     }
 }
