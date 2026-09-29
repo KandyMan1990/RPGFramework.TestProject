@@ -16,7 +16,6 @@
         "RPGFramework.Menu.SharedTypes",
         "Unity.Mathematics",
         "Unity.RenderPipelines.Universal.Runtime",
-        "Unity.InputSystem",
         "Test.SplashScreen"
     ],
     "includePlatforms": [],

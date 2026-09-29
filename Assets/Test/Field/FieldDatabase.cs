@@ -23,20 +23,23 @@ namespace Test.Field
 					{
 						"Generic",
 						"TestField",
-					}
+					},
+					0UL
 				),
 				[Fnv1a64.Hash("TestField1")] = new FieldDatabaseAsset("TestField1", Path.Combine(assetBundlesPath, "testfield1"),
 					new string[]
 					{
 						"Generic",
-					}
+					},
+					0UL
 				),
 				[Fnv1a64.Hash("TestField2")] = new FieldDatabaseAsset("TestField2", Path.Combine(assetBundlesPath, "testfield2"),
 					new string[]
 					{
 						"Generic",
 						"TestField",
-					}
+					},
+					0UL
 				),
 			};
 		}

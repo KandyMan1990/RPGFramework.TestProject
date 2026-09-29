@@ -23,6 +23,11 @@ namespace Test.Menu
             container.BindTransient<IConfigMenuUI, ConfigMenuUI>();
             container.BindTransient<ILanguageMenu, LanguageMenu>();
             container.BindTransient<ILanguageMenuUI, LanguageMenuUI>();
+            container.BindTransient<IPartyMenu, PartyMenu>();
+            container.BindTransient<IPartyMenuUI, PartyMenuUI>();
+            container.BindTransient<ISaveMenu, SaveMenu>();
+            container.BindTransient<ILoadMenu, LoadMenu>();
+            container.BindTransient<ISaveSlotMenuUI, SaveSlotMenuUI>();
 
             container.BindSingleton<IMenuTypeProvider, MenuTypeProvider>();
             container.BindSingleton<IMenuModule, MenuModule>();
@@ -68,9 +73,38 @@ namespace Test.Menu
                                                                                                           Localisation.LocalisationKeys.ConfigMenu.LANGUAGE,
                                                                                                           languageSheetNames);
 
+            string[] partySheetNames = new[]
+                                       {
+                                           Test.Localisation.LocalisationKeys.Generic.SHEET_NAME,
+                                           Localisation.LocalisationKeys.PartyMenu.SHEET_NAME,
+                                           Localisation.LocalisationKeys.Locations.SHEET_NAME
+                                       };
+
+            IPartyMenuLocalisationArgs partyMenuLocalisationArgs = new PartyMenuLocalisationArgs(Test.Localisation.LocalisationKeys.Generic.SETTINGS,
+                                                                                                 Localisation.LocalisationKeys.PartyMenu.SAVE,
+                                                                                                 Localisation.LocalisationKeys.PartyMenu.TIME,
+                                                                                                 partySheetNames);
+
+            string[] saveSheetNames = new[]
+                                      {
+                                          Test.Localisation.LocalisationKeys.Generic.SHEET_NAME,
+                                          Localisation.LocalisationKeys.SaveMenu.SHEET_NAME,
+                                          Localisation.LocalisationKeys.Locations.SHEET_NAME
+                                      };
+
+            ISaveMenuLocalisationArgs saveMenuLocalisationArgs = new SaveMenuLocalisationArgs(Localisation.LocalisationKeys.SaveMenu.SAVE_TITLE,
+                                                                                              Localisation.LocalisationKeys.SaveMenu.LOAD_TITLE,
+                                                                                              Localisation.LocalisationKeys.SaveMenu.NEW_SAVE,
+                                                                                              Localisation.LocalisationKeys.SaveMenu.OVERWRITE_QUESTION,
+                                                                                              Test.Localisation.LocalisationKeys.Generic.YES,
+                                                                                              Test.Localisation.LocalisationKeys.Generic.NO,
+                                                                                              saveSheetNames);
+
             container.BindSingletonFromInstance(beginMenuLocalisationArgs);
             container.BindSingletonFromInstance(configMenuLocalisationArgs);
             container.BindSingletonFromInstance(languageMenuLocalisationArgs);
+            container.BindSingletonFromInstance(partyMenuLocalisationArgs);
+            container.BindSingletonFromInstance(saveMenuLocalisationArgs);
         }
     }
 }

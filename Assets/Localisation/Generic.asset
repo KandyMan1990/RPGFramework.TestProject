@@ -20,3 +20,5 @@ MonoBehaviour:
   - Generic/Game_Title
   - Generic/Settings
   - Generic/PlayerName
+  - Generic/Yes
+  - Generic/No

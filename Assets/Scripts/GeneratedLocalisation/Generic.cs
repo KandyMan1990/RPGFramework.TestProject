@@ -13,6 +13,10 @@
 			public const string SETTINGS = @"Generic/Settings";
 			///<summary>PlayerName</summary>
 			public const string PLAYERNAME = @"Generic/PlayerName";
+			///<summary>Yes</summary>
+			public const string YES = @"Generic/Yes";
+			///<summary>No</summary>
+			public const string NO = @"Generic/No";
 		}
 	}
 }

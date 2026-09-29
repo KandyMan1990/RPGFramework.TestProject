@@ -18,10 +18,13 @@ MonoBehaviour:
       LocalisationSheets:
       - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
       - {fileID: 11400000, guid: 9a993b4a988e2c445b1e08ec025f3e5f, type: 2}
+      LocationName: Locations/TestField0
     - Prefab: {fileID: 4226698957846357039, guid: 368860dd8e62d5d4eb55fea2fd485d6a, type: 3}
       LocalisationSheets:
       - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
+      LocationName: Locations/TestField1
     - Prefab: {fileID: 4226698957846357039, guid: 84087e7f18b802e499b83f07857945ee, type: 3}
       LocalisationSheets:
       - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
       - {fileID: 11400000, guid: 9a993b4a988e2c445b1e08ec025f3e5f, type: 2}
+      LocationName: Locations/TestField2

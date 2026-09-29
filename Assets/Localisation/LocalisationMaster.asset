@@ -18,5 +18,8 @@ MonoBehaviour:
   SheetAssets:
   - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
   - {fileID: 11400000, guid: 34dd1c8d7a5bcdc489a4e817f51c8da9, type: 2}
+  - {fileID: 11400000, guid: f1a8c9abe30ef4ed280d372c619effa2, type: 2}
+  - {fileID: 11400000, guid: 477ab40eb805748579ea6a867ce01143, type: 2}
   - {fileID: 11400000, guid: f359084be1ae7ce459792550d36b0976, type: 2}
+  - {fileID: 11400000, guid: 22fbbdc9b44a940e68cb077747dcfe5b, type: 2}
   - {fileID: 11400000, guid: 9a993b4a988e2c445b1e08ec025f3e5f, type: 2}

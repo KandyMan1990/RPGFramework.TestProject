@@ -73,3 +73,21 @@ MonoBehaviour:
     m_Offset: 7
     m_Description: Set when a save is loaded, and cleared once the player is back where it was made. Its default is not used
     m_DefaultValue: 0
+  - m_Name: SaveEnabled
+    m_Bank: 1
+    m_Width: 0
+    m_Offset: 8
+    m_Description: 'Whether the player can save from the party menu. Its default is the game''s policy: false to save only where a script allows it, true to save anywhere'
+    m_DefaultValue: 0
+  - m_Name: PlayTime
+    m_Bank: 0
+    m_Width: 6
+    m_Offset: 36
+    m_Description: How long the playthrough has been played, in whole seconds. Counted by the framework
+    m_DefaultValue: 0
+  - m_Name: LocationName
+    m_Bank: 0
+    m_Width: 8
+    m_Offset: 40
+    m_Description: The place the player is in, as the hash of its localisation key. Written by the module the player is in
+    m_DefaultValue: 0
