@@ -39,7 +39,7 @@ namespace Test
         private DialogueWindowUiProvider m_DialogueWindowUiProvider;
 
         [SerializeField]
-        private VariableMapMemoryServiceArgs m_MemoryServiceArgs;
+        private VariableMapAsset m_VariableMap;
 
         [SerializeField]
         private UniversalRendererData m_UniversalRendererData;
@@ -78,9 +78,9 @@ namespace Test
 
             container.BindSingletonFromInstance<IDialogueWindowUiProvider>(m_DialogueWindowUiProvider);
 
-            container.BindSingletonFromInstance<IMemoryServiceArgs>(m_MemoryServiceArgs);
-            container.BindSingletonFromInstance<ITempMemoryArgs>(m_MemoryServiceArgs);
-            container.BindSingletonFromInstance<IVariableMap>(m_MemoryServiceArgs.VariableMap);
+            container.BindSingletonFromInstance<IMemoryServiceArgs>(m_VariableMap);
+            container.BindSingletonFromInstance<ITempMemoryArgs>(m_VariableMap);
+            container.BindSingletonFromInstance<IVariableMap>(m_VariableMap);
 
             container.BindSingleton<IBattleCompleteStateProvider, BattleCompleteStateProvider>();
 
