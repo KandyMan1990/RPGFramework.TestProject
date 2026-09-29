@@ -366,9 +366,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21dc0e2425a1418cae022ad447c36590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Core::RPGFramework.Core.Input.InputAdapter
+  m_Movement: {fileID: 0}
   m_Primary: {fileID: 604768482}
   m_Secondary: {fileID: 752957352}
-  m_Tertiary: {fileID: 0}
+  m_Tertiary: {fileID: 4978126274567800861, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_Quaternary: {fileID: 0}
   m_ShoulderLeft: {fileID: 0}
   m_ShoulderRight: {fileID: 0}

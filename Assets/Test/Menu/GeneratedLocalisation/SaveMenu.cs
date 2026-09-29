@@ -15,6 +15,8 @@
 			public const string NEW_SAVE = @"SaveMenu/New_Save";
 			///<summary>Overwrite_Question</summary>
 			public const string OVERWRITE_QUESTION = @"SaveMenu/Overwrite_Question";
+			///<summary>Delete_Question</summary>
+			public const string DELETE_QUESTION = @"SaveMenu/Delete_Question";
 		}
 	}
 }

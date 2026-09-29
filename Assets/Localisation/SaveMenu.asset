@@ -21,3 +21,4 @@ MonoBehaviour:
   - SaveMenu/Load_Title
   - SaveMenu/New_Save
   - SaveMenu/Overwrite_Question
+  - SaveMenu/Delete_Question
