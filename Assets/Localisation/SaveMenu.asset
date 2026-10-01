@@ -23,3 +23,4 @@ MonoBehaviour:
   - SaveMenu/Overwrite_Question
   - SaveMenu/Delete_Question
   - SaveMenu/Newer_Version
+  - SaveMenu/Damaged

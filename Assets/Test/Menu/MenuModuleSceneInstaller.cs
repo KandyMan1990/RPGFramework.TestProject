@@ -98,6 +98,7 @@ namespace Test.Menu
                                                                                               Localisation.LocalisationKeys.SaveMenu.OVERWRITE_QUESTION,
                                                                                               Localisation.LocalisationKeys.SaveMenu.DELETE_QUESTION,
                                                                                               Localisation.LocalisationKeys.SaveMenu.NEWER_VERSION,
+                                                                                              Localisation.LocalisationKeys.SaveMenu.DAMAGED,
                                                                                               Test.Localisation.LocalisationKeys.Generic.YES,
                                                                                               Test.Localisation.LocalisationKeys.Generic.NO,
                                                                                               saveSheetNames);

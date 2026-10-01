@@ -19,6 +19,8 @@
 			public const string DELETE_QUESTION = @"SaveMenu/Delete_Question";
 			///<summary>Newer_Version</summary>
 			public const string NEWER_VERSION = @"SaveMenu/Newer_Version";
+			///<summary>Damaged</summary>
+			public const string DAMAGED = @"SaveMenu/Damaged";
 		}
 	}
 }
