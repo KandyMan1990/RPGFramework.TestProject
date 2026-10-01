@@ -17,6 +17,8 @@
 			public const string OVERWRITE_QUESTION = @"SaveMenu/Overwrite_Question";
 			///<summary>Delete_Question</summary>
 			public const string DELETE_QUESTION = @"SaveMenu/Delete_Question";
+			///<summary>Newer_Version</summary>
+			public const string NEWER_VERSION = @"SaveMenu/Newer_Version";
 		}
 	}
 }

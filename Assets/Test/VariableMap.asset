@@ -13,140 +13,171 @@ MonoBehaviour:
   m_Name: VariableMap
   m_EditorClassIdentifier: RPGFramework.Core::RPGFramework.Core.Memory.VariableMapAsset
   m_Variables:
-  - m_Name: CurrentModule
+  - m_Id: 1
+    m_Name: CurrentModule
     m_Bank: 0
     m_Width: 2
     m_Count: 1
     m_Fields: []
+    m_LastFieldId: 0
     m_Offset: 1
     m_Description: The module the playthrough is in. Its default is the module a new game begins in
     m_DefaultValue: 0
     m_ElementDefaults: []
-  - m_Name: CurrentField
+  - m_Id: 2
+    m_Name: CurrentField
     m_Bank: 0
     m_Width: 8
     m_Count: 1
     m_Fields: []
+    m_LastFieldId: 0
     m_Offset: 8
     m_Description: The field the player is in. Its default is the field a new game begins in
     m_DefaultValue: 10519967275879140533
     m_ElementDefaults: []
-  - m_Name: CurrentSpawn
+  - m_Id: 3
+    m_Name: CurrentSpawn
     m_Bank: 0
     m_Width: 5
     m_Count: 1
     m_Fields: []
+    m_LastFieldId: 0
     m_Offset: 16
     m_Description: The spawn point the player entered the current field by. Its default is where a new game begins
     m_DefaultValue: 0
     m_ElementDefaults: []
-  - m_Name: TestIntroCutscene
+  - m_Id: 4
+    m_Name: TestIntroCutscene
     m_Bank: 0
     m_Width: 0
     m_Count: 1
     m_Fields: []
+    m_LastFieldId: 0
     m_Offset: 0
     m_Description: Triggers opening cutscene if unset
     m_DefaultValue: 0
     m_ElementDefaults: []
-  - m_Name: TestChoiceAnswer
+  - m_Id: 5
+    m_Name: TestChoiceAnswer
     m_Bank: 1
     m_Width: 2
     m_Count: 1
     m_Fields: []
+    m_LastFieldId: 0
     m_Offset: 6
     m_Description: Which answer the choice in TestField2 picked
     m_DefaultValue: 0
     m_ElementDefaults: []
-  - m_Name: PlayerPositionX
+  - m_Id: 6
+    m_Name: PlayerPositionX
     m_Bank: 0
     m_Width: 9
     m_Count: 1
     m_Fields: []
+    m_LastFieldId: 0
     m_Offset: 20
     m_Description: Where the player stood when the game was saved. Its default is not used
     m_DefaultValue: 0
     m_ElementDefaults: []
-  - m_Name: PlayerPositionY
+  - m_Id: 7
+    m_Name: PlayerPositionY
     m_Bank: 0
     m_Width: 9
     m_Count: 1
     m_Fields: []
+    m_LastFieldId: 0
     m_Offset: 24
     m_Description: Where the player stood when the game was saved. Its default is not used
     m_DefaultValue: 0
     m_ElementDefaults: []
-  - m_Name: PlayerPositionZ
+  - m_Id: 8
+    m_Name: PlayerPositionZ
     m_Bank: 0
     m_Width: 9
     m_Count: 1
     m_Fields: []
+    m_LastFieldId: 0
     m_Offset: 28
     m_Description: Where the player stood when the game was saved. Its default is not used
     m_DefaultValue: 0
     m_ElementDefaults: []
-  - m_Name: PlayerFacing
+  - m_Id: 9
+    m_Name: PlayerFacing
     m_Bank: 0
     m_Width: 9
     m_Count: 1
     m_Fields: []
+    m_LastFieldId: 0
     m_Offset: 32
     m_Description: Which way the player faced when the game was saved, in degrees around the field's up axis. Its default is not used
     m_DefaultValue: 0
     m_ElementDefaults: []
-  - m_Name: LoadedFromSave
+  - m_Id: 10
+    m_Name: LoadedFromSave
     m_Bank: 1
     m_Width: 0
     m_Count: 1
     m_Fields: []
+    m_LastFieldId: 0
     m_Offset: 7
     m_Description: Set when a save is loaded, and cleared once the player is back where it was made. Its default is not used
     m_DefaultValue: 0
     m_ElementDefaults: []
-  - m_Name: SaveEnabled
+  - m_Id: 11
+    m_Name: SaveEnabled
     m_Bank: 1
     m_Width: 0
     m_Count: 1
     m_Fields: []
+    m_LastFieldId: 0
     m_Offset: 8
     m_Description: 'Whether the player can save from the party menu. Its default is the game''s policy: false to save only where a script allows it, true to save anywhere'
     m_DefaultValue: 0
     m_ElementDefaults: []
-  - m_Name: PlayTime
+  - m_Id: 12
+    m_Name: PlayTime
     m_Bank: 0
     m_Width: 6
     m_Count: 1
     m_Fields: []
+    m_LastFieldId: 0
     m_Offset: 36
     m_Description: How long the playthrough has been played, in whole seconds. Counted by the framework
     m_DefaultValue: 0
     m_ElementDefaults: []
-  - m_Name: LocationName
+  - m_Id: 13
+    m_Name: LocationName
     m_Bank: 0
     m_Width: 8
     m_Count: 1
     m_Fields: []
+    m_LastFieldId: 0
     m_Offset: 40
     m_Description: The place the player is in, as the hash of its localisation key. Written by the module the player is in
     m_DefaultValue: 0
     m_ElementDefaults: []
-  - m_Name: Characters
+  - m_Id: 14
+    m_Name: Characters
     m_Bank: 0
     m_Width: 0
     m_Count: 3
     m_Fields:
-    - m_Name: hp
+    - m_Id: 1
+      m_Name: hp
       m_Width: 4
       m_Count: 1
       m_DefaultValue: 500
-    - m_Name: level
+    - m_Id: 2
+      m_Name: level
       m_Width: 2
       m_Count: 1
       m_DefaultValue: 1
-    - m_Name: stats
+    - m_Id: 3
+      m_Name: stats
       m_Width: 2
       m_Count: 4
       m_DefaultValue: 10
+    m_LastFieldId: 3
     m_Offset: 48
     m_Description: The characters
     m_DefaultValue: 0
@@ -223,3 +254,4 @@ MonoBehaviour:
       m_Field: stats
       m_FieldIndex: 3
       m_Value: 10
+  m_LastVariableId: 14
