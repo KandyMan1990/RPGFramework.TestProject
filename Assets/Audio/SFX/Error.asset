@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: RPGFramework.Audio::RPGFramework.Audio.Sfx.SfxAsset
   m_Tracks:
   - m_AudioClip: {fileID: 8300000, guid: 2d6c6ca7b5855b945b66f6c6e2306d79, type: 3}
-    m_ReverbSendLevel: 0.5
+    m_ReverbSendLevel: 1
   m_Events: []
   m_Loop: 0
   m_LoopStart: 0

@@ -20,13 +20,13 @@ MonoBehaviour:
   m_Loop: 1
   m_Tracks:
   - m_AudioClip: {fileID: 8300000, guid: c93f6cb4f4df6214dbbda31b1f7d4671, type: 3}
-    m_ReverbSendLevel: 0.3
+    m_ReverbSendLevel: 1
   - m_AudioClip: {fileID: 8300000, guid: 170d98c2b0e6ba4498c551c19537546e, type: 3}
-    m_ReverbSendLevel: 0.5
+    m_ReverbSendLevel: 1
   - m_AudioClip: {fileID: 8300000, guid: 2100fb028f6b77b4bb063e955acdd535, type: 3}
-    m_ReverbSendLevel: 0.7
+    m_ReverbSendLevel: 1
   - m_AudioClip: {fileID: 8300000, guid: 360e11fe379096e4b9733963fbc382e4, type: 3}
-    m_ReverbSendLevel: 0.8
+    m_ReverbSendLevel: 1
   m_States:
   - m_Name: Default
     m_ActiveStems: 01010101y
