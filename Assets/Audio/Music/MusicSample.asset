@@ -30,3 +30,8 @@ MonoBehaviour:
   m_States:
   - m_Name: Default
     m_ActiveStems: 01010101y
+  m_Reverb:
+    m_SetPreset: 1
+    m_Preset: 4
+    m_SetVolume: 1
+    m_Volume: 0.31496063
