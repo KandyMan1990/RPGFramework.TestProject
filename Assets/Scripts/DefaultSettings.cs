@@ -5,16 +5,16 @@ using RPGFramework.Localisation;
 
 namespace Test
 {
-    internal class SettingsFactory : ISettingsFactory
+    internal class DefaultSettings : IDefaultSettings
     {
         private readonly ILocalisationService m_LocalisationService;
 
-        public SettingsFactory(ILocalisationService localisationService)
+        public DefaultSettings(ILocalisationService localisationService)
         {
             m_LocalisationService = localisationService;
         }
 
-        void ISettingsFactory.CreateDefaultSettings(ISettingsService settingsService)
+        void IDefaultSettings.Populate(ISettingsService settingsService)
         {
             ConfigData_V1 configData = new ConfigData_V1
                                        {
@@ -26,7 +26,7 @@ namespace Test
 
             configData.SetLanguage(m_LocalisationService.CurrentLanguage);
 
-            settingsService.SetSection(FrameworkSettingsSectionDatabase.CONFIG_DATA, new SaveSection<ConfigData_V1>(Versions.GLOBAL_CONFIG, configData));
+            settingsService.SetSection(FrameworkSettingsSections.CONFIG_DATA, new SaveSection<ConfigData_V1>(Versions.GLOBAL_CONFIG, configData));
         }
     }
 }

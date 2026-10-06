@@ -14,7 +14,7 @@ namespace Test
         {
             async Task Run()
             {
-                ICoreModule entryPoint = await CoreModuleBuilder.Create(m_GlobalContainer, SplashScreenConstants.MODULE_ID);
+                ICoreModule entryPoint = await CoreModuleFactory.Create(m_GlobalContainer, SplashScreenConstants.MODULE_ID);
 
                 await entryPoint.RequestModuleChangeAsync();
             }

@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using RPGFramework.Audio;
 using RPGFramework.Audio.Music;
 using RPGFramework.Audio.Sfx;
-using RPGFramework.Battle.SharedTypes.Providers;
+using RPGFramework.Battle.SharedTypes.Stores;
 using RPGFramework.Core;
 using RPGFramework.Core.Audio;
 using RPGFramework.Core.Databases;
@@ -12,9 +12,9 @@ using RPGFramework.Core.Rendering;
 using RPGFramework.Core.Settings;
 using RPGFramework.DI;
 using RPGFramework.Field;
-using RPGFramework.Field.SharedTypes.Providers;
+using RPGFramework.Field.SharedTypes.Stores;
 using RPGFramework.Localisation;
-using RPGFramework.Menu.SharedTypes.Providers;
+using RPGFramework.Menu.SharedTypes.Stores;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Rendering.Universal;
@@ -36,7 +36,7 @@ namespace Test
         private AudioMixerGroup[] m_SfxMixerGroups;
 
         [SerializeField]
-        private DialogueWindowUiProvider m_DialogueWindowUiProvider;
+        private DialogueWindowUIProvider m_DialogueWindowUIProvider;
 
         [SerializeField]
         private VariableMapAsset m_VariableMap;
@@ -66,23 +66,23 @@ namespace Test
 
             container.BindSingletonFromInstance<IScreenFadeServiceConfig>(m_ScreenFadeServiceConfig);
 
-            container.BindSingleton<IBattleArgsProvider, BattleArgsProvider>();
+            container.BindSingleton<IBattleArgsStore, BattleArgsStore>();
             container.BindSingleton<IFieldArgsStore, VariableFieldArgsStore>();
-            container.BindSingleton<IMenuArgsProvider, MenuArgsProvider>();
+            container.BindSingleton<IMenuArgsStore, MenuArgsStore>();
 
             container.BindSingletonFromInstance<IAudioIntentPlayer>(new GameAudioIntentPlayer(sfxPlayer, GameAudioIntentMaps.Default));
 
-            container.BindSingleton<ISettingsFactory, SettingsFactory>();
+            container.BindSingleton<IDefaultSettings, DefaultSettings>();
             container.BindSingleton<IModuleDatabase, ModuleDatabase>();
             container.BindSingleton<IFieldResumeDataStore, FieldResumeDataStore>();
 
-            container.BindSingletonFromInstance<IDialogueWindowUiProvider>(m_DialogueWindowUiProvider);
+            container.BindSingletonFromInstance<IDialogueWindowUIProvider>(m_DialogueWindowUIProvider);
 
             container.BindSingletonFromInstance<IMemoryServiceArgs>(m_VariableMap);
             container.BindSingletonFromInstance<ITempMemoryArgs>(m_VariableMap);
             container.BindSingletonFromInstance<IVariableMap>(m_VariableMap);
 
-            container.BindSingleton<IBattleCompleteStateProvider, BattleCompleteStateProvider>();
+            container.BindSingleton<IBattleCompleteStateStore, BattleCompleteStateStore>();
 
             container.BindSingleton<ISceneDatabase, SceneDatabase>();
         }

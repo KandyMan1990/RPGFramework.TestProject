@@ -11,14 +11,14 @@ namespace Test.Field
 {
 	internal class FieldDatabase : IFieldDatabase
 	{
-		private readonly Dictionary<ulong, FieldDatabaseAsset> m_FieldsByNameHash;
+		private readonly Dictionary<ulong, FieldDefinition> m_FieldsByNameHash;
 
 		internal FieldDatabase()
 		{
 			string assetBundlesPath = Path.Combine(Application.streamingAssetsPath, "Field");
-			m_FieldsByNameHash = new Dictionary<ulong, FieldDatabaseAsset>(3)
+			m_FieldsByNameHash = new Dictionary<ulong, FieldDefinition>(3)
 			{
-				[Fnv1a64.Hash("TestField0")] = new FieldDatabaseAsset("TestField0", Path.Combine(assetBundlesPath, "testfield0"),
+				[Fnv1a64.Hash("TestField0")] = new FieldDefinition("TestField0", Path.Combine(assetBundlesPath, "testfield0"),
 					new string[]
 					{
 						"Generic",
@@ -26,14 +26,14 @@ namespace Test.Field
 					},
 					0UL
 				),
-				[Fnv1a64.Hash("TestField1")] = new FieldDatabaseAsset("TestField1", Path.Combine(assetBundlesPath, "testfield1"),
+				[Fnv1a64.Hash("TestField1")] = new FieldDefinition("TestField1", Path.Combine(assetBundlesPath, "testfield1"),
 					new string[]
 					{
 						"Generic",
 					},
 					0UL
 				),
-				[Fnv1a64.Hash("TestField2")] = new FieldDatabaseAsset("TestField2", Path.Combine(assetBundlesPath, "testfield2"),
+				[Fnv1a64.Hash("TestField2")] = new FieldDefinition("TestField2", Path.Combine(assetBundlesPath, "testfield2"),
 					new string[]
 					{
 						"Generic",
@@ -44,7 +44,7 @@ namespace Test.Field
 			};
 		}
 
-		FieldDatabaseAsset IFieldDatabase.Get(ulong fieldNameHash)
+		FieldDefinition IFieldDatabase.Get(ulong fieldNameHash)
 		{
 			return m_FieldsByNameHash[fieldNameHash];
 		}
