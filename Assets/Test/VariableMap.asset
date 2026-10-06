@@ -254,4 +254,15 @@ MonoBehaviour:
       m_Field: stats
       m_FieldIndex: 3
       m_Value: 10
-  m_LastVariableId: 14
+  - m_Id: 15
+    m_Name: MusicVolume
+    m_Bank: 0
+    m_Width: 9
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 4
+    m_Description: The volume the field plays its music at, 0 to 1, as SET_MUSIC_VOLUME and FADE_MUSIC_VOLUME leave it. Its default is a new game's
+    m_DefaultValue: 1065353216
+    m_ElementDefaults: []
+  m_LastVariableId: 15
