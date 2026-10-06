@@ -10,15 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d8f647ff9eec994c97f47850de96982, type: 3}
-  m_Name: Generic
+  m_Name: Locations
   m_EditorClassIdentifier: RPGFramework.Localisation.Editor::RPGFramework.Localisation.Editor.LocalisationSheetAsset
-  SheetName: Generic
-  Gid: 1415532938
-  GeneratedOutputFolder: Assets/Scripts/GeneratedLocalisation
-  NamespaceOverride: 
+  GenerateKeysClass: 1
+  KeysClassFolderOverride: Assets/Test/Menu/GeneratedLocalisation
+  NamespaceOverride: Test.Menu.Localisation
   m_Keys:
-  - Generic/Game_Title
-  - Generic/Settings
-  - Generic/PlayerName
-  - Generic/Yes
-  - Generic/No
+  - Locations/TestField0
+  - Locations/TestField1
+  - Locations/TestField2

@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d8f647ff9eec994c97f47850de96982, type: 3}
-  m_Name: BeginMenu
+  m_Name: PartyMenu
   m_EditorClassIdentifier: RPGFramework.Localisation.Editor::RPGFramework.Localisation.Editor.LocalisationSheetAsset
-  SheetName: BeginMenu
-  Gid: 986472477
-  GeneratedOutputFolder: Assets/Test/Menu/GeneratedLocalisation
+  GenerateKeysClass: 1
+  KeysClassFolderOverride: Assets/Test/Menu/GeneratedLocalisation
   NamespaceOverride: Test.Menu.Localisation
   m_Keys:
-  - BeginMenu/New_Game
-  - BeginMenu/Load_Game
-  - BeginMenu/Quit_Game
+  - PartyMenu/Save
+  - PartyMenu/Time

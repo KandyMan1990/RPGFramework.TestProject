@@ -10,17 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d8f647ff9eec994c97f47850de96982, type: 3}
-  m_Name: SaveMenu
+  m_Name: BeginMenu
   m_EditorClassIdentifier: RPGFramework.Localisation.Editor::RPGFramework.Localisation.Editor.LocalisationSheetAsset
-  SheetName: SaveMenu
-  Gid: 1798822886
-  GeneratedOutputFolder: Assets/Test/Menu/GeneratedLocalisation
+  GenerateKeysClass: 1
+  KeysClassFolderOverride: Assets/Test/Menu/GeneratedLocalisation
   NamespaceOverride: Test.Menu.Localisation
   m_Keys:
-  - SaveMenu/Save_Title
-  - SaveMenu/Load_Title
-  - SaveMenu/New_Save
-  - SaveMenu/Overwrite_Question
-  - SaveMenu/Delete_Question
-  - SaveMenu/Newer_Version
-  - SaveMenu/Damaged
+  - BeginMenu/New_Game
+  - BeginMenu/Load_Game
+  - BeginMenu/Quit_Game

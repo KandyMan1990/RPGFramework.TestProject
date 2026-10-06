@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: RPGFramework.Localisation.Editor::RPGFramework.Localisation.Editor.LocalisationMaster
   SheetId: 1R9kxWgY2cfwkjbftb_JPVQAgiBG1UrCZM4ZOA-pAfNo
   DefaultNamespace: Test.Localisation
+  DefaultKeysClassFolder: Assets/Scripts/GeneratedLocalisation
   Version: 1
   SheetAssets:
   - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}

@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d8f647ff9eec994c97f47850de96982, type: 3}
-  m_Name: Locations
+  m_Name: ConfigMenu
   m_EditorClassIdentifier: RPGFramework.Localisation.Editor::RPGFramework.Localisation.Editor.LocalisationSheetAsset
-  SheetName: Locations
-  Gid: 203257858
-  GeneratedOutputFolder: Assets/Test/Menu/GeneratedLocalisation
+  GenerateKeysClass: 1
+  KeysClassFolderOverride: Assets/Test/Menu/GeneratedLocalisation
   NamespaceOverride: Test.Menu.Localisation
   m_Keys:
-  - Locations/TestField0
-  - Locations/TestField1
-  - Locations/TestField2
+  - ConfigMenu/Language_Title
+  - ConfigMenu/Language
+  - ConfigMenu/Controls
+  - ConfigMenu/Music_Volume
+  - ConfigMenu/Sfx_Volume
+  - ConfigMenu/Battle_Message_Speed
+  - ConfigMenu/Field_Message_Speed

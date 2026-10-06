@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d8f647ff9eec994c97f47850de96982, type: 3}
   m_Name: TestField
   m_EditorClassIdentifier: RPGFramework.Localisation.Editor::RPGFramework.Localisation.Editor.LocalisationSheetAsset
-  SheetName: TestField
-  Gid: 1544136321
-  GeneratedOutputFolder: Assets/Test/Field/GeneratedLocalisation
+  GenerateKeysClass: 0
+  KeysClassFolderOverride: Assets/Test/Field/GeneratedLocalisation
   NamespaceOverride: Test.Field.Localisation
   m_Keys:
   - TestField/Location
