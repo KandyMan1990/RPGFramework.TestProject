@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: RPGFramework.Audio::RPGFramework.Audio.Music.MusicAssetProvider
   m_MusicAssets:
   - {fileID: 11400000, guid: 5be024c730f3cd04da94dd1cb7e00bdc, type: 2}
+  - {fileID: 11400000, guid: 40e68dfb1987d4d9091f3d63c0c9c79d, type: 2}

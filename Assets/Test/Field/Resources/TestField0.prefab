@@ -495,7 +495,7 @@ MonoBehaviour:
       m_Slot: 0
     - m_Type: 5
       m_Name: 
-      m_Text: 'JUMP_TO_MAP TestField1 0
+      m_Text: 'JUMP_TO_MAP TestField2 0
 
         RETURN'
       m_Slot: 0

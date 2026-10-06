@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 314535403b2949fba48cc97b81e469d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntities
+  m_Dimension: 0
   m_Entities:
   - m_EntityId: 0
     m_Name: Entity0 (PlayMusic)
@@ -143,9 +144,10 @@ MonoBehaviour:
     m_Scripts:
     - m_Type: 0
       m_Name: 
-      m_Text: 'PLAY_MUSIC MusicSample Default
+      m_Text: 'CROSSFADE_MUSIC "MusicSample Sparse" Default 2 1
 
         RETURN'
+      m_Slot: 0
   - m_EntityId: 1
     m_Name: Entity1 (PlayerCharacter)
     m_Body: {fileID: 6354893702813436339}
@@ -157,6 +159,7 @@ MonoBehaviour:
         VISIBILITY true
 
         RETURN'
+      m_Slot: 0
     - m_Type: 1
       m_Name: 
       m_Text: 'LOCK_INPUT true
@@ -166,6 +169,7 @@ MonoBehaviour:
         LOCK_INPUT false
 
         RETURN'
+      m_Slot: 0
   - m_EntityId: 2
     m_Name: Entity2 (AskPlayerChoice)
     m_Body: {fileID: 0}
@@ -173,6 +177,7 @@ MonoBehaviour:
     - m_Type: 0
       m_Name: 
       m_Text: RETURN
+      m_Slot: 0
     - m_Type: 1
       m_Name: 
       m_Text: 'WAIT_SECONDS 3.0
@@ -182,8 +187,10 @@ MonoBehaviour:
         ASK_PLAYER_TO_MAKE_A_CHOICE $TestChoiceAnswer 0 TestField/Test TestField/Location Generic/Settings Generic/PlayerName
 
         RETURN'
+      m_Slot: 0
   m_FormatVersion: 0
   m_Compiled: []
+  m_AnimationNames: []
 --- !u!1 &5709288289742801716
 GameObject:
   m_ObjectHideFlags: 0
