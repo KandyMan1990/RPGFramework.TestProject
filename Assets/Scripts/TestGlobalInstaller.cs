@@ -26,6 +26,10 @@ namespace Test
     internal class TestGlobalInstaller : GlobalInstallerBase
     {
         [SerializeField]
+        [Tooltip("Play music and sound from the bundles each provider's Build bundles writes, rather than from the providers. Build them first")]
+        private bool m_AudioFromBundles;
+
+        [SerializeField]
         private MusicAssetProvider m_MusicProvider;
 
         [SerializeField]
@@ -54,12 +58,12 @@ namespace Test
             container.BindSingleton<ILocalisationService, LocalisationService>().AsNonLazy();
 
             ISfxPlayer sfxPlayer = new UnitySfxPlayer();
-            sfxPlayer.SetSfxAssetProvider(m_SfxProvider);
+            sfxPlayer.SetSfxAssetProvider(m_AudioFromBundles ? new BundledSfxAssetProvider() : m_SfxProvider);
             sfxPlayer.SetStemMixerGroups(m_SfxMixerGroups);
             container.BindSingletonFromInstance(sfxPlayer);
 
             IMusicPlayer musicPlayer = new UnityMusicPlayer();
-            musicPlayer.SetMusicAssetProvider(m_MusicProvider);
+            musicPlayer.SetMusicAssetProvider(m_AudioFromBundles ? new BundledMusicAssetProvider() : m_MusicProvider);
             musicPlayer.SetStemMixerGroups(m_MusicMixerGroups);
             container.BindSingletonFromInstance(musicPlayer);
 

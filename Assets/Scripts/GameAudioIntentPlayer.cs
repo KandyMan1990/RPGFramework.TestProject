@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using RPGFramework.Audio;
+using RPGFramework.Core;
 using RPGFramework.Core.Audio;
 
 namespace Test
@@ -24,7 +25,7 @@ namespace Test
                 return;
             }
 
-            m_SfxPlayer.Play(sfxId);
+            m_SfxPlayer.PlayAsync(sfxId).FireAndForget();
         }
     }
 }
