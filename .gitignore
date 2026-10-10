@@ -106,3 +106,11 @@ InitTestScene*.unity*
 # Field export writes compiled copies of each field here and deletes them after the bundle build
 /Assets/RPGFrameworkFieldBuild/
 /Assets/RPGFrameworkFieldBuild.meta
+
+# Bundles rebuilt from the project: the Field and Battle exports, and Build bundles on the audio providers
+/Assets/StreamingAssets/Audio/
+/Assets/StreamingAssets/Audio.meta
+/Assets/StreamingAssets/Battle/
+/Assets/StreamingAssets/Battle.meta
+/Assets/StreamingAssets/Field/
+/Assets/StreamingAssets/Field.meta
