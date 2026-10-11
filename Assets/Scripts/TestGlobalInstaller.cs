@@ -11,6 +11,7 @@ using RPGFramework.Core.Dialogue.UI;
 using RPGFramework.Core.Memory;
 using RPGFramework.Core.Rendering;
 using RPGFramework.Core.Settings;
+using RPGFramework.Core.SharedTypes;
 using RPGFramework.DI;
 using RPGFramework.Field;
 using RPGFramework.Field.SharedTypes.Stores;
@@ -80,6 +81,7 @@ namespace Test
 
             container.BindSingleton<IDefaultSettings, DefaultSettings>();
             container.BindSingleton<IModuleDatabase, ModuleDatabase>();
+            container.BindSingleton<IModuleRouter, TestModuleRouter>();
             container.BindSingleton<IFieldResumeDataStore, FieldResumeDataStore>();
 
             container.BindSingletonFromInstance<IDialogueWindowUIProvider>(m_DialogueWindowUIProvider);

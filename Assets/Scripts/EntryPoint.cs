@@ -16,7 +16,7 @@ namespace Test
             {
                 ICoreModule entryPoint = await CoreModuleFactory.Create(m_GlobalContainer, SplashScreenConstants.MODULE_ID);
 
-                await entryPoint.RequestModuleChangeAsync();
+                await entryPoint.StartAsync();
             }
             
             Run().FireAndForget();

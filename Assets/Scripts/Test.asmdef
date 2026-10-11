@@ -14,6 +14,7 @@
         "RPGFramework.Localisation",
         "RPGFramework.Menu",
         "RPGFramework.Menu.SharedTypes",
+        "RPGFramework.ModuleRouter",
         "Unity.Mathematics",
         "Unity.RenderPipelines.Universal.Runtime",
         "Test.SplashScreen"
