@@ -1,3 +1,5 @@
+using RPGFramework.Audio;
+using RPGFramework.Battle.SharedTypes.Stores;
 using RPGFramework.Core.SharedTypes;
 using RPGFramework.Core.Store;
 using RPGFramework.Menu.SharedTypes.Constants;
@@ -9,7 +11,11 @@ namespace Test
     /// <summary>The framework's routes, and the splash screen's: on to the title menu.</summary>
     internal sealed class TestModuleRouter : DefaultModuleRouter
     {
-        public TestModuleRouter(ICurrentModuleStore currentModuleStore) : base(currentModuleStore)
+        public TestModuleRouter(ICurrentModuleStore currentModuleStore,
+                                IBattleArgsStore    battleArgsStore,
+                                IBattleMusicStore   battleMusicStore,
+                                IPausedMusicStore   pausedMusicStore,
+                                IMusicPlayer        musicPlayer) : base(currentModuleStore, battleArgsStore, battleMusicStore, pausedMusicStore, musicPlayer)
         {
         }
 

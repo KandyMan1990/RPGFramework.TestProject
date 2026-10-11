@@ -144,7 +144,7 @@ MonoBehaviour:
     m_Scripts:
     - m_Type: 0
       m_Name: 
-      m_Text: 'CROSSFADE_MUSIC "MusicSample Sparse" Default 2 1
+      m_Text: 'CROSSFADE_MUSIC MusicSample Default 2 1
 
         RETURN'
       m_Slot: 0

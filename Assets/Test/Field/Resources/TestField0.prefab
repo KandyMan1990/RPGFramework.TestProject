@@ -613,7 +613,7 @@ MonoBehaviour:
       m_Slot: 0
     - m_Type: 3
       m_Name: 
-      m_Text: 'SET_BATTLE_MODE_OPTIONS 0 3 129 15
+      m_Text: 'SET_BATTLE_MODE_OPTIONS 0 3 0 15
 
         START_BATTLE
 

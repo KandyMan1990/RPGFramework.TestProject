@@ -262,7 +262,18 @@ MonoBehaviour:
     m_Fields: []
     m_LastFieldId: 0
     m_Offset: 4
-    m_Description: The volume the field plays its music at, 0 to 1, as SET_MUSIC_VOLUME and FADE_MUSIC_VOLUME leave it. Its default is a new game's
+    m_Description: The volume the music plays at, 0 to 1, as the scripts last set it. Its default is a new game's
     m_DefaultValue: 1065353216
     m_ElementDefaults: []
-  m_LastVariableId: 15
+  - m_Id: 16
+    m_Name: BattleMusic
+    m_Bank: 0
+    m_Width: 8
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 72
+    m_Description: The track every battle plays, as its music asset's name hash, until a script sets another. Its default is a new game's; zero plays none
+    m_DefaultValue: 9522339296470591095
+    m_ElementDefaults: []
+  m_LastVariableId: 16
