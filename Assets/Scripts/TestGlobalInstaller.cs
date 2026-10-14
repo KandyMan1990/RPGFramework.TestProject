@@ -74,7 +74,9 @@ namespace Test
             container.BindSingletonFromInstance<IScreenFadeServiceConfig>(m_ScreenFadeServiceConfig);
 
             container.BindSingleton<IBattleArgsStore, BattleArgsStore>();
-            container.BindSingleton<IFieldArgsStore, VariableFieldArgsStore>();
+            container.BindSingleton<IBattleModeStore, BattleModeStore>();
+            container.BindSingleton<IFieldArgsStore, FieldArgsStore>();
+            container.BindSingleton<IGameOverFieldStore, GameOverFieldStore>();
             container.BindSingleton<IMenuArgsStore, MenuArgsStore>();
 
             container.BindSingletonFromInstance<IAudioIntentPlayer>(new GameAudioIntentPlayer(sfxPlayer, GameAudioIntentMaps.Default));

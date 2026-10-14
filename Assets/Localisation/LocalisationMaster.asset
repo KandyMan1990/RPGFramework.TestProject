@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d462923d374abf45bf8104bbe84145a, type: 3}
   m_Name: LocalisationMaster
   m_EditorClassIdentifier: RPGFramework.Localisation.Editor::RPGFramework.Localisation.Editor.LocalisationMaster
+  Access: 0
   SheetId: 1R9kxWgY2cfwkjbftb_JPVQAgiBG1UrCZM4ZOA-pAfNo
+  WebAppUrl: 
   DefaultNamespace: Test.Localisation
   DefaultKeysClassFolder: Assets/Scripts/GeneratedLocalisation
   Version: 1

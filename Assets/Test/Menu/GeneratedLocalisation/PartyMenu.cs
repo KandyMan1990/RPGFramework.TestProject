@@ -7,6 +7,8 @@
 		{
 			///<summary>PartyMenu</summary>
 			public const string SHEET_NAME = @"PartyMenu";
+			///<summary>Load</summary>
+			public const string LOAD = @"PartyMenu/Load";
 			///<summary>Save</summary>
 			public const string SAVE = @"PartyMenu/Save";
 			///<summary>Time</summary>

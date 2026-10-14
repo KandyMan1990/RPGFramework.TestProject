@@ -2,7 +2,9 @@ using RPGFramework.Audio;
 using RPGFramework.Battle.SharedTypes.Stores;
 using RPGFramework.Core.SharedTypes;
 using RPGFramework.Core.Store;
+using RPGFramework.Field.SharedTypes.Stores;
 using RPGFramework.Menu.SharedTypes.Constants;
+using RPGFramework.Menu.SharedTypes.Stores;
 using RPGFramework.ModuleRouter;
 using Test.SplashScreen.Constants;
 
@@ -11,11 +13,25 @@ namespace Test
     /// <summary>The framework's routes, and the splash screen's: on to the title menu.</summary>
     internal sealed class TestModuleRouter : DefaultModuleRouter
     {
-        public TestModuleRouter(ICurrentModuleStore currentModuleStore,
-                                IBattleArgsStore    battleArgsStore,
-                                IBattleMusicStore   battleMusicStore,
-                                IPausedMusicStore   pausedMusicStore,
-                                IMusicPlayer        musicPlayer) : base(currentModuleStore, battleArgsStore, battleMusicStore, pausedMusicStore, musicPlayer)
+        public TestModuleRouter(ICurrentModuleStore       currentModuleStore,
+                                IBattleArgsStore          battleArgsStore,
+                                IBattleModeStore          battleModeStore,
+                                IBattleCompleteStateStore battleCompleteStateStore,
+                                IBattleMusicStore         battleMusicStore,
+                                IPausedMusicStore         pausedMusicStore,
+                                IFieldArgsStore           fieldArgsStore,
+                                IGameOverFieldStore       gameOverFieldStore,
+                                IMenuArgsStore            menuArgsStore,
+                                IMusicPlayer              musicPlayer) : base(currentModuleStore,
+                                                                              battleArgsStore,
+                                                                              battleModeStore,
+                                                                              battleCompleteStateStore,
+                                                                              battleMusicStore,
+                                                                              pausedMusicStore,
+                                                                              fieldArgsStore,
+                                                                              gameOverFieldStore,
+                                                                              menuArgsStore,
+                                                                              musicPlayer)
         {
         }
 

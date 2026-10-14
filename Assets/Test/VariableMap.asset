@@ -276,4 +276,48 @@ MonoBehaviour:
     m_Description: The track every battle plays, as its music asset's name hash, until a script sets another. Its default is a new game's; zero plays none
     m_DefaultValue: 9522339296470591095
     m_ElementDefaults: []
-  m_LastVariableId: 16
+  - m_Id: 17
+    m_Name: GameOverField
+    m_Bank: 1
+    m_Width: 8
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 16
+    m_Description: The field a game over sends the player to. Only its default is used
+    m_DefaultValue: 2706410170469834045
+    m_ElementDefaults: []
+  - m_Id: 18
+    m_Name: GameOverSpawn
+    m_Bank: 1
+    m_Width: 5
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 0
+    m_Description: The spawn point the player arrives at in the game-over field. Only its default is used
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  - m_Id: 19
+    m_Name: BattleMode
+    m_Bank: 0
+    m_Width: 4
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 2
+    m_Description: The flags every random battle is fought with, and whether losing a battle or a countdown running out ends the game. Its default is a new game's
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  - m_Id: 20
+    m_Name: TestLastBattleResult
+    m_Bank: 1
+    m_Width: 2
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 4
+    m_Description: How the last battle TestField0 started ended, for its losable battle to branch on
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  m_LastVariableId: 20

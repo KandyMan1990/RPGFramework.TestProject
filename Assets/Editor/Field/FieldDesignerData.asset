@@ -28,4 +28,8 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
       - {fileID: 11400000, guid: 9a993b4a988e2c445b1e08ec025f3e5f, type: 2}
       LocationName: Locations/TestField2
-    m_ExportedLayoutHash: 14076486002590691592
+    - Prefab: {fileID: 8807264972890559759, guid: 540f805c111404d5b8ef4a109692aba5, type: 3}
+      LocalisationSheets:
+      - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
+      LocationName: 
+    m_ExportedLayoutHash: 15480136301121000714

@@ -16,5 +16,6 @@ MonoBehaviour:
   KeysClassFolderOverride: Assets/Test/Menu/GeneratedLocalisation
   NamespaceOverride: Test.Menu.Localisation
   m_Keys:
+  - PartyMenu/Load
   - PartyMenu/Save
   - PartyMenu/Time

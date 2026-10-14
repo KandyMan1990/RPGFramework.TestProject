@@ -82,6 +82,7 @@ namespace Test.Menu
 
             IPartyMenuLocalisationArgs partyMenuLocalisationArgs = new PartyMenuLocalisationArgs(Test.Localisation.LocalisationKeys.Generic.SETTINGS,
                                                                                                  Localisation.LocalisationKeys.PartyMenu.SAVE,
+                                                                                                 Localisation.LocalisationKeys.PartyMenu.LOAD,
                                                                                                  Localisation.LocalisationKeys.PartyMenu.TIME,
                                                                                                  partySheetNames);
 
