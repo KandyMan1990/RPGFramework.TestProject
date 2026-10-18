@@ -12,11 +12,15 @@ namespace Test.Menu
         [SerializeField]
         private MenuUIProvider m_MenuUIProvider;
 
+        [SerializeField]
+        private MenuTransitionConfig m_TransitionConfig;
+
         public override void InstallBindings(IDIContainer container)
         {
             BindLocalisationArgs(container);
 
             container.BindSingletonFromInstance<IMenuUIProvider>(m_MenuUIProvider);
+            container.BindSingletonFromInstance<IMenuTransitionConfig>(m_TransitionConfig);
             container.BindTransient<IBeginMenu, BeginMenu>();
             container.BindTransient<IBeginMenuUI, BeginMenuUI>();
             container.BindTransient<IConfigMenu, ConfigMenu>();

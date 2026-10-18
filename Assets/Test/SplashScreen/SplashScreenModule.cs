@@ -23,8 +23,6 @@ namespace Test.SplashScreen
 
         Task IModule.OnEnterAsync(byte entry)
         {
-            ShowSplashScreenAsync().FireAndForget();
-
             return Task.CompletedTask;
         }
 
@@ -41,6 +39,11 @@ namespace Test.SplashScreen
         Task IModule.OnResumeAsync()
         {
             return Task.CompletedTask;
+        }
+
+        void IModule.OnRevealed()
+        {
+            ShowSplashScreenAsync().FireAndForget();
         }
 
         private async Task ShowSplashScreenAsync()

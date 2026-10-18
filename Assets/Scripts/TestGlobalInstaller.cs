@@ -9,18 +9,18 @@ using RPGFramework.Core.Audio;
 using RPGFramework.Core.Databases;
 using RPGFramework.Core.Dialogue.UI;
 using RPGFramework.Core.Memory;
-using RPGFramework.Core.Rendering;
 using RPGFramework.Core.Settings;
 using RPGFramework.Core.SharedTypes;
+using RPGFramework.Core.Transitions;
 using RPGFramework.DI;
 using RPGFramework.Field;
 using RPGFramework.Field.SharedTypes.Stores;
 using RPGFramework.Localisation;
 using RPGFramework.Menu;
 using RPGFramework.Menu.SharedTypes.Stores;
+using RPGFramework.ModuleRouter;
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEngine.Rendering.Universal;
 
 namespace Test
 {
@@ -49,10 +49,13 @@ namespace Test
         private VariableMapAsset m_VariableMap;
 
         [SerializeField]
-        private UniversalRendererData m_UniversalRendererData;
+        private TransitionConfig m_TransitionConfig;
 
         [SerializeField]
-        private ScreenFadeServiceConfig m_ScreenFadeServiceConfig;
+        private TransitionDatabase m_TransitionDatabase;
+
+        [SerializeField]
+        private ModuleRouterConfig m_ModuleRouterConfig;
 
         public override void InstallBindings(IDIContainer container)
         {
@@ -68,10 +71,9 @@ namespace Test
             musicPlayer.SetStemMixerGroups(m_MusicMixerGroups);
             container.BindSingletonFromInstance(musicPlayer);
 
-            IRendererDataProvider rendererDataProvider = new RendererDataProvider(m_UniversalRendererData);
-            container.BindSingletonFromInstance(rendererDataProvider);
-
-            container.BindSingletonFromInstance<IScreenFadeServiceConfig>(m_ScreenFadeServiceConfig);
+            container.BindSingletonFromInstance<ITransitionConfig>(m_TransitionConfig);
+            container.BindSingletonFromInstance<ITransitionDatabase>(m_TransitionDatabase);
+            container.BindSingletonFromInstance<IModuleRouterConfig>(m_ModuleRouterConfig);
 
             container.BindSingleton<IBattleArgsStore, BattleArgsStore>();
             container.BindSingleton<IBattleModeStore, BattleModeStore>();
@@ -99,9 +101,6 @@ namespace Test
 
         public override Task Bootstrap(IDIResolver resolver)
         {
-            IScreenFadeService screenFadeService = resolver.Resolve<IScreenFadeService>();
-            screenFadeService.SetFadeToSimple();
-
             ILocalisationService localisationService = resolver.Resolve<ILocalisationService>();
             return localisationService.InitialiseAsync();
         }

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ea2fb9545bf4bcd958321e978f073e, type: 3}
+  m_Name: TransitionDatabase
+  m_EditorClassIdentifier: RPGFramework.Core::RPGFramework.Core.Transitions.TransitionDatabase
+  m_Transitions:
+  - {fileID: 11400000, guid: 00e5e2f65822e420680bdd569ae81e12, type: 2}
+  - {fileID: 11400000, guid: 1f90f90576f964399b8c6c0e641cc6b6, type: 2}
+  - {fileID: 11400000, guid: a3ad08f15ebf9467093eefaa000706bd, type: 2}
+  - {fileID: 11400000, guid: bd5cc5f037e0f4e528b0a2ea3fbd5505, type: 2}
+  - {fileID: 11400000, guid: 2ee63b09e011348989a13ce37456490f, type: 2}
+  - {fileID: 11400000, guid: 94301257e9f27457e88cf432751ce860, type: 2}
+  - {fileID: 11400000, guid: 9b355cd20f4de455d95f7863b1e46134, type: 2}
+  - {fileID: 11400000, guid: a2099616baa3640b7be9e4d75a2d40db, type: 2}
+  - {fileID: 11400000, guid: 7e789c484f66d44bab5dc894a5d00c01, type: 2}
+  - {fileID: 11400000, guid: dcc787212ec4843d0b6090b1f6fea07a, type: 2}
+  - {fileID: 11400000, guid: b2a919b5e99b341f6b0545823a38a5d6, type: 2}
+  - {fileID: 11400000, guid: b188d6a76ad964704843d6eddbe5ebd4, type: 2}
+  - {fileID: 11400000, guid: 1388e16904483412f87354d073b3e0e1, type: 2}
+  - {fileID: 11400000, guid: 344d3c7555fdd4d1bb0d7db3407e97d5, type: 2}
+  - {fileID: 11400000, guid: 1c85ddbe3ae224e12b33d441bb8565ad, type: 2}
+  - {fileID: 11400000, guid: b41b2cc837abd4e209b507065f0c44b3, type: 2}
+  - {fileID: 11400000, guid: 6578b13ff481642f18f70a318aa00727, type: 2}

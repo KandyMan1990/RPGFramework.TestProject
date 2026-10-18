@@ -320,4 +320,37 @@ MonoBehaviour:
     m_Description: How the last battle TestField0 started ended, for its losable battle to branch on
     m_DefaultValue: 0
     m_ElementDefaults: []
-  m_LastVariableId: 20
+  - m_Id: 21
+    m_Name: ScreenFade
+    m_Bank: 0
+    m_Width: 2
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 69
+    m_Description: 'Where a script left the field''s screen: clear, faded out, or a colour taken from it or added. Its default, 0, is clear'
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  - m_Id: 22
+    m_Name: ScreenFadeTransition
+    m_Bank: 0
+    m_Width: 8
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 80
+    m_Description: The transition a faded-out screen is covered by. Its default is not used
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  - m_Id: 23
+    m_Name: ScreenColour
+    m_Bank: 0
+    m_Width: 5
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 88
+    m_Description: The colour taken from or added to the field's screen. Its default is not used
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  m_LastVariableId: 23

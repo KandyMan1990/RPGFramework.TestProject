@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e73b5b8a9ef746089ad7a23ee2caef1, type: 3}
+  m_Name: TransitionConfig
+  m_EditorClassIdentifier: RPGFramework.Core::RPGFramework.Core.Transitions.TransitionConfig
+  m_PanelSettings: {fileID: 11400000, guid: 89c7412f9a18a4fa9a3be5489572c813, type: 2}
+  m_DefaultCover: {fileID: 11400000, guid: a3ad08f15ebf9467093eefaa000706bd, type: 2}
+  m_DefaultReveal: {fileID: 11400000, guid: a3ad08f15ebf9467093eefaa000706bd, type: 2}
+  m_ScreenColourShader: {fileID: 4800000, guid: 8be2b53566cb24932bec16a4bf45a819, type: 3}
+  m_MaskWipeShader: {fileID: 4800000, guid: 3d6e9acbaa53b40b8b908e2a4eeb2b7f, type: 3}

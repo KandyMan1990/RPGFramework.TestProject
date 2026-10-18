@@ -19,17 +19,25 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
       - {fileID: 11400000, guid: 9a993b4a988e2c445b1e08ec025f3e5f, type: 2}
       LocationName: Locations/TestField0
+      ExitTransition: 
+      EntryTransition: 
     - Prefab: {fileID: 4226698957846357039, guid: 368860dd8e62d5d4eb55fea2fd485d6a, type: 3}
       LocalisationSheets:
       - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
       LocationName: Locations/TestField1
+      ExitTransition: 
+      EntryTransition: 
     - Prefab: {fileID: 4226698957846357039, guid: 84087e7f18b802e499b83f07857945ee, type: 3}
       LocalisationSheets:
       - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
       - {fileID: 11400000, guid: 9a993b4a988e2c445b1e08ec025f3e5f, type: 2}
       LocationName: Locations/TestField2
+      ExitTransition: 
+      EntryTransition: 
     - Prefab: {fileID: 8807264972890559759, guid: 540f805c111404d5b8ef4a109692aba5, type: 3}
       LocalisationSheets:
       - {fileID: 11400000, guid: 740a3d703c5f9b5449750c415b59b151, type: 2}
       LocationName: 
-    m_ExportedLayoutHash: 15480136301121000714
+      ExitTransition: 
+      EntryTransition: 
+    m_ExportedLayoutHash: 10677798600640175392

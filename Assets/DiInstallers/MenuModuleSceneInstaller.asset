@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: MenuModuleSceneInstaller
   m_EditorClassIdentifier: Test.Menu::NewSceneInstaller
   m_MenuUIProvider: {fileID: 11400000, guid: 651c2ceeb20068441b1e537227e9ee1f, type: 2}
+  m_TransitionConfig: {fileID: 11400000, guid: 17835b142f23e4495bf1255286777371, type: 2}

@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21d30f4a05e1340d38896780fed33ceb, type: 3}
+  m_Name: ModuleRouterConfig
+  m_EditorClassIdentifier: RPGFramework.ModuleRouter::RPGFramework.ModuleRouter.ModuleRouterConfig
+  m_MenuOpening:
+    m_Cover: {fileID: 0}
+    m_Reveal: {fileID: 0}
+    m_MusicFade: 0
+    m_MusicFadeSeconds: 0
+  m_MenuClosing:
+    m_Cover: {fileID: 0}
+    m_Reveal: {fileID: 0}
+    m_MusicFade: 0
+    m_MusicFadeSeconds: 0
+  m_BattleStarting:
+    m_Cover: {fileID: 11400000, guid: 9b355cd20f4de455d95f7863b1e46134, type: 2}
+    m_Reveal: {fileID: 11400000, guid: bd5cc5f037e0f4e528b0a2ea3fbd5505, type: 2}
+    m_MusicFade: 0
+    m_MusicFadeSeconds: 0
+  m_BattleEnding:
+    m_Cover: {fileID: 0}
+    m_Reveal: {fileID: 0}
+    m_MusicFade: 0
+    m_MusicFadeSeconds: 0
+  m_Defeat:
+    m_Cover: {fileID: 0}
+    m_Reveal: {fileID: 0}
+    m_MusicFade: 2
+    m_MusicFadeSeconds: 2
+  m_GameOver:
+    m_Cover: {fileID: 0}
+    m_Reveal: {fileID: 0}
+    m_MusicFade: 2
+    m_MusicFadeSeconds: 2
+  m_Playthrough:
+    m_Cover: {fileID: 0}
+    m_Reveal: {fileID: 0}
+    m_MusicFade: 2
+    m_MusicFadeSeconds: 2

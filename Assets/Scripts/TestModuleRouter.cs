@@ -2,6 +2,7 @@ using RPGFramework.Audio;
 using RPGFramework.Battle.SharedTypes.Stores;
 using RPGFramework.Core.SharedTypes;
 using RPGFramework.Core.Store;
+using RPGFramework.Core.Transitions;
 using RPGFramework.Field.SharedTypes.Stores;
 using RPGFramework.Menu.SharedTypes.Constants;
 using RPGFramework.Menu.SharedTypes.Stores;
@@ -22,7 +23,9 @@ namespace Test
                                 IFieldArgsStore           fieldArgsStore,
                                 IGameOverFieldStore       gameOverFieldStore,
                                 IMenuArgsStore            menuArgsStore,
-                                IMusicPlayer              musicPlayer) : base(currentModuleStore,
+                                IMusicPlayer              musicPlayer,
+                                IModuleRouterConfig       config,
+                                ITransitionService        transitions) : base(currentModuleStore,
                                                                               battleArgsStore,
                                                                               battleModeStore,
                                                                               battleCompleteStateStore,
@@ -31,7 +34,9 @@ namespace Test
                                                                               fieldArgsStore,
                                                                               gameOverFieldStore,
                                                                               menuArgsStore,
-                                                                              musicPlayer)
+                                                                              musicPlayer,
+                                                                              config,
+                                                                              transitions)
         {
         }
 
