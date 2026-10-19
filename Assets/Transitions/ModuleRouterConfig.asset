@@ -28,8 +28,8 @@ MonoBehaviour:
     m_MusicFade: 0
     m_MusicFadeSeconds: 0
   m_BattleEnding:
-    m_Cover: {fileID: 0}
-    m_Reveal: {fileID: 0}
+    m_Cover: {fileID: 11400000, guid: 5cafe51a2d420402b93f72db7fb5933a, type: 2}
+    m_Reveal: {fileID: 11400000, guid: 5cafe51a2d420402b93f72db7fb5933a, type: 2}
     m_MusicFade: 0
     m_MusicFadeSeconds: 0
   m_Defeat:

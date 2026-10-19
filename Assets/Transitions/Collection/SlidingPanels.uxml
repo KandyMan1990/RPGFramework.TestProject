@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="SlidingPanels.uss" />
+    <ui:VisualElement class="sliding-panel" picking-mode="Ignore">
+        <ui:VisualElement class="sliding-panel__frame" picking-mode="Ignore">
+            <ui:VisualElement class="sliding-panel__band" picking-mode="Ignore">
+                <ui:Label text="RESULTS" class="sliding-panel__title" picking-mode="Ignore" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,31 @@
+.sliding-panel {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: rgb(16, 20, 36);
+}
+
+.sliding-panel__frame {
+    flex-grow: 1;
+    justify-content: center;
+    border-width: 6px;
+    border-radius: 16px;
+    border-color: rgb(206, 168, 72);
+    background-color: rgb(24, 30, 54);
+}
+
+.sliding-panel__band {
+    height: 160px;
+    align-items: center;
+    justify-content: center;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-color: rgb(206, 168, 72);
+    background-color: rgb(44, 54, 96);
+}
+
+.sliding-panel__title {
+    font-size: 96px;
+    -unity-font-style: bold;
+    letter-spacing: 40px;
+    color: rgb(240, 214, 130);
+}

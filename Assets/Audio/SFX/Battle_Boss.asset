@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd71118d5034842b9b15f73fe888dbc, type: 3}
+  m_Name: Battle_Boss
+  m_EditorClassIdentifier: RPGFramework.Audio::RPGFramework.Audio.Sfx.SfxAsset
+  m_Tracks:
+  - m_AudioClip: {fileID: 8300000, guid: 96ddc347674c2452b895e90a48199309, type: 3}
+    m_ReverbSendLevel: 1
+    m_EchoSendLevel: 0
+  - m_AudioClip: {fileID: 8300000, guid: c77a94a920cc9479db4d4f5ebdd8335a, type: 3}
+    m_ReverbSendLevel: 1
+    m_EchoSendLevel: 0
+  - m_AudioClip: {fileID: 8300000, guid: 763560087c042476a94fda16efb65382, type: 3}
+    m_ReverbSendLevel: 1
+    m_EchoSendLevel: 0
+  m_Events: []
+  m_Loop: 0
+  m_LoopStart: 0
+  m_LoopEnd: 0
