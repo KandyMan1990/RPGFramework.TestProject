@@ -1,23 +1,23 @@
 {
   "dependencies": {
-    "com.rpgframework.audio": "https://github.com/KandyMan1990/RPGFramework.Audio.git#v0.5.4",
-    "com.rpgframework.core": "https://github.com/KandyMan1990/RPGFramework.Core.git#v0.7.0",
-    "com.rpgframework.core.sharedtypes": "https://github.com/KandyMan1990/RPGFramework.Core.SharedTypes.git#v0.2.0",
-    "com.rpgframework.di": "https://github.com/KandyMan1990/RPGFramework.DI.git#v2.1.0",
-    "com.rpgframework.field": "https://github.com/KandyMan1990/RPGFramework.Field.git#v0.2.0",
-    "com.rpgframework.field.sharedtypes": "https://github.com/KandyMan1990/RPGFramework.Field.SharedTypes.git#v0.2.0",
-    "com.rpgframework.hashing": "https://github.com/KandyMan1990/RPGFramework.Hashing.git#v1.0.0",
-    "com.rpgframework.localisation": "https://github.com/KandyMan1990/RPGFramework.Localisation.git#v1.0.1",
-    "com.rpgframework.menu": "https://github.com/KandyMan1990/RPGFramework.Menu.git#v0.3.0",
-    "com.rpgframework.menu.sharedtypes": "https://github.com/KandyMan1990/RPGFramework.Menu.SharedTypes.git#v0.2.0",
-    "com.unity.collections": "6.5.0",
-    "com.unity.ide.rider": "3.0.40",
-    "com.unity.inputsystem": "1.19.0",
+    "com.rpgframework.audio": "https://github.com/KandyMan1990/RPGFramework.Audio.git#v4.1.1",
+    "com.rpgframework.battle": "https://github.com/KandyMan1990/RPGFramework.Battle.git#v0.1.0",
+    "com.rpgframework.battle.sharedtypes": "https://github.com/KandyMan1990/RPGFramework.Battle.SharedTypes.git#v0.2.0",
+    "com.rpgframework.core": "https://github.com/KandyMan1990/RPGFramework.Core.git#v0.8.0",
+    "com.rpgframework.core.sharedtypes": "https://github.com/KandyMan1990/RPGFramework.Core.SharedTypes.git#v0.3.0",
+    "com.rpgframework.di": "https://github.com/KandyMan1990/RPGFramework.DI.git#v4.0.3",
+    "com.rpgframework.field": "https://github.com/KandyMan1990/RPGFramework.Field.git#v0.3.1",
+    "com.rpgframework.field.sharedtypes": "https://github.com/KandyMan1990/RPGFramework.Field.SharedTypes.git#v0.3.0",
+    "com.rpgframework.hashing": "https://github.com/KandyMan1990/RPGFramework.Hashing.git#v2.0.2",
+    "com.rpgframework.localisation": "https://github.com/KandyMan1990/RPGFramework.Localisation.git#v2.1.1",
+    "com.rpgframework.menu": "https://github.com/KandyMan1990/RPGFramework.Menu.git#v0.4.0",
+    "com.rpgframework.menu.sharedtypes": "https://github.com/KandyMan1990/RPGFramework.Menu.SharedTypes.git#v0.3.0",
+    "com.rpgframework.modulerouter": "https://github.com/KandyMan1990/RPGFramework.ModuleRouter.git#v0.1.0",
     "com.rpgframework.psxreverb": "https://github.com/KandyMan1990/RPGFramework.PSXReverb.git#v1.0.0",
     "com.unity.collections": "6.6.0",
     "com.unity.ide.rider": "3.1.0",
     "com.unity.inputsystem": "1.20.0",
-    "com.unity.platformtoolkit": "1.1.0",
+    "com.unity.pipeline": "0.8.0-exp.1",
     "com.unity.project-auditor": "2.0.0",
     "com.unity.render-pipelines.universal": "17.6.0",
     "com.unity.modules.accessibility": "1.0.0",
@@ -55,5 +55,14 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  }
+  },
+  "testables": [
+    "com.rpgframework.audio",
+    "com.rpgframework.core",
+    "com.rpgframework.di",
+    "com.rpgframework.field",
+    "com.rpgframework.hashing",
+    "com.rpgframework.localisation",
+    "com.rpgframework.modulerouter"
+  ]
 }
