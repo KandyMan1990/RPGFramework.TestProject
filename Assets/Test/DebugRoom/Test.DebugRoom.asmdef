@@ -1,0 +1,28 @@
+{
+    "name": "Test.DebugRoom",
+    "rootNamespace": "",
+    "references": [
+        "RPGFramework.Battle",
+        "RPGFramework.Battle.SharedTypes",
+        "RPGFramework.Core",
+        "RPGFramework.Core.SharedTypes",
+        "RPGFramework.DebugRoom",
+        "RPGFramework.DebugRoom.SharedTypes",
+        "RPGFramework.DI",
+        "RPGFramework.Field",
+        "RPGFramework.Field.SharedTypes",
+        "Test.Battle",
+        "Test.Field"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "ENABLE_RPG_FRAMEWORK_DEBUG"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

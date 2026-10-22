@@ -2,6 +2,10 @@ using System;
 using RPGFramework.Battle.SharedTypes;
 using RPGFramework.Battle.SharedTypes.Constants;
 using RPGFramework.Core.Databases;
+#if ENABLE_RPG_FRAMEWORK_DEBUG
+using RPGFramework.DebugRoom.SharedTypes;
+using RPGFramework.DebugRoom.SharedTypes.Constants;
+#endif
 using RPGFramework.Field.SharedTypes;
 using RPGFramework.Field.SharedTypes.Constants;
 using RPGFramework.Menu.SharedTypes;
@@ -22,6 +26,9 @@ namespace Test
                        BattleConstants.MODULE_ID       => typeof(IBattleModule),
                        //ModuleID.World => typeof(IWorldModule),
                        SplashScreenConstants.MODULE_ID => typeof(ISplashScreenModule),
+#if ENABLE_RPG_FRAMEWORK_DEBUG
+                       DebugRoomConstants.MODULE_ID    => typeof(IDebugRoomModule),
+#endif
                        _                               => throw new InvalidOperationException($"{nameof(IModuleDatabase)}::{nameof(IModuleDatabase.GetModuleType)} Unknown module id {moduleId}")
                    };
         }

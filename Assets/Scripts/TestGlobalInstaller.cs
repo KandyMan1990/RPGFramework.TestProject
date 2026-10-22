@@ -61,15 +61,23 @@ namespace Test
         {
             container.BindSingleton<ILocalisationService, LocalisationService>().AsNonLazy();
 
-            ISfxPlayer sfxPlayer = new UnitySfxPlayer();
-            sfxPlayer.SetSfxAssetProvider(m_AudioFromBundles ? new BundledSfxAssetProvider() : m_SfxProvider);
+            ISfxAssetProvider sfxProvider = m_AudioFromBundles ? new BundledSfxAssetProvider() : m_SfxProvider;
+            ISfxPlayer        sfxPlayer   = new UnitySfxPlayer();
+            sfxPlayer.SetSfxAssetProvider(sfxProvider);
             sfxPlayer.SetStemMixerGroups(m_SfxMixerGroups);
             container.BindSingletonFromInstance(sfxPlayer);
 
-            IMusicPlayer musicPlayer = new UnityMusicPlayer();
-            musicPlayer.SetMusicAssetProvider(m_AudioFromBundles ? new BundledMusicAssetProvider() : m_MusicProvider);
+            IMusicAssetProvider musicProvider = m_AudioFromBundles ? new BundledMusicAssetProvider() : m_MusicProvider;
+            IMusicPlayer        musicPlayer   = new UnityMusicPlayer();
+            musicPlayer.SetMusicAssetProvider(musicProvider);
             musicPlayer.SetStemMixerGroups(m_MusicMixerGroups);
             container.BindSingletonFromInstance(musicPlayer);
+
+#if ENABLE_RPG_FRAMEWORK_DEBUG
+            // The players' own providers, so the debug room lists what they play.
+            container.BindSingletonFromInstance((IDebugSfxAssetProvider)sfxProvider);
+            container.BindSingletonFromInstance((IDebugMusicAssetProvider)musicProvider);
+#endif
 
             container.BindSingletonFromInstance<ITransitionConfig>(m_TransitionConfig);
             container.BindSingletonFromInstance<ITransitionDatabase>(m_TransitionDatabase);
