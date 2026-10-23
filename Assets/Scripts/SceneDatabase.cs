@@ -12,18 +12,6 @@ namespace Test
 {
     internal sealed class SceneDatabase : ISceneDatabase
     {
-        private readonly ISceneDatabase m_This;
-
-        public SceneDatabase()
-        {
-            m_This = this;
-        }
-
-        string ISceneDatabase.GetSceneNameForModule<T>()
-        {
-            return m_This.GetSceneNameForModule(typeof(T));
-        }
-
         string ISceneDatabase.GetSceneNameForModule(Type type)
         {
             return type switch
