@@ -156,12 +156,12 @@ MonoBehaviour:
   m_Secondary: {fileID: 0}
   m_Tertiary: {fileID: 1990023514}
   m_Quaternary: {fileID: 0}
-  m_ShoulderLeft: {fileID: 0}
-  m_ShoulderRight: {fileID: 0}
-  m_TriggerLeft: {fileID: 0}
-  m_TriggerRight: {fileID: 0}
+  m_ShoulderLeft: {fileID: 9087734154671958178, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_ShoulderRight: {fileID: 4310118602437010115, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_TriggerLeft: {fileID: -5277571919223034408, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_TriggerRight: {fileID: 6266803090654256949, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_Start: {fileID: 0}
-  m_Select: {fileID: 0}
+  m_Select: {fileID: 2805508434336598067, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!114 &588473728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,6 +230,7 @@ MonoBehaviour:
   m_InputAdapter: {fileID: 588473727}
   m_UIDocument: {fileID: 588473728}
   m_Camera: {fileID: 669434363}
+  m_VisibleWhileSuspended: 0
 --- !u!1 &669434360
 GameObject:
   m_ObjectHideFlags: 0
