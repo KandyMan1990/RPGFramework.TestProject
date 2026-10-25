@@ -2,6 +2,7 @@ using System.Threading.Tasks;
 using RPGFramework.Core;
 using RPGFramework.Core.SharedTypes;
 using Test.SplashScreen.Constants;
+using UnityEngine;
 
 namespace Test.SplashScreen
 {
@@ -11,14 +12,13 @@ namespace Test.SplashScreen
 
     internal sealed class SplashScreenModule : ISplashScreenModule
     {
-        private readonly ICoreModule                      m_CoreModule;
-        private readonly ISplashScreenModuleMonoBehaviour m_SplashScreenModuleMonoBehaviour;
+        private const float HOLD_SECONDS = 3f;
 
-        internal SplashScreenModule(ICoreModule                      coreModule,
-                                    ISplashScreenModuleMonoBehaviour splashScreenModuleMonoBehaviour)
+        private readonly ICoreModule m_CoreModule;
+
+        internal SplashScreenModule(ICoreModule coreModule)
         {
-            m_CoreModule                      = coreModule;
-            m_SplashScreenModuleMonoBehaviour = splashScreenModuleMonoBehaviour;
+            m_CoreModule = coreModule;
         }
 
         Task IModule.OnEnterAsync(byte entry)
@@ -43,12 +43,12 @@ namespace Test.SplashScreen
 
         void IModule.OnRevealed()
         {
-            ShowSplashScreenAsync().FireAndForget();
+            LeaveAfterHoldAsync().FireAndForget();
         }
 
-        private async Task ShowSplashScreenAsync()
+        private async Task LeaveAfterHoldAsync()
         {
-            await m_SplashScreenModuleMonoBehaviour.ShowSplashScreenAsync();
+            await Awaitable.WaitForSecondsAsync(HOLD_SECONDS);
 
             m_CoreModule.RequestModuleChangeAsync(SplashScreenConstants.OUTCOME_FINISHED).FireAndForget();
         }

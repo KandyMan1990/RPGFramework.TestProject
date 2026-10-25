@@ -201,7 +201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d366820a4354f50861fe24c43c98ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Test.SplashScreen::Test.SplashScreen.SplashScreenModuleMonoBehaviour
-  m_UIDocument: {fileID: 588473728}
 --- !u!1 &669434360
 GameObject:
   m_ObjectHideFlags: 0

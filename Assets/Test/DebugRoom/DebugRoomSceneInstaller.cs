@@ -1,5 +1,4 @@
 using RPGFramework.Battle.SharedTypes;
-using RPGFramework.DebugRoom;
 using RPGFramework.DebugRoom.SharedTypes;
 using RPGFramework.DI;
 using RPGFramework.Field;
@@ -16,7 +15,6 @@ namespace Test.DebugRoom
             container.BindInterfacesToSelfSingleton<FieldDatabase>();
             container.BindSingleton<IDebugSpawnPointLoader, DebugSpawnPointLoader>();
             container.BindSingleton<IDebugBattleArenaDatabase, BattleArenaDatabase>();
-            container.BindSingleton<IDebugRoomModule, DebugRoomModule>();
         }
     }
 }
