@@ -1917,8 +1917,8 @@ GameObject:
   - component: {fileID: 7441842165563679642}
   - component: {fileID: 5476714171965757579}
   - component: {fileID: 1597074251309165949}
-  - component: {fileID: 2370087768003392339}
   - component: {fileID: 6031417156001654204}
+  - component: {fileID: 2370087768003392339}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1958,7 +1958,7 @@ MonoBehaviour:
     m_Value: 0
   OutputChannel: 1
   StandbyUpdate: 2
-  m_StreamingVersion: 0
+  m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
     TrackingTarget: {fileID: 0}
@@ -2008,25 +2008,13 @@ MonoBehaviour:
       Size: {x: 0.8, y: 0.8}
       Offset: {x: 0, y: 0}
   CenterOnActivate: 1
-  TargetOffset: {x: 0, y: 0, z: 0}
+  TargetOffset: {x: 0, y: 2, z: 0}
   Damping: {x: 0, y: 0, z: 0}
   Lookahead:
     Enabled: 0
     Time: 0
     Smoothing: 0
     IgnoreY: 0
---- !u!114 &2370087768003392339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8073716647764557753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b89695f8a7543d2b00e1e6e90591ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FollowPlayer
 --- !u!114 &6031417156001654204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2041,6 +2029,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineConfiner3D
   BoundingVolume: {fileID: 5453151394934016135}
   SlowingDistance: 0
+--- !u!114 &2370087768003392339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8073716647764557753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b89695f8a7543d2b00e1e6e90591ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FollowPlayer
 --- !u!1 &8391640893187416538
 GameObject:
   m_ObjectHideFlags: 0
