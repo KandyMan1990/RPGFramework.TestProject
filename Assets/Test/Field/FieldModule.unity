@@ -153,7 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: RPGFramework.Core::RPGFramework.Core.Input.InputAdapter
   m_Movement: {fileID: 5272367611473766546, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_Primary: {fileID: 5187823559276234746, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_Secondary: {fileID: 0}
+  m_Secondary: {fileID: -6316435537939096186, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_Tertiary: {fileID: 1990023514}
   m_Quaternary: {fileID: 0}
   m_ShoulderLeft: {fileID: 9087734154671958178, guid: 052faaac586de48259a63d0c4782560b, type: 3}

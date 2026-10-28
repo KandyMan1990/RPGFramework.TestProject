@@ -443,6 +443,16 @@
                     "priority": 0
                 },
                 {
+                    "name": "Cancel",
+                    "type": "Button",
+                    "id": "e17d5fcb-4358-4e75-a783-3f45d2474377",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
                     "name": "Interact",
                     "type": "Button",
                     "id": "2433999f-224a-49f7-815a-da4a5b868ee5",
@@ -656,6 +666,28 @@
                     "action": "Navigate",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "09a0174f-be03-4f21-9e28-24cdeb011209",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c825ff45-67bf-4de2-a92c-d0173324b421",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "",
