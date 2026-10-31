@@ -32,6 +32,7 @@ namespace Test.Menu
             IBeginMenuLocalisationArgs beginMenuLocalisationArgs = new BeginMenuLocalisationArgs(Test.Localisation.LocalisationKeys.Generic.GAME_TITLE,
                                                                                                  Localisation.LocalisationKeys.BeginMenu.NEW_GAME,
                                                                                                  Localisation.LocalisationKeys.BeginMenu.LOAD_GAME,
+                                                                                                 Test.Localisation.LocalisationKeys.Generic.SETTINGS,
                                                                                                  Localisation.LocalisationKeys.BeginMenu.QUIT_GAME,
                                                                                                  beginSheetNames);
 
