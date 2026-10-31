@@ -17,6 +17,8 @@
 			public const string YES = @"Generic/Yes";
 			///<summary>No</summary>
 			public const string NO = @"Generic/No";
+			///<summary>Money</summary>
+			public const string MONEY = @"Generic/Money";
 		}
 	}
 }

@@ -408,4 +408,36 @@ MonoBehaviour:
     m_Description: How fast the field's dialogue appears, 0 to 1, 0.5 as authored. Its default is a first launch's
     m_DefaultValue: 1056964608
     m_ElementDefaults: []
-  m_LastVariableId: 28
+  - m_Id: 29
+    m_Name: Money
+    m_Bank: 0
+    m_Width: 6
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 92
+    m_Description: The party's money. Its default is what a new game starts with
+    m_DefaultValue: 100
+    m_ElementDefaults: []
+  - m_Id: 30
+    m_Name: TestParty
+    m_Bank: 0
+    m_Width: 0
+    m_Count: 3
+    m_Fields:
+    - m_Id: 1
+      m_Name: Level
+      m_Width: 2
+      m_Count: 1
+      m_DefaultValue: 1
+    - m_Id: 2
+      m_Name: Hp
+      m_Width: 4
+      m_Count: 1
+      m_DefaultValue: 100
+    m_LastFieldId: 2
+    m_Offset: 96
+    m_Description: 'A test party of three, proving a save slot shows a record''s field by name: the test project''s slot shows the leader''s level and HP. Set them in the debug room'
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  m_LastVariableId: 30
