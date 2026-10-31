@@ -9,7 +9,6 @@ using RPGFramework.Core.Audio;
 using RPGFramework.Core.Databases;
 using RPGFramework.Core.Dialogue.UI;
 using RPGFramework.Core.Memory;
-using RPGFramework.Core.Settings;
 using RPGFramework.Core.SharedTypes;
 using RPGFramework.Core.Transitions;
 using RPGFramework.DI;
@@ -91,7 +90,6 @@ namespace Test
 
             container.BindSingletonFromInstance<IAudioIntentPlayer>(new GameAudioIntentPlayer(sfxPlayer, GameAudioIntentMaps.Default));
 
-            container.BindSingleton<IDefaultSettings, DefaultSettings>();
             container.BindSingleton<IModuleDatabase, ModuleDatabase>();
             container.BindSingleton<IModuleRouter, TestModuleRouter>();
             container.BindSingleton<IFieldResumeDataStore, FieldResumeDataStore>();
