@@ -440,4 +440,70 @@ MonoBehaviour:
     m_Description: 'A test party of three, proving a save slot shows a record''s field by name: the test project''s slot shows the leader''s level and HP. Set them in the debug room'
     m_DefaultValue: 0
     m_ElementDefaults: []
-  m_LastVariableId: 30
+  - m_Id: 31
+    m_Name: CountdownX
+    m_Bank: 0
+    m_Width: 5
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 108
+    m_Description: Where the field shows the countdown, across, as SHOW_COUNTDOWN_TIMER last put it. Its default is not used
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  - m_Id: 32
+    m_Name: CountdownY
+    m_Bank: 0
+    m_Width: 5
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 112
+    m_Description: Where the field shows the countdown, down, as SHOW_COUNTDOWN_TIMER last put it. Its default is not used
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  - m_Id: 33
+    m_Name: Countdown
+    m_Bank: 0
+    m_Width: 6
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 116
+    m_Description: The countdown's seconds left, counted down whenever it is above zero. Set by scripts; its default is a new game's
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  - m_Id: 34
+    m_Name: CountdownShown
+    m_Bank: 0
+    m_Width: 0
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 70
+    m_Description: Whether the countdown is on screen. Set by scripts; its default is a new game's
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  - m_Id: 35
+    m_Name: TestCountdownRunning
+    m_Bank: 0
+    m_Width: 0
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 71
+    m_Description: 'Whether the test field''s countdown NPC has a countdown running: talking to it starts one or hides it'
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  - m_Id: 36
+    m_Name: TestCountdownLeft
+    m_Bank: 0
+    m_Width: 5
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 120
+    m_Description: The seconds the test field's countdown battle left, read as the battle ends, as a timed boss fight keeps them for a grade
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  m_LastVariableId: 36

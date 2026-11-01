@@ -91,6 +91,126 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &709777514737117905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6381912476239482532}
+  - component: {fileID: 5902293048228487439}
+  - component: {fileID: 2555600735520603632}
+  m_Layer: 0
+  m_Name: CountdownBattle27
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6381912476239482532
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709777514737117905}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6, y: 0, z: -3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8967626963149710051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5902293048228487439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709777514737117905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
+  m_VisibleObject: {fileID: 0}
+--- !u!114 &2555600735520603632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709777514737117905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc75dbce07184c60b898d17408700dc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldInteractionTrigger
+  m_InteractionAngle: 360
+  m_InteractionRange: 1
+--- !u!1 &1067412861032175455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9178651848104891463}
+  - component: {fileID: 2642396879847357779}
+  - component: {fileID: 2668867533862614123}
+  m_Layer: 0
+  m_Name: Countdown26
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9178651848104891463
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067412861032175455}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4, y: 0, z: -3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8967626963149710051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2642396879847357779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067412861032175455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
+  m_VisibleObject: {fileID: 0}
+--- !u!114 &2668867533862614123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067412861032175455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc75dbce07184c60b898d17408700dc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldInteractionTrigger
+  m_InteractionAngle: 360
+  m_InteractionRange: 1
 --- !u!1 &1639832957538049038
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +618,8 @@ Transform:
   - {fileID: 8908833828374831941}
   - {fileID: 305392195151298090}
   - {fileID: 475052340010512308}
+  - {fileID: 9178651848104891463}
+  - {fileID: 6381912476239482532}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4829676445749990612
@@ -1043,6 +1165,52 @@ MonoBehaviour:
         WAIT_SECONDS 2.7
 
         CLOSE_DIALOGUE_WINDOW 5
+
+        RETURN'
+      m_Slot: 0
+  - m_EntityId: 26
+    m_Name: Countdown26
+    m_Body: {fileID: 2642396879847357779}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'INTERACTION_TRIGGER_ACTIVATION true
+
+        SET_INTERACTION_RANGE 2.0
+
+        RETURN'
+      m_Slot: 0
+    - m_Type: 3
+      m_Name: StartOrHide
+      m_Text: "IF_BOOL $TestCountdownRunning == true\n    HIDE_COUNTDOWN_TIMER\n    SET_BOOL $TestCountdownRunning false\n    RETURN\nEND_IF\nSET_BOOL $TestCountdownRunning true\nSET_COUNTDOWN_TIMER 30\nSHOW_COUNTDOWN_TIMER 1500 50\nRETURN"
+      m_Slot: 0
+  - m_EntityId: 27
+    m_Name: CountdownBattle27
+    m_Body: {fileID: 5902293048228487439}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'INTERACTION_TRIGGER_ACTIVATION true
+
+        SET_INTERACTION_RANGE 2.0
+
+        RETURN'
+      m_Slot: 0
+    - m_Type: 3
+      m_Name: TimedBattle
+      m_Text: 'SET_COUNTDOWN_TIMER 8
+
+        SHOW_COUNTDOWN_TIMER 1500 50
+
+        SET_BOOL $TestCountdownRunning true
+
+        START_BATTLE 0 3 4 15
+
+        GET_COUNTDOWN_TIMER $TestCountdownLeft
+
+        HIDE_COUNTDOWN_TIMER
+
+        SET_BOOL $TestCountdownRunning false
 
         RETURN'
       m_Slot: 0
