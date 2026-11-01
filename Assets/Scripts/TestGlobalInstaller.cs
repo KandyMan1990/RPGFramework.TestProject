@@ -91,6 +91,7 @@ namespace Test
             container.BindSingletonFromInstance<IAudioIntentPlayer>(new GameAudioIntentPlayer(sfxPlayer, GameAudioIntentMaps.Default));
 
             container.BindSingleton<IModuleDatabase, ModuleDatabase>();
+            container.BindSingleton<IDefaultModuleRouter, DefaultModuleRouter>();
             container.BindSingleton<IModuleRouter, TestModuleRouter>();
             container.BindSingleton<IFieldResumeDataStore, FieldResumeDataStore>();
 

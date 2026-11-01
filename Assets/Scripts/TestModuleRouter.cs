@@ -1,59 +1,28 @@
-using RPGFramework.Audio;
-using RPGFramework.Battle.SharedTypes.Stores;
 using RPGFramework.Core.SharedTypes;
-using RPGFramework.Core.Store;
-using RPGFramework.Core.Transitions;
-using RPGFramework.Field.SharedTypes.Stores;
 using RPGFramework.Menu.SharedTypes.Constants;
-using RPGFramework.Menu.SharedTypes.Stores;
 using RPGFramework.ModuleRouter;
 using Test.SplashScreen.Constants;
 
 namespace Test
 {
-    /// <summary>The framework's routes, and the splash screen's: on to the title menu.</summary>
-    internal sealed class TestModuleRouter : DefaultModuleRouter
+    /// <summary>The splash screen's route: on to the title menu. The rest are the framework's.</summary>
+    internal sealed class TestModuleRouter : IModuleRouter
     {
-        public TestModuleRouter(ICurrentModuleStore       currentModuleStore,
-                                IBattleArgsStore          battleArgsStore,
-                                IBattleModeStore          battleModeStore,
-                                IBattleCompleteStateStore battleCompleteStateStore,
-                                IBattleMusicStore         battleMusicStore,
-                                IPausedMusicStore         pausedMusicStore,
-                                ICountdownStore           countdownStore,
-                                IFieldArgsStore           fieldArgsStore,
-                                IGameOverFieldStore       gameOverFieldStore,
-                                IMenuArgsStore            menuArgsStore,
-                                IMusicPlayer              musicPlayer,
-                                IModuleRouterConfig       config,
-                                ITransitionService        transitions) : base(currentModuleStore,
-                                                                              battleArgsStore,
-                                                                              battleModeStore,
-                                                                              battleCompleteStateStore,
-                                                                              battleMusicStore,
-                                                                              pausedMusicStore,
-                                                                              countdownStore,
-                                                                              fieldArgsStore,
-                                                                              gameOverFieldStore,
-                                                                              menuArgsStore,
-                                                                              musicPlayer,
-                                                                              config,
-                                                                              transitions)
+        private readonly IDefaultModuleRouter m_Default;
+
+        public TestModuleRouter(IDefaultModuleRouter defaultRouter)
         {
+            m_Default = defaultRouter;
         }
 
-        protected override ModuleChange Route(byte moduleId, byte outcome)
+        ModuleChange IModuleRouter.Route(byte moduleId, byte outcome)
         {
             if (moduleId == SplashScreenConstants.MODULE_ID && outcome == SplashScreenConstants.OUTCOME_FINISHED)
             {
-                ModuleChange toTitle = ModuleChange.Clear(MenuConstants.MODULE_ID);
-
-                return toTitle;
+                return ModuleChange.Clear(MenuConstants.MODULE_ID);
             }
 
-            ModuleChange change = base.Route(moduleId, outcome);
-
-            return change;
+            return m_Default.Route(moduleId, outcome);
         }
     }
 }
