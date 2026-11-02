@@ -1,0 +1,40 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.rpgframework.core/Runtime/UI%20Toolkit/UIShared.uss?fileID=7433441132597879392&amp;guid=94d472c2b9a84d747912b7c0d4c5d053&amp;type=3#UIShared"/>
+    <Style src="Menus.uss"/>
+    <ui:VisualElement name="PartyMenu" class="rpg-menu">
+        <ui:VisualElement name="ContentContainer" class="rpg-menu-content">
+            <ui:VisualElement name="ButtonsContainer" class="rpg-menu-buttons">
+                <RPGFramework.Core.UI.RPGUIButton focusable="true" name="ConfigBtn" text="Config">
+                    <Bindings>
+                        <RPGFramework.Localisation.LocalisedText property="text" key="Generic/Settings"/>
+                    </Bindings>
+                </RPGFramework.Core.UI.RPGUIButton>
+                <RPGFramework.Core.UI.RPGUIButton focusable="true" name="SaveBtn" text="Save">
+                    <Bindings>
+                        <RPGFramework.Localisation.LocalisedText property="text" key="PartyMenu/Save"/>
+                    </Bindings>
+                </RPGFramework.Core.UI.RPGUIButton>
+                <RPGFramework.Core.UI.RPGUIButton focusable="true" name="LoadBtn" text="Load">
+                    <Bindings>
+                        <RPGFramework.Localisation.LocalisedText property="text" key="PartyMenu/Load"/>
+                    </Bindings>
+                </RPGFramework.Core.UI.RPGUIButton>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="FooterContainer" class="rpg-menu-footer">
+            <ui:Label text="Location" name="LocationLabel" class="rpg-ui-label">
+                <Bindings>
+                    <RPGFramework.Localisation.PickedLocalisedText property="text" sheet="Locations"/>
+                </Bindings>
+            </ui:Label>
+            <ui:VisualElement name="PlayTime">
+                <ui:Label text="Time" name="TimeLabel" class="rpg-ui-label">
+                    <Bindings>
+                        <RPGFramework.Localisation.LocalisedText property="text" key="PartyMenu/Time"/>
+                    </Bindings>
+                </ui:Label>
+                <ui:Label text="0:00" name="PlayTimeLabel" class="rpg-ui-label"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

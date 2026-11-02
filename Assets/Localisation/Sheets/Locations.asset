@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d8f647ff9eec994c97f47850de96982, type: 3}
   m_Name: Locations
   m_EditorClassIdentifier: RPGFramework.Localisation.Editor::RPGFramework.Localisation.Editor.LocalisationSheetAsset
-  GenerateKeysClass: 1
+  GenerateKeysClass: 0
   KeysClassFolderOverride: Assets/Test/Menu/GeneratedLocalisation
   NamespaceOverride: Test.Menu.Localisation
   m_Keys:

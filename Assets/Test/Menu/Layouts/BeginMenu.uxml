@@ -1,0 +1,40 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.rpgframework.core/Runtime/UI%20Toolkit/UIShared.uss?fileID=7433441132597879392&amp;guid=94d472c2b9a84d747912b7c0d4c5d053&amp;type=3#UIShared"/>
+    <Style src="Menus.uss"/>
+    <ui:VisualElement name="BeginMenu" class="rpg-menu">
+        <ui:VisualElement name="TitleContainer" class="rpg-menu-title-area">
+            <ui:Label text="Game Name" name="TitleLabel" class="rpg-ui-label rpg-menu-title">
+                <Bindings>
+                    <RPGFramework.Localisation.LocalisedText property="text" key="Generic/Game_Title"/>
+                </Bindings>
+            </ui:Label>
+        </ui:VisualElement>
+        <ui:VisualElement name="ContentContainer" class="rpg-menu-content">
+            <ui:VisualElement name="ButtonsContainer" class="rpg-menu-buttons">
+                <RPGFramework.Core.UI.RPGUIButton focusable="true" text="New Game" name="NewGameBtn">
+                    <Bindings>
+                        <RPGFramework.Localisation.LocalisedText property="text" key="BeginMenu/New_Game"/>
+                    </Bindings>
+                </RPGFramework.Core.UI.RPGUIButton>
+                <RPGFramework.Core.UI.RPGUIButton focusable="true" name="LoadGameBtn" text="Load Game">
+                    <Bindings>
+                        <RPGFramework.Localisation.LocalisedText property="text" key="BeginMenu/Load_Game"/>
+                    </Bindings>
+                </RPGFramework.Core.UI.RPGUIButton>
+                <RPGFramework.Core.UI.RPGUIButton focusable="true" name="ConfigBtn" text="Settings">
+                    <Bindings>
+                        <RPGFramework.Localisation.LocalisedText property="text" key="Generic/Settings"/>
+                    </Bindings>
+                </RPGFramework.Core.UI.RPGUIButton>
+                <RPGFramework.Core.UI.RPGUIButton focusable="true" name="QuitBtn" text="Quit">
+                    <Bindings>
+                        <RPGFramework.Localisation.LocalisedText property="text" key="BeginMenu/Quit_Game"/>
+                    </Bindings>
+                </RPGFramework.Core.UI.RPGUIButton>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="FooterContainer" class="rpg-menu-footer">
+            <ui:Label text="v1.0.0" name="VersionLabel" class="rpg-ui-label"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
