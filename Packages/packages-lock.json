@@ -17,13 +17,13 @@
       "dependencies": {
         "com.rpgframework.audio": "5.0.0",
         "com.rpgframework.battle.sharedtypes": "0.2.0",
-        "com.rpgframework.core": "0.8.0",
+        "com.rpgframework.core": "0.8.1",
         "com.rpgframework.core.sharedtypes": "0.3.0",
         "com.rpgframework.di": "5.0.0",
         "com.rpgframework.hashing": "2.0.2",
         "com.rpgframework.localisation": "4.0.0"
       },
-      "hash": "028958838ee41a2c83903dd2419dc712be80f605"
+      "hash": "06190631328a4d8d06218f2b9f523279f57004d3"
     },
     "com.rpgframework.battle.sharedtypes": {
       "version": "https://github.com/KandyMan1990/RPGFramework.Battle.SharedTypes.git#v0.2.0",
@@ -129,7 +129,7 @@
       "dependencies": {
         "com.rpgframework.hashing": "2.0.2"
       },
-      "hash": "cb8ffe2c3746b3a24fa0e98b6389e2076938c81d"
+      "hash": "fe2712ec1532cfad8db3910364e20a33ae366a8b"
     },
     "com.rpgframework.menu": {
       "version": "https://github.com/KandyMan1990/RPGFramework.Menu.git#v0.5.0",
@@ -137,14 +137,14 @@
       "source": "git",
       "dependencies": {
         "com.rpgframework.audio": "5.0.0",
-        "com.rpgframework.core": "0.8.0",
+        "com.rpgframework.core": "0.8.1",
         "com.rpgframework.core.sharedtypes": "0.3.0",
         "com.rpgframework.di": "5.0.0",
         "com.rpgframework.localisation": "4.0.0",
         "com.rpgframework.menu.sharedtypes": "0.3.0",
         "com.unity.mathematics": "1.4.0"
       },
-      "hash": "a30e993996415d07114be03cc4dfa6679fd15194"
+      "hash": "c2ef1ef4369789fcacf7e77a1534ae80d0d82811"
     },
     "com.rpgframework.menu.sharedtypes": {
       "version": "https://github.com/KandyMan1990/RPGFramework.Menu.SharedTypes.git#v0.3.0",
