@@ -256,34 +256,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!114 &604768482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
-  m_Name: UI/Submit
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
-  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_ActionId: 7607c7b6-cd76-4816-beef-bd0341cfe950
---- !u!114 &752957352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
-  m_Name: UI/Cancel
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
-  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_ActionId: 15cef263-9014-4fd5-94d9-4e4a6234a6ef
 --- !u!1 &1883422317
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,17 +339,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21dc0e2425a1418cae022ad447c36590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Core::RPGFramework.Core.Input.InputAdapter
-  m_Movement: {fileID: 0}
-  m_Primary: {fileID: 604768482}
-  m_Secondary: {fileID: 752957352}
-  m_Tertiary: {fileID: 4978126274567800861, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_Quaternary: {fileID: 0}
-  m_ShoulderLeft: {fileID: 0}
-  m_ShoulderRight: {fileID: 0}
-  m_TriggerLeft: {fileID: 0}
-  m_TriggerRight: {fileID: 0}
-  m_Start: {fileID: 0}
-  m_Select: {fileID: 0}
+  m_Actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_Map: UI
+  m_Movement: 
 --- !u!114 &1883422322
 MonoBehaviour:
   m_ObjectHideFlags: 0

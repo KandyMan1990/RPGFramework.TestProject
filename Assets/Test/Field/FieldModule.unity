@@ -151,17 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21dc0e2425a1418cae022ad447c36590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Core::RPGFramework.Core.Input.InputAdapter
-  m_Movement: {fileID: 5272367611473766546, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_Primary: {fileID: 5187823559276234746, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_Secondary: {fileID: -6316435537939096186, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_Tertiary: {fileID: 1990023514}
-  m_Quaternary: {fileID: 0}
-  m_ShoulderLeft: {fileID: 9087734154671958178, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_ShoulderRight: {fileID: 4310118602437010115, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_TriggerLeft: {fileID: -5277571919223034408, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_TriggerRight: {fileID: 6266803090654256949, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_Start: {fileID: 0}
-  m_Select: {fileID: 2805508434336598067, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_Map: Field
+  m_Movement: Navigate
 --- !u!114 &588473728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,20 +394,6 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
---- !u!114 &1990023514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
-  m_Name: Field/Menu
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
-  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_ActionId: 9ce836e3-d448-4828-b79f-627c606e3cf6
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

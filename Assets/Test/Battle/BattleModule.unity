@@ -151,17 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21dc0e2425a1418cae022ad447c36590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Core::RPGFramework.Core.Input.InputAdapter
-  m_Movement: {fileID: -6980917337273421111, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_Primary: {fileID: -1600621610270253272, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_Secondary: {fileID: -2934320097650608758, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_Tertiary: {fileID: 0}
-  m_Quaternary: {fileID: 0}
-  m_ShoulderLeft: {fileID: 0}
-  m_ShoulderRight: {fileID: 0}
-  m_TriggerLeft: {fileID: 0}
-  m_TriggerRight: {fileID: 0}
-  m_Start: {fileID: 0}
-  m_Select: {fileID: 0}
+  m_Actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_Map: Battle
+  m_Movement: 
 --- !u!114 &588473728
 MonoBehaviour:
   m_ObjectHideFlags: 0

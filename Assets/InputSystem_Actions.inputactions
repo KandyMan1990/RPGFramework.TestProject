@@ -37,7 +37,7 @@
                     "priority": 0
                 },
                 {
-                    "name": "Tertiary",
+                    "name": "Delete",
                     "type": "Button",
                     "id": "ceceba9d-fce0-4d10-be59-f7d92e257702",
                     "expectedControlType": "",
@@ -242,10 +242,10 @@
                 {
                     "name": "",
                     "id": "9e92bb26-7e3b-4ec4-b06b-3c8f8e498ddc",
-                    "path": "*/{Submit}",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad;Touch;Joystick;XR",
+                    "groups": ";Gamepad",
                     "action": "Submit",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -411,7 +411,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Tertiary",
+                    "action": "Delete",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -422,7 +422,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Tertiary",
+                    "action": "Delete",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -453,7 +453,7 @@
                     "priority": 0
                 },
                 {
-                    "name": "Interact",
+                    "name": "Confirm",
                     "type": "Button",
                     "id": "2433999f-224a-49f7-815a-da4a5b868ee5",
                     "expectedControlType": "",
@@ -506,6 +506,16 @@
                     "name": "TriggerRight",
                     "type": "Button",
                     "id": "351a7724-4738-43ca-9e79-2306f61d8991",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Start",
+                    "type": "Button",
+                    "id": "7cfa7823-7035-4002-a5e0-8bf716368095",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -696,7 +706,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Interact",
+                    "action": "Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -707,7 +717,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Interact",
+                    "action": "Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -875,6 +885,28 @@
                     "action": "Select",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "38d35ac6-da60-461f-8633-9770f4e457db",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Start",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5043f486-2bce-4cab-b1cb-9543ee664227",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Start",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -893,7 +925,7 @@
                     "priority": 0
                 },
                 {
-                    "name": "Select",
+                    "name": "Confirm",
                     "type": "Button",
                     "id": "da07c602-e1ee-4d0b-afdf-f78814b32fd8",
                     "expectedControlType": "",
@@ -1064,7 +1096,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Select",
+                    "action": "Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1075,7 +1107,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Select",
+                    "action": "Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
