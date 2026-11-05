@@ -23,3 +23,15 @@ MonoBehaviour:
   - ConfigMenu/Sfx_Volume
   - ConfigMenu/Battle_Message_Speed
   - ConfigMenu/Field_Message_Speed
+  - ConfigMenu/Controls_Keyboard
+  - ConfigMenu/Controls_Gamepad
+  - ConfigMenu/Controls_Reset
+  - ConfigMenu/Controls_Prompt
+  - ConfigMenu/Control_Confirm
+  - ConfigMenu/Control_Cancel
+  - ConfigMenu/Control_Menu
+  - ConfigMenu/Control_Delete
+  - ConfigMenu/Control_Up
+  - ConfigMenu/Control_Down
+  - ConfigMenu/Control_Left
+  - ConfigMenu/Control_Right

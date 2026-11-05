@@ -506,4 +506,25 @@ MonoBehaviour:
     m_Description: The seconds the test field's countdown battle left, read as the battle ends, as a timed boss fight keeps them for a grade
     m_DefaultValue: 0
     m_ElementDefaults: []
-  m_LastVariableId: 36
+  - m_Id: 37
+    m_Name: InputBindings
+    m_Bank: 3
+    m_Width: 0
+    m_Count: 32
+    m_Fields:
+    - m_Id: 1
+      m_Name: Binding
+      m_Width: 2
+      m_Count: 16
+      m_DefaultValue: 0
+    - m_Id: 2
+      m_Name: Path
+      m_Width: 2
+      m_Count: 64
+      m_DefaultValue: 0
+    m_LastFieldId: 2
+    m_Offset: 24
+    m_Description: 'The player''s own bindings, set on the Controls page: a binding''s id and the control it is bound to instead. Its defaults are none'
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  m_LastVariableId: 37
