@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e5b6742c96a4db7894f1953364548f, type: 3}
+  m_Name: System Sound Config
+  m_EditorClassIdentifier: RPGFramework.Core::RPGFramework.Core.Audio.SystemSoundConfig
+  m_Cursor: 12069975141896364794
+  m_Confirm: 12069975141896364794
+  m_Cancel: 15264754500189748758
+  m_Error: 6860172195720241041
+  m_NewGame: 4826419420261722300
+  m_LoadGame: 4826419420261722300
+  m_SaveGame: 4826419420261722300
