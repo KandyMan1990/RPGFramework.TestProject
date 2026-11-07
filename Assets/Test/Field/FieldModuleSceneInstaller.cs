@@ -8,6 +8,9 @@ namespace Test.Field
         public override void InstallBindings(IDIContainer container)
         {
             container.BindSingleton<IFieldDatabase, FieldDatabase>();
+
+            container.BindSingleton<TestCollection, TestCollection>();
+            container.BindSingleton<IFieldGameOpCodeDatabase, CollectionOpCodeDatabase>();
         }
     }
 }

@@ -1,6 +1,6 @@
 {
     "name": "Test.Field",
-    "rootNamespace": "",
+    "rootNamespace": "Test.Field",
     "references": [
         "RPGFramework.DI",
         "RPGFramework.Core",

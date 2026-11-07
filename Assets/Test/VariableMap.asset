@@ -527,4 +527,37 @@ MonoBehaviour:
     m_Description: 'The player''s own bindings, set on the Controls page: a binding''s id and the control it is bound to instead. Its defaults are none'
     m_DefaultValue: 0
     m_ElementDefaults: []
-  m_LastVariableId: 37
+  - m_Id: 38
+    m_Name: TestCollection
+    m_Bank: 0
+    m_Width: 2
+    m_Count: 8
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 124
+    m_Description: How many of each of eight things the test collection holds (Test.Field CollectionOpCode)
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  - m_Id: 39
+    m_Name: TestCollectionPick
+    m_Bank: 0
+    m_Width: 2
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 105
+    m_Description: Which thing the collection test NPC adds, read by ADD_TO_COLLECTION from a variable
+    m_DefaultValue: 3
+    m_ElementDefaults: []
+  - m_Id: 40
+    m_Name: TestCollectionCount
+    m_Bank: 1
+    m_Width: 5
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 12
+    m_Description: How many of the picked thing the collection holds, written by COUNT_IN_COLLECTION
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  m_LastVariableId: 40
