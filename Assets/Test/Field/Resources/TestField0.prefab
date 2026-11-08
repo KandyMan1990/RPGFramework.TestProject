@@ -730,6 +730,7 @@ Transform:
   - {fileID: 4547987601190387110}
   - {fileID: 1740601950556032283}
   - {fileID: 1702392443445750343}
+  - {fileID: 1383620559422986691}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4829676445749990612
@@ -1387,6 +1388,28 @@ MonoBehaviour:
     - m_Type: 3
       m_Name: AddAndCount
       m_Text: "ADD_TO_COLLECTION $TestCollectionPick 1\nCOUNT_IN_COLLECTION $TestCollectionCount $TestCollectionPick\nIF_INT $TestCollectionCount >= 3\n    CREATE_DIALOGUE_WINDOW 0 100 100 640 180\n    SHOW_DIALOGUE_WINDOW 0 TestField/Test true\nEND_IF\nRETURN"
+      m_Slot: 0
+  - m_EntityId: 31
+    m_Name: FittedWindows31
+    m_Body: {fileID: 7700953550027767081}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'INTERACTION_TRIGGER_ACTIVATION true
+
+        SET_INTERACTION_RANGE 2.0
+
+        RETURN'
+      m_Slot: 0
+    - m_Type: 3
+      m_Name: Fitted
+      m_Text: 'SHOW_DIALOGUE_AT 0 TestField/Test 60 60 true
+
+        SHOW_DIALOGUE_AT 0 TestField/Location 1800 1000 true
+
+        ASK_PLAYER_AT $TestChoiceAnswer 0 600 300 TestField/Location 0 Last TestField/Test TestField/Location
+
+        RETURN'
       m_Slot: 0
   m_FormatVersion: 0
   m_Compiled: []
@@ -3235,6 +3258,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
   m_VisibleObject: {fileID: 0}
+--- !u!1 &9119508229649971249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1383620559422986691}
+  - component: {fileID: 7700953550027767081}
+  - component: {fileID: 4814585552047954453}
+  m_Layer: 0
+  m_Name: FittedWindows31
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1383620559422986691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9119508229649971249}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10, y: 0, z: -3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8967626963149710051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7700953550027767081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9119508229649971249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
+  m_VisibleObject: {fileID: 0}
+--- !u!114 &4814585552047954453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9119508229649971249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc75dbce07184c60b898d17408700dc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldInteractionTrigger
+  m_InteractionAngle: 360
+  m_InteractionRange: 1
 --- !u!1001 &8032505884716692133
 PrefabInstance:
   m_ObjectHideFlags: 0
