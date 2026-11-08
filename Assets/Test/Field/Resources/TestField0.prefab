@@ -808,6 +808,126 @@ MonoBehaviour:
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldInteractionTrigger
   m_InteractionAngle: 360
   m_InteractionRange: 1
+--- !u!1 &3723012295395387120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1865458232577216200}
+  - component: {fileID: 7279884476270027178}
+  - component: {fileID: 6311428800136173241}
+  m_Layer: 0
+  m_Name: SoundLoop38
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1865458232577216200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3723012295395387120}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4, y: 0, z: -5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8967626963149710051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7279884476270027178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3723012295395387120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
+  m_VisibleObject: {fileID: 0}
+--- !u!114 &6311428800136173241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3723012295395387120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc75dbce07184c60b898d17408700dc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldInteractionTrigger
+  m_InteractionAngle: 360
+  m_InteractionRange: 1
+--- !u!1 &3914532376287000805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2645572278907671369}
+  - component: {fileID: 2929298358426959287}
+  - component: {fileID: 3217354226432666521}
+  m_Layer: 0
+  m_Name: SoundStop39
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2645572278907671369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3914532376287000805}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6, y: 0, z: -5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8967626963149710051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2929298358426959287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3914532376287000805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
+  m_VisibleObject: {fileID: 0}
+--- !u!114 &3217354226432666521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3914532376287000805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc75dbce07184c60b898d17408700dc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldInteractionTrigger
+  m_InteractionAngle: 360
+  m_InteractionRange: 1
 --- !u!1 &4214088858133092361
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,6 +1037,9 @@ Transform:
   - {fileID: 4654919249211650154}
   - {fileID: 7588631463163499623}
   - {fileID: 5014400388598550453}
+  - {fileID: 1865458232577216200}
+  - {fileID: 2645572278907671369}
+  - {fileID: 4187254434672044864}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4829676445749990612
@@ -949,7 +1072,7 @@ MonoBehaviour:
     m_Scripts:
     - m_Type: 0
       m_Name: 
-      m_Text: 'PLAY_SOUND Equip
+      m_Text: 'PLAY_SOUND Equip 1 0 0
 
         RETURN'
       m_Slot: 0
@@ -1093,7 +1216,7 @@ MonoBehaviour:
       m_Slot: 0
     - m_Type: 3
       m_Name: 
-      m_Text: 'PLAY_SOUND ItemConsumed
+      m_Text: 'PLAY_SOUND ItemConsumed 1 0 0
 
         RETURN'
       m_Slot: 0
@@ -1255,7 +1378,7 @@ MonoBehaviour:
       m_Slot: 0
     - m_Type: 3
       m_Name: 
-      m_Text: "SET_BATTLE_MODE 512\nSTART_BATTLE 0 3 0 15\nGET_LAST_BATTLE_RESULT $TestLastBattleResult\nSET_BATTLE_MODE 0\nIF_BYTE $TestLastBattleResult == 1\n    PLAY_SOUND Error\nEND_IF\nRETURN"
+      m_Text: "SET_BATTLE_MODE 512\nSTART_BATTLE 0 3 0 15\nGET_LAST_BATTLE_RESULT $TestLastBattleResult\nSET_BATTLE_MODE 0\nIF_BYTE $TestLastBattleResult == 1\n    PLAY_SOUND Error 1 0 0\nEND_IF\nRETURN"
       m_Slot: 0
   - m_EntityId: 15
     m_Name: TransitionShowcase15
@@ -1766,6 +1889,82 @@ MonoBehaviour:
     - m_Type: 3
       m_Name: TryIt
       m_Text: 'REQUEST_SCRIPT_WAIT_END 2 8
+
+        RETURN'
+      m_Slot: 0
+  - m_EntityId: 38
+    m_Name: SoundLoop38
+    m_Body: {fileID: 7279884476270027178}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'INTERACTION_TRIGGER_ACTIVATION true
+
+        SET_INTERACTION_RANGE 2.0
+
+        RETURN'
+      m_Slot: 0
+    - m_Type: 3
+      m_Name: TryIt
+      m_Text: 'PLAY_SOUND LoopTest 1 0 1
+
+        WAIT_SECONDS 2.0
+
+        FADE_SOUND_PAN 1 -1 1
+
+        WAIT_SECONDS 2.0
+
+        FADE_SOUND_PAN 1 1 1
+
+        WAIT_SECONDS 2.0
+
+        FADE_SOUND_PAN 1 0 0
+
+        FADE_SOUND_VOLUME 1 0.2 1
+
+        WAIT_SECONDS 2.0
+
+        FADE_SOUND_VOLUME 1 1 1
+
+        RETURN'
+      m_Slot: 0
+  - m_EntityId: 39
+    m_Name: SoundStop39
+    m_Body: {fileID: 2929298358426959287}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'INTERACTION_TRIGGER_ACTIVATION true
+
+        SET_INTERACTION_RANGE 2.0
+
+        RETURN'
+      m_Slot: 0
+    - m_Type: 3
+      m_Name: TryIt
+      m_Text: 'STOP_SOUND 1
+
+        RETURN'
+      m_Slot: 0
+  - m_EntityId: 40
+    m_Name: SoundAll40
+    m_Body: {fileID: 4586342922315381773}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'INTERACTION_TRIGGER_ACTIVATION true
+
+        SET_INTERACTION_RANGE 2.0
+
+        RETURN'
+      m_Slot: 0
+    - m_Type: 3
+      m_Name: TryIt
+      m_Text: 'FADE_ALL_SOUND_VOLUME 0 1
+
+        WAIT_SECONDS 2.0
+
+        FADE_ALL_SOUND_VOLUME 1 1
 
         RETURN'
       m_Slot: 0
@@ -2730,7 +2929,7 @@ MonoBehaviour:
     m_Value: 0
   OutputChannel: 1
   StandbyUpdate: 2
-  m_StreamingVersion: 0
+  m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
     TrackingTarget: {fileID: 0}
@@ -3577,6 +3776,66 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8578499657332479893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc75dbce07184c60b898d17408700dc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldInteractionTrigger
+  m_InteractionAngle: 360
+  m_InteractionRange: 1
+--- !u!1 &8650762225856849178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4187254434672044864}
+  - component: {fileID: 4586342922315381773}
+  - component: {fileID: 4906403198003768351}
+  m_Layer: 0
+  m_Name: SoundAll40
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4187254434672044864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650762225856849178}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8, y: 0, z: -5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8967626963149710051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4586342922315381773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650762225856849178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
+  m_VisibleObject: {fileID: 0}
+--- !u!114 &4906403198003768351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650762225856849178}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc75dbce07184c60b898d17408700dc2, type: 3}

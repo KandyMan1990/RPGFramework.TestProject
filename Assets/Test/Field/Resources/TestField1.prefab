@@ -242,7 +242,7 @@ MonoBehaviour:
       m_Name: 
       m_Text: 'WAIT_SECONDS 1.0
 
-        PLAY_SOUND Error
+        PLAY_SOUND Error 1 0 0
 
         RETURN'
       m_Slot: 0
