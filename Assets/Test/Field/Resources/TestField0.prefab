@@ -914,6 +914,9 @@ Transform:
   - {fileID: 1864804781674639988}
   - {fileID: 4580080015014655813}
   - {fileID: 522611520435150685}
+  - {fileID: 4654919249211650154}
+  - {fileID: 7588631463163499623}
+  - {fileID: 5014400388598550453}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4829676445749990612
@@ -959,6 +962,8 @@ MonoBehaviour:
       m_Text: 'SET_PLAYER_ENTITY
 
         SET_BASE_ANIMATION IdleWalkRunBlend
+
+        SET_LADDER_ANIMATIONS InAir IdleWalkRunBlend InAir
 
         VISIBILITY true
 
@@ -1013,6 +1018,38 @@ MonoBehaviour:
         SET_ENTITY_POSITION $TestStandX $TestStandY $TestStandZ
 
         SET_ENTITY_ROTATION 0 $TestStandDirection 0
+
+        LOCK_INPUT false
+
+        RETURN'
+      m_Slot: 0
+    - m_Type: 6
+      m_Name: LadderUp
+      m_Text: 'CLIMB_LADDER_AND_WAIT true -2 0 -5 -2 4 -5 -2 4 -4
+
+        RETURN'
+      m_Slot: 0
+    - m_Type: 6
+      m_Name: LadderDown
+      m_Text: 'CLIMB_LADDER_AND_WAIT false -2 4 -5 -2 0 -5 -2 0 -4
+
+        RETURN'
+      m_Slot: 0
+    - m_Type: 6
+      m_Name: JumpAndOffset
+      m_Text: 'LOCK_INPUT true
+
+        JUMP_ENTITY_AND_WAIT 3 0 -4 0.75 1.5
+
+        WAIT_SECONDS 0.5
+
+        SET_ENTITY_DRAW_OFFSET_AND_WAIT 0 1.5 0 0.5 1
+
+        WAIT_SECONDS 0.5
+
+        SET_ENTITY_DRAW_OFFSET 0 0 0 0.5 0
+
+        WAIT_FOR_ENTITY_DRAW_OFFSET
 
         LOCK_INPUT false
 
@@ -1678,6 +1715,60 @@ MonoBehaviour:
       m_Name: 
       m_Text: "LABEL Start\nIS_ENTITY_IN_RANGE 2 $TestInRange\nIF_BOOL $TestInRange == true\n    SHOW_DIALOGUE_AT 0 TestField/Location 60 60 false\n    WAIT_SECONDS 3.0\nEND_IF\nYIELD\nGOTO_DIRECTLY Start"
       m_Slot: 0
+  - m_EntityId: 35
+    m_Name: LadderBottom35
+    m_Body: {fileID: 4615798591383895138}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'INTERACTION_TRIGGER_ACTIVATION true
+
+        SET_INTERACTION_RANGE 2.0
+
+        RETURN'
+      m_Slot: 0
+    - m_Type: 3
+      m_Name: TryIt
+      m_Text: 'REQUEST_SCRIPT_WAIT_END 2 6
+
+        RETURN'
+      m_Slot: 0
+  - m_EntityId: 36
+    m_Name: LadderTop36
+    m_Body: {fileID: 1864475178206331587}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'INTERACTION_TRIGGER_ACTIVATION true
+
+        SET_INTERACTION_RANGE 2.0
+
+        RETURN'
+      m_Slot: 0
+    - m_Type: 3
+      m_Name: TryIt
+      m_Text: 'REQUEST_SCRIPT_WAIT_END 2 7
+
+        RETURN'
+      m_Slot: 0
+  - m_EntityId: 37
+    m_Name: JumpAndOffset37
+    m_Body: {fileID: 8985569814709306963}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: 'INTERACTION_TRIGGER_ACTIVATION true
+
+        SET_INTERACTION_RANGE 2.0
+
+        RETURN'
+      m_Slot: 0
+    - m_Type: 3
+      m_Name: TryIt
+      m_Text: 'REQUEST_SCRIPT_WAIT_END 2 8
+
+        RETURN'
+      m_Slot: 0
   m_FormatVersion: 0
   m_Compiled: []
   m_AnimationNames: []
@@ -2047,6 +2138,66 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5739972418678641235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc75dbce07184c60b898d17408700dc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldInteractionTrigger
+  m_InteractionAngle: 360
+  m_InteractionRange: 1
+--- !u!1 &5956533435221434818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7588631463163499623}
+  - component: {fileID: 1864475178206331587}
+  - component: {fileID: 4133728533018696403}
+  m_Layer: 0
+  m_Name: LadderTop36
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7588631463163499623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5956533435221434818}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2, y: 3, z: -4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8967626963149710051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1864475178206331587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5956533435221434818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
+  m_VisibleObject: {fileID: 0}
+--- !u!114 &4133728533018696403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5956533435221434818}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc75dbce07184c60b898d17408700dc2, type: 3}
@@ -2948,6 +3099,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
   m_VisibleObject: {fileID: 0}
+--- !u!1 &7949482527423215790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5014400388598550453}
+  - component: {fileID: 8985569814709306963}
+  - component: {fileID: 9082316824123647387}
+  m_Layer: 0
+  m_Name: JumpAndOffset37
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5014400388598550453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7949482527423215790}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8967626963149710051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8985569814709306963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7949482527423215790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
+  m_VisibleObject: {fileID: 0}
+--- !u!114 &9082316824123647387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7949482527423215790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc75dbce07184c60b898d17408700dc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldInteractionTrigger
+  m_InteractionAngle: 360
+  m_InteractionRange: 1
 --- !u!1 &8073716647764557753
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,6 +3683,66 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8911272829941489032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc75dbce07184c60b898d17408700dc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldInteractionTrigger
+  m_InteractionAngle: 360
+  m_InteractionRange: 1
+--- !u!1 &8933194387282342693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4654919249211650154}
+  - component: {fileID: 4615798591383895138}
+  - component: {fileID: 1079068388333014894}
+  m_Layer: 0
+  m_Name: LadderBottom35
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4654919249211650154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8933194387282342693}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2, y: 0, z: -4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8967626963149710051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4615798591383895138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8933194387282342693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
+  m_VisibleObject: {fileID: 0}
+--- !u!114 &1079068388333014894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8933194387282342693}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc75dbce07184c60b898d17408700dc2, type: 3}
