@@ -560,4 +560,15 @@ MonoBehaviour:
     m_Description: How many of the picked thing the collection holds, written by COUNT_IN_COLLECTION
     m_DefaultValue: 0
     m_ElementDefaults: []
-  m_LastVariableId: 40
+  - m_Id: 41
+    m_Name: MoneyMaximum
+    m_Bank: 1
+    m_Width: 6
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 24
+    m_Description: 'The most money the party can hold. Only its default is used: the game''s own limit, zero for none'
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  m_LastVariableId: 41
