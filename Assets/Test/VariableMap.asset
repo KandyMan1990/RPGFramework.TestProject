@@ -571,4 +571,59 @@ MonoBehaviour:
     m_Description: 'The most money the party can hold. Only its default is used: the game''s own limit, zero for none'
     m_DefaultValue: 0
     m_ElementDefaults: []
-  m_LastVariableId: 41
+  - m_Id: 42
+    m_Name: TestStandX
+    m_Bank: 1
+    m_Width: 9
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 28
+    m_Description: Where the test field's player stood, as a script reads it
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  - m_Id: 43
+    m_Name: TestStandY
+    m_Bank: 1
+    m_Width: 9
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 32
+    m_Description: Where the test field's player stood, as a script reads it
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  - m_Id: 44
+    m_Name: TestStandZ
+    m_Bank: 1
+    m_Width: 9
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 36
+    m_Description: Where the test field's player stood, as a script reads it
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  - m_Id: 45
+    m_Name: TestStandDirection
+    m_Bank: 1
+    m_Width: 9
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 40
+    m_Description: Which way the test field's player faced, as a script reads it
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  - m_Id: 46
+    m_Name: TestInRange
+    m_Bank: 1
+    m_Width: 0
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 5
+    m_Description: Whether the player is in range of the test field's InRange entity
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  m_LastVariableId: 46
