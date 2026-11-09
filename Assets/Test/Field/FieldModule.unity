@@ -224,6 +224,9 @@ MonoBehaviour:
   m_UIDocument: {fileID: 588473728}
   m_CinemachineBrain: {fileID: 669434365}
   m_VisibleWhileSuspended: 0
+  m_FootstepSound: 11755123460741369544
+  m_LadderSound: 14581731250852633105
+  m_FootstepFarDistance: 30
 --- !u!1 &669434360
 GameObject:
   m_ObjectHideFlags: 0
