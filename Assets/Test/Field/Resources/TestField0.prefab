@@ -3803,7 +3803,7 @@ MonoBehaviour:
       m_Slot: 0
     - m_Type: 3
       m_Name: 
-      m_Text: 'START_BATTLE 0 3 0 15 Mosaic
+      m_Text: 'START_BATTLE 3 Arena0 0 Mosaic
 
         RETURN'
       m_Slot: 0
@@ -3875,7 +3875,7 @@ MonoBehaviour:
       m_Slot: 0
     - m_Type: 3
       m_Name: 
-      m_Text: "SET_BATTLE_MODE 512\nSTART_BATTLE 0 3 0 15\nGET_LAST_BATTLE_RESULT $TestLastBattleResult\nSET_BATTLE_MODE 0\nIF_BYTE $TestLastBattleResult == 1\n    PLAY_SOUND Error 1 0 0\nEND_IF\nRETURN"
+      m_Text: "SET_BATTLE_MODE 512\nSTART_BATTLE 3 Arena0 0\nGET_LAST_BATTLE_RESULT $TestLastBattleResult\nSET_BATTLE_MODE 0\nIF_BYTE $TestLastBattleResult == 1\n    PLAY_SOUND Error 1 0 0\nEND_IF\nRETURN"
       m_Slot: 0
   - m_EntityId: 15
     m_Name: TransitionShowcase15
@@ -3957,7 +3957,7 @@ MonoBehaviour:
       m_Slot: 0
     - m_Type: 3
       m_Name: Battle
-      m_Text: 'START_BATTLE 0 3 0 15 FlyingStrips
+      m_Text: 'START_BATTLE 3 Arena0 0 FlyingStrips
 
         RETURN'
       m_Slot: 0
@@ -3975,7 +3975,7 @@ MonoBehaviour:
       m_Slot: 0
     - m_Type: 3
       m_Name: Battle
-      m_Text: 'START_BATTLE 0 3 0 15 MirroredPanels
+      m_Text: 'START_BATTLE 3 Arena0 0 MirroredPanels
 
         RETURN'
       m_Slot: 0
@@ -3993,7 +3993,7 @@ MonoBehaviour:
       m_Slot: 0
     - m_Type: 3
       m_Name: Battle
-      m_Text: 'START_BATTLE 0 3 0 15 Swirl
+      m_Text: 'START_BATTLE 3 Arena0 0 Swirl
 
         RETURN'
       m_Slot: 0
@@ -4011,7 +4011,7 @@ MonoBehaviour:
       m_Slot: 0
     - m_Type: 3
       m_Name: Battle
-      m_Text: 'START_BATTLE 0 3 0 15 Shatter
+      m_Text: 'START_BATTLE 3 Arena0 0 Shatter
 
         RETURN'
       m_Slot: 0
@@ -4183,7 +4183,7 @@ MonoBehaviour:
 
         SET_BOOL $TestCountdownRunning true
 
-        START_BATTLE 0 3 4 15
+        START_BATTLE 3 Arena0 4
 
         GET_COUNTDOWN_TIMER $TestCountdownLeft
 
