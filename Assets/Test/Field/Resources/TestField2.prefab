@@ -100,6 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8967626963149710051}
   - component: {fileID: 6081003387355856814}
+  - component: {fileID: 5883787244245598633}
   m_Layer: 0
   m_Name: TestField2
   m_TagString: Untagged
@@ -192,6 +193,28 @@ MonoBehaviour:
   m_FormatVersion: 0
   m_Compiled: []
   m_AnimationNames: []
+--- !u!114 &5883787244245598633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4226698957846357039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14219644b793d4a2cba6196cfb574e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEncounters
+  m_AverageSeconds: 15
+  m_Slots:
+  - m_EnemyGroup: 1
+    m_Arena: 2568076095700158152
+  - m_EnemyGroup: 1
+    m_Arena: 2568076095700158152
+  - m_EnemyGroup: 2
+    m_Arena: 2568076095700158152
+  - m_EnemyGroup: 3
+    m_Arena: 2568076095700158152
 --- !u!1 &5709288289742801716
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,6 +397,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
   m_VisibleObject: {fileID: 8409716444044686529}
+  m_Head: {fileID: 0}
+  m_FirstFootDown: 0
+  m_SecondFootDown: 0.5
+  m_RaisesAnimationEvents: 0
 --- !u!65 &588670411180573758
 BoxCollider:
   m_ObjectHideFlags: 0
