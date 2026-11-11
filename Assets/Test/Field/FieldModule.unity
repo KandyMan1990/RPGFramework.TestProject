@@ -227,6 +227,7 @@ MonoBehaviour:
   m_FootstepSound: 11755123460741369544
   m_LadderSound: 14581731250852633105
   m_FootstepFarDistance: 30
+  m_EncounterConfig: {fileID: 11400000, guid: 85a50c017162b43868aa4f6a18f2337d, type: 2}
 --- !u!1 &669434360
 GameObject:
   m_ObjectHideFlags: 0

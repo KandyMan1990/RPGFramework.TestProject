@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: BattleSceneInstaller
   m_EditorClassIdentifier: Assembly-CSharp::BattleSceneInstaller
   m_AudioProvider: {fileID: 11400000, guid: a9dd7ee4ee09341d59d186896205b234, type: 2}
+  m_Encounters: {fileID: 11400000, guid: fed243d2f12b3416b994c77811c532f6, type: 2}

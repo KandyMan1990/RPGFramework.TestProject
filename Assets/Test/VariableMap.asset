@@ -648,17 +648,6 @@ MonoBehaviour:
     m_Description: How far the player has walked toward the next random battle's check, from 0 to 1
     m_DefaultValue: 0
     m_ElementDefaults: []
-  - m_Id: 49
-    m_Name: LastEnemyGroup
-    m_Bank: 1
-    m_Width: 4
-    m_Count: 1
-    m_Fields: []
-    m_LastFieldId: 0
-    m_Offset: 48
-    m_Description: The enemy group the last random battle fought, which the next does not repeat where it can help it
-    m_DefaultValue: 0
-    m_ElementDefaults: []
   - m_Id: 50
     m_Name: EncounterRate
     m_Bank: 0
@@ -670,4 +659,15 @@ MonoBehaviour:
     m_Description: 'Multiplies every field''s rate of random battles: 0.5 half as often, 0 none. Its default is a new game''s'
     m_DefaultValue: 1065353216
     m_ElementDefaults: []
-  m_LastVariableId: 50
+  - m_Id: 51
+    m_Name: LastEncounter
+    m_Bank: 1
+    m_Width: 8
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 48
+    m_Description: The encounter the last random battle fought, which the next does not repeat where it can help it
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  m_LastVariableId: 51

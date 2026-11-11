@@ -205,15 +205,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14219644b793d4a2cba6196cfb574e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEncounters
-  m_AverageSeconds: 15
+  m_Rate: 8
   m_Slots:
-  - m_EnemyGroup: 1
+  - m_Encounter: 13034089859273440312
     m_Arena: 2568076095700158152
-  - m_EnemyGroup: 1
+  - m_Encounter: 13034089859273440312
     m_Arena: 2568076095700158152
-  - m_EnemyGroup: 2
+  - m_Encounter: 13411507498871326085
     m_Arena: 2568076095700158152
-  - m_EnemyGroup: 3
+  - m_Encounter: 9306063870593729960
     m_Arena: 2568076095700158152
 --- !u!1 &5709288289742801716
 GameObject:

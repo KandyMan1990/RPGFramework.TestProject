@@ -12,9 +12,13 @@ namespace Test.Battle
         [SerializeField]
         private BattleAudioProvider m_AudioProvider;
 
+        [SerializeField]
+        private BattleEncounterDatabase m_Encounters;
+
         public override void InstallBindings(IDIContainer container)
         {
             container.BindSingletonFromInstance<IBattleAudioProvider>(m_AudioProvider);
+            container.BindSingletonFromInstance<IBattleEncounterDatabase>(m_Encounters);
 
             container.BindSingleton<IBattleArenaDatabase, BattleArenaDatabase>();
         }
