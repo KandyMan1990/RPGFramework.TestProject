@@ -42,6 +42,9 @@ namespace Test.PlayModeTests
         /// <summary>The scene of the module the game is in, as only the field records which module it is.</summary>
         internal static string Scene => SceneManager.GetActiveScene().name;
 
+        /// <summary>Whether the menu module is open, over the field or on its own.</summary>
+        internal static bool IsMenuOpen => SceneManager.GetSceneByName(TITLE_SCENE).isLoaded;
+
         internal static T Resolve<T>()
         {
             return m_Installer.Resolver.Resolve<T>();
@@ -55,6 +58,20 @@ namespace Test.PlayModeTests
             InputAction confirm = Action(UseCaseProject.CONFIRM);
 
             yield return Wait.Until(() => UseCaseField.Loaded() != null && confirm.enabled, 10f, $"{field} took the player's input");
+        }
+
+        /// <summary>Cancel pressed until the menu has closed, as a player backs out of it.</summary>
+        internal static IEnumerator CloseMenu(UseCaseInput input)
+        {
+            float end = Time.realtimeSinceStartup + 8f;
+
+            while (IsMenuOpen)
+            {
+                NUnit.Framework.Assert.That(Time.realtimeSinceStartup, NUnit.Framework.Is.LessThan(end), "the menu closed within eight seconds");
+
+                yield return input.Tap(input.Keyboard.escapeKey);
+                yield return Wait.Seconds(0.25f);
+            }
         }
 
         /// <summary>One of the game's actions, by map and name, which a module's input adapter enables while it takes input.</summary>

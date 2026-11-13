@@ -7,7 +7,8 @@ namespace Test.PlayModeTests
     /// <summary>The field the module has loaded, and what is in it, found as a player sees it: by what it is called.</summary>
     internal static class UseCaseField
     {
-        internal const string SYSTEM = "UseCaseSystem";
+        internal const string SYSTEM  = "UseCaseSystem";
+        internal const string WINDOWS = "UseCaseWindows";
 
         /// <summary>The field loaded, or null while none is, or the next is loading before the last has gone.</summary>
         internal static FieldEntities Loaded()
