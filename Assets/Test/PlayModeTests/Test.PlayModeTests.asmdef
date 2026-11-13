@@ -1,0 +1,30 @@
+{
+    "name": "Test.PlayModeTests",
+    "rootNamespace": "Test.PlayModeTests",
+    "references": [
+        "RPGFramework.Core",
+        "RPGFramework.Core.SharedTypes",
+        "RPGFramework.DI",
+        "RPGFramework.Field",
+        "RPGFramework.Field.SharedTypes",
+        "RPGFramework.Hashing",
+        "RPGFramework.ModuleRouter",
+        "Test",
+        "Unity.InputSystem",
+        "Unity.InputSystem.TestFramework",
+        "UnityEngine.TestRunner"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
