@@ -19,5 +19,8 @@ namespace Test.PlayModeTests
         internal const string GAME_OVER_FIELD = "GameOver";
 
         internal static Vector3 Up => Vector3.up;
+
+        // Where UseCaseScrollToPoint scrolls the view.
+        internal static Vector3 ScrollPoint => new Vector3(-2f, 0f, 7f);
     }
 }

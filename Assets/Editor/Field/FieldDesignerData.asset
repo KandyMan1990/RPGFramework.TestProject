@@ -49,10 +49,16 @@ MonoBehaviour:
     - Prefab: {fileID: 4226698957846357039, guid: 4a507cd6b07b741cc88da1ac63fba72f, type: 3}
       LocalisationSheets:
       - {fileID: 11400000, guid: 908506bf1ad6f4f4ba1e2dab30a89154, type: 2}
+      - {fileID: 11400000, guid: 9a993b4a988e2c445b1e08ec025f3e5f, type: 2}
       LocationName: 
       ExitTransition: 
       EntryTransition: 
     - Prefab: {fileID: 4226698957846357039, guid: d866a8c3881134647b1f6345b8dd6870, type: 3}
+      LocalisationSheets: []
+      LocationName: 
+      ExitTransition: 
+      EntryTransition: 
+    - Prefab: {fileID: 4226698957846357039, guid: 5b973d30447a8409dad06ef4652f6843, type: 3}
       LocalisationSheets: []
       LocationName: 
       ExitTransition: 
