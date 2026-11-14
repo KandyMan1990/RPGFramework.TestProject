@@ -670,4 +670,15 @@ MonoBehaviour:
     m_Description: The encounter the last random battle fought, which the next does not repeat where it can help it
     m_DefaultValue: 0
     m_ElementDefaults: []
-  m_LastVariableId: 51
+  - m_Id: 52
+    m_Name: TestMusicPlaying
+    m_Bank: 1
+    m_Width: 0
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 9
+    m_Description: Whether music was playing when a use case asked (item 35)
+    m_DefaultValue: 0
+    m_ElementDefaults: []
+  m_LastVariableId: 52

@@ -103,6 +103,20 @@ namespace Test.PlayModeTests
             return Resolve<IMemoryService>().ReadUint(definition.Bank, (ushort)definition.Offset);
         }
 
+        internal static float ReadFloat(string variable)
+        {
+            VariableDefinition definition = Find(variable);
+
+            return Resolve<IMemoryService>().ReadFloat(definition.Bank, (ushort)definition.Offset);
+        }
+
+        internal static ulong ReadUlong(string variable)
+        {
+            VariableDefinition definition = Find(variable);
+
+            return Resolve<IMemoryService>().ReadUlong(definition.Bank, (ushort)definition.Offset);
+        }
+
         internal static bool ReadBool(string variable)
         {
             VariableDefinition definition = Find(variable);

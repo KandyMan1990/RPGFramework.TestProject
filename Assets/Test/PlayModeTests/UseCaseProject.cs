@@ -15,6 +15,7 @@ namespace Test.PlayModeTests
         internal const string BATTLE_RESULT  = "TestLastBattleResult";
         internal const string COUNTDOWN_LEFT = "TestCountdownLeft";
         internal const string ANSWER         = "TestChoiceAnswer";
+        internal const string MUSIC_PLAYING  = "TestMusicPlaying";
         internal const string GAME_OVER_FIELD = "GameOver";
 
         internal static Vector3 Up => Vector3.up;

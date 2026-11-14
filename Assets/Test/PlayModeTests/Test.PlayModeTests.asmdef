@@ -2,6 +2,7 @@
     "name": "Test.PlayModeTests",
     "rootNamespace": "Test.PlayModeTests",
     "references": [
+        "RPGFramework.Audio",
         "RPGFramework.Core",
         "RPGFramework.Core.SharedTypes",
         "RPGFramework.DI",

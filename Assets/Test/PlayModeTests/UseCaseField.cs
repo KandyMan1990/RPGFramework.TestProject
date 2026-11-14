@@ -9,6 +9,7 @@ namespace Test.PlayModeTests
     {
         internal const string SYSTEM  = "UseCaseSystem";
         internal const string WINDOWS = "UseCaseWindows";
+        internal const string AUDIO   = "UseCaseAudio";
 
         /// <summary>The field loaded, or null while none is, or the next is loading before the last has gone.</summary>
         internal static FieldEntities Loaded()
