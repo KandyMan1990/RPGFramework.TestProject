@@ -17,6 +17,7 @@ namespace Test.PlayModeTests
         internal const string ANSWER         = "TestChoiceAnswer";
         internal const string MUSIC_PLAYING  = "TestMusicPlaying";
         internal const string GAME_OVER_FIELD = "GameOver";
+        internal const string STARTING_FIELD  = "TestField0";
         internal const string STAND_X         = "TestStandX";
         internal const string STAND_Y         = "TestStandY";
         internal const string STAND_Z         = "TestStandZ";
