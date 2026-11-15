@@ -9,6 +9,7 @@ using RPGFramework.Field.SharedTypes.Constants;
 using RPGFramework.Field.SharedTypes.Stores;
 using RPGFramework.DI;
 using RPGFramework.Hashing;
+using Unity.Scripting.LifecycleManagement;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -20,7 +21,8 @@ namespace Test.PlayModeTests
     /// and each use case a new playthrough begun at its field, as New Game begins one — its play time counting,
     /// as the countdown counts down beside it — the stack cleared to it.
     /// </summary>
-    internal static class UseCaseGame
+    [AutoStaticsCleanup]
+    internal static partial class UseCaseGame
     {
         internal const string FIELD_SCENE  = "FieldModule";
         internal const string BATTLE_SCENE = "BattleModule";
@@ -29,15 +31,6 @@ namespace Test.PlayModeTests
         private static ICoreModule            m_Core;
         private static UseCaseGlobalInstaller m_Installer;
         private static InputActionAsset       m_Actions;
-
-        // Fast enter play mode keeps statics from the run before, whose Core went as play stopped.
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-        private static void Forget()
-        {
-            m_Core      = null;
-            m_Installer = null;
-            m_Actions   = null;
-        }
 
         /// <summary>The scene of the module the game is in, as only the field records which module it is.</summary>
         internal static string Scene => SceneManager.GetActiveScene().name;
