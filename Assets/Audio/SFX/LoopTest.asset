@@ -26,3 +26,4 @@ MonoBehaviour:
   m_Loop: 1
   m_LoopStart: 44100
   m_LoopEnd: 132300
+  m_SampleRate: 44100
