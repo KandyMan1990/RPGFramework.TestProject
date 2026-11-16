@@ -6,8 +6,9 @@ namespace Test.PlayModeTests
 {
     /// <summary>
     /// What the music and sound players play, read as Unity plays it: each player keeps its sources under an object of
-    /// its own, `MusicPlayer` and `SfxPlayer`, a source's volume its stem's level times the song's fade, or a sound's
-    /// volume times every sound's; the PS1 reverb is two of the mixer's exposed parameters.
+    /// its own, `MusicPlayer` and `SfxPlayer`, each source's clip held by the stem generator it plays, a source's volume
+    /// its stem's level times the song's fade, or a sound's volume times every sound's; the PS1 reverb is two of the
+    /// mixer's exposed parameters.
     /// </summary>
     internal static class UseCaseAudio
     {
@@ -90,13 +91,21 @@ namespace Test.PlayModeTests
 
             for (int i = 0; i < sources.Length; i++)
             {
-                if (sources[i].isPlaying && sources[i].clip != null && sources[i].clip.name == clip)
+                AudioClip playing = ClipOf(sources[i]);
+
+                if (sources[i].isPlaying && playing != null && playing.name == clip)
                 {
                     return sources[i];
                 }
             }
 
             return null;
+        }
+
+        // The web plays the clip on the source itself, with no generator.
+        private static AudioClip ClipOf(AudioSource source)
+        {
+            return source.generator is IStemGenerator stem ? stem.Clip : source.clip;
         }
     }
 }
