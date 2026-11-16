@@ -18,6 +18,6 @@ AudioManager:
   m_DisableAudio: 0
   m_VirtualizeEffects: 1
   m_RequestedDSPBufferSize: 0
-  m_AudioFoundation: 0
+  m_AudioFoundation: 1
   m_OutputChannelLayout: 2
-  m_OutputSamplingRate: 48000
+  m_OutputSamplingRate: 44100
