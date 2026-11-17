@@ -681,4 +681,26 @@ MonoBehaviour:
     m_Description: Whether music was playing when a use case asked (item 35)
     m_DefaultValue: 0
     m_ElementDefaults: []
-  m_LastVariableId: 52
+  - m_Id: 53
+    m_Name: MessageSpeedSlowest
+    m_Bank: 1
+    m_Width: 9
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 56
+    m_Description: 'The characters a second dialogue types at with the player''s message speed at its slowest. Only its default is used: the game''s own, above zero'
+    m_DefaultValue: 1102278820
+    m_ElementDefaults: []
+  - m_Id: 54
+    m_Name: MessageSpeedFastest
+    m_Bank: 1
+    m_Width: 9
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 60
+    m_Description: 'The characters a second dialogue types at with the player''s message speed at its fastest. Only its default is used: the game''s own, no slower than the slowest'
+    m_DefaultValue: 1112628265
+    m_ElementDefaults: []
+  m_LastVariableId: 54

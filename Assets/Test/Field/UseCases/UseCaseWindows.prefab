@@ -173,6 +173,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.SpawnPoint
   m_Id: 9
+--- !u!1 &1308376232529786556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3858468632524662997}
+  - component: {fileID: 7650635619752098528}
+  m_Layer: 0
+  m_Name: SpawnPoint12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3858468632524662997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308376232529786556}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5, y: 0, z: -3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8967626963149710051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7650635619752098528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308376232529786556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6123fe1503884b1aa33b6593f1353303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.SpawnPoint
+  m_Id: 12
 --- !u!1 &1308384611122742368
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,6 +933,8 @@ Transform:
   - {fileID: 6364125895537927939}
   - {fileID: 6256790212582985781}
   - {fileID: 1835431534360035447}
+  - {fileID: 3858468632524662997}
+  - {fileID: 2434446268552793112}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6081003387355856814
@@ -1277,6 +1324,30 @@ MonoBehaviour:
         SHOW_DIALOGUE_AT 0 TestField/Location 1800 1000 true
 
         ASK_PLAYER_AT $TestChoiceAnswer 0 600 300 TestField/Location 0 Last TestField/Test TestField/Location
+
+        RETURN'
+      m_Slot: 0
+  - m_EntityId: 32
+    m_Name: UseCaseMessageSpeed32
+    m_Body: {fileID: 837557598811966506}
+    m_Scripts:
+    - m_Type: 0
+      m_Name: 
+      m_Text: RETURN
+      m_Slot: 0
+    - m_Type: 3
+      m_Name: Talk
+      m_Text: 'CREATE_DIALOGUE_WINDOW 0 200 150 900 200
+
+        SET_MESSAGE_SPEED 0 10
+
+        SHOW_DIALOGUE_WINDOW 0 UseCases/Line true
+
+        SET_MESSAGE_SPEED 0 0
+
+        SHOW_DIALOGUE_WINDOW 0 UseCases/Line true
+
+        ADD_MONEY 1
 
         RETURN'
       m_Slot: 0
@@ -1894,6 +1965,70 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.SpawnPoint
   m_Id: 5
+--- !u!1 &6942816419336553057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2434446268552793112}
+  - component: {fileID: 837557598811966506}
+  - component: {fileID: 3651357624787410344}
+  m_Layer: 0
+  m_Name: UseCaseMessageSpeed32
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2434446268552793112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6942816419336553057}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5, y: 0, z: -2.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8967626963149710051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &837557598811966506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6942816419336553057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85c769e257741268e23f4906855624b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldEntity
+  m_VisibleObject: {fileID: 0}
+  m_Head: {fileID: 0}
+  m_FirstFootDown: 0
+  m_SecondFootDown: 0.5
+  m_RaisesAnimationEvents: 0
+--- !u!114 &3651357624787410344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6942816419336553057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc75dbce07184c60b898d17408700dc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RPGFramework.Field::RPGFramework.Field.FieldInteractionTrigger
+  m_InteractionAngle: 360
+  m_InteractionRange: 1
 --- !u!1 &7670648275562415708
 GameObject:
   m_ObjectHideFlags: 0
