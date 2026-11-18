@@ -35,3 +35,9 @@ MonoBehaviour:
   - ConfigMenu/Control_Down
   - ConfigMenu/Control_Left
   - ConfigMenu/Control_Right
+  - ConfigMenu/Language_Help
+  - ConfigMenu/Controls_Help
+  - ConfigMenu/Music_Volume_Help
+  - ConfigMenu/Sfx_Volume_Help
+  - ConfigMenu/Battle_Message_Speed_Help
+  - ConfigMenu/Field_Message_Speed_Help
