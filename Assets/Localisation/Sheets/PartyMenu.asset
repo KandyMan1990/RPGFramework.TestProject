@@ -19,3 +19,6 @@ MonoBehaviour:
   - PartyMenu/Load
   - PartyMenu/Save
   - PartyMenu/Time
+  - PartyMenu/ConfigHelp
+  - PartyMenu/SaveHelp
+  - PartyMenu/LoadHelp

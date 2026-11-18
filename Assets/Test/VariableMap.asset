@@ -690,7 +690,7 @@ MonoBehaviour:
     m_LastFieldId: 0
     m_Offset: 56
     m_Description: 'The characters a second dialogue types at with the player''s message speed at its slowest. Only its default is used: the game''s own, above zero'
-    m_DefaultValue: 1102278820
+    m_DefaultValue: 1102315520
     m_ElementDefaults: []
   - m_Id: 54
     m_Name: MessageSpeedFastest
@@ -701,6 +701,17 @@ MonoBehaviour:
     m_LastFieldId: 0
     m_Offset: 60
     m_Description: 'The characters a second dialogue types at with the player''s message speed at its fastest. Only its default is used: the game''s own, no slower than the slowest'
-    m_DefaultValue: 1112628265
+    m_DefaultValue: 1112670208
     m_ElementDefaults: []
-  m_LastVariableId: 54
+  - m_Id: 55
+    m_Name: SaveUnsealed
+    m_Bank: 0
+    m_Width: 0
+    m_Count: 1
+    m_Fields: []
+    m_LastFieldId: 0
+    m_Offset: 106
+    m_Description: 'Whether the party menu offers Save, beside the save flag: a script clears it to seal saving for a stretch of the story. It greys the Save entry, proving a menu entry greyed by a variable'
+    m_DefaultValue: 1
+    m_ElementDefaults: []
+  m_LastVariableId: 55
