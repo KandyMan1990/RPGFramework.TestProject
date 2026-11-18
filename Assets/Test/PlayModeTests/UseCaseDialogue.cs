@@ -1,6 +1,5 @@
 using System.Collections;
 using NUnit.Framework;
-using RPGFramework.Core.UI;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -15,6 +14,9 @@ namespace Test.PlayModeTests
         private const string WINDOW       = "dialogue-window";
         private const string STYLE_PREFIX = "dialogue-window--";
         private const string FITTED       = "dialogue-window--fitted";
+
+        // What a selection scope classes its elements, the answers among them.
+        private const string SELECTABLE_CLASS = "rpg-selectable";
 
         /// <summary>The window showing, or null while none is.</summary>
         internal static VisualElement Shown()
@@ -78,15 +80,15 @@ namespace Test.PlayModeTests
             int       index   = -1;
             int       next    = 0;
 
-            window.Query<RPGUIButton>().ForEach(answer =>
-                                                {
-                                                    if (answer == focused)
-                                                    {
-                                                        index = next;
-                                                    }
+            window.Query(className: SELECTABLE_CLASS).ForEach(answer =>
+                                                              {
+                                                                  if (answer == focused)
+                                                                  {
+                                                                      index = next;
+                                                                  }
 
-                                                    next++;
-                                                });
+                                                                  next++;
+                                                              });
 
             return index;
         }
